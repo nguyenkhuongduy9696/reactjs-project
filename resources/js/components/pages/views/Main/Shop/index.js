@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
-import { Link } from 'react-router-dom';
-
-const Home = () => {
+import { Link } from 'react-router-dom'
+const Shop = () => {
     const [products, setProduct] = useState([]);
     const callDataProduct = () => {
-        Axios.get('/api/new-products')
-            .then(respone => {
-                setProduct(respone.data)
+        Axios.get('/api/products')
+            .then(response => {
+                setProduct(response.data)
             })
             .catch(error => console.log(error))
     }
@@ -17,7 +16,7 @@ const Home = () => {
     return (
         <div>
             <div className="features_items">
-                <h2 className="title text-center">Sản phẩm mới</h2>
+                <h2 className="title text-center">Cửa hàng</h2>
                 {products.map(({ id, name, image, price }, index) => (
                     <div className="col-sm-3" key={index}>
                         <div className="product-image-wrapper">
@@ -33,7 +32,9 @@ const Home = () => {
                     </div>
                 ))}
             </div>
+
         </div>
     );
 }
-export default Home
+
+export default Shop

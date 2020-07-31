@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Model\Category;
+use App\Model\Product;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -17,5 +18,13 @@ class CategoryController extends Controller
         $category->delete();
         $category = Category::orderBy('created_at', 'desc')->get();
         return response()->json($category, 200);
+    }
+    public function show(Category $category)
+    {
+        $arr = [];
+        $arr['cate'] = $category->name;
+        $products = Product::where('cate_id', $category->id)->orderBy('created_at', 'desc')->get();
+        $arr['pro'] = $products;
+        return response()->json($arr, 200);
     }
 }

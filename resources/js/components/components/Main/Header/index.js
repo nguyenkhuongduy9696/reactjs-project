@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../../assets/Main/images/home/logo.png'
+import { Link } from 'react-router-dom';
 const Header = props => {
     return (
         <header id="header">
@@ -39,10 +40,8 @@ const Header = props => {
                             </div>
                             <div className="mainmenu pull-left">
                                 <ul className="nav navbar-nav collapse navbar-collapse">
-                                    <li><a href="index.html" className="active">Home</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="404.html">Blog</a></li>
-                                    <li><a href="contact-us.html">Contact</a></li>
+                                    <li><Link to="/" className="active">Home</Link></li>
+                                    <li><Link to="/shop">Shop</Link></li>
                                 </ul>
                             </div>
                         </div>

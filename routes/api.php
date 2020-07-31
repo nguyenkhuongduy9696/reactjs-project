@@ -21,4 +21,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix('category')->name('category.')->group(function () {
     Route::get('', 'CategoryController@index')->name('index');
     Route::post('delete/{category}', 'CategoryController@delete')->name('delete');
+    Route::get('{category}', 'CategoryController@show')->name('show');
 });
+Route::prefix('products')->name('products.')->group(function () {
+    Route::get('', 'ProductController@index')->name('index');
+    Route::post('', 'ProductController@add')->name('add');
+    Route::post('delete/{product}', 'ProductController@delete')->name('delete');
+    Route::get('{product}', 'ProductController@show')->name('show');
+    Route::post('{product}', 'ProductController@edit')->name('edit');
+});
+Route::get('new-products', 'ProductController@new')->name('new-product');

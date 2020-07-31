@@ -6458,7 +6458,7 @@ exports.push([module.i, "@import url(http://fonts.googleapis.com/css?family=Open
 exports.push([module.i, "@import url(http://fonts.googleapis.com/css?family=Abel);", ""]);
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/*************************\n*******Typography******\n**************************/\n.main-page {\n  /*************************\n  *******Header CSS******\n  **************************/\n  /*  Dropdown menu*/\n  /*************************\n  *******Footer CSS******\n  **************************/\n  /*************************\n  ******* Home ******\n  **************************/\n  /*************************\n  *******Shop CSS******\n  **************************/\n  /*************************\n  *******Product Details CSS******\n  **************************/\n  /*************************\n  *******404 CSS******\n  **************************/\n  /*************************\n  *******login page CSS******\n  **************************/\n  /*************************\n  *******Cart CSS******\n  **************************/\n  /*************************\n  *******checkout CSS******\n  **************************/\n  /*************************\n  *******Blog CSS******\n  **************************/\n  /*************************\n  *******Blog Single CSS******\n  **************************/\n  /*************************\n  ******* Contact CSS ********\n  **************************/\n}\n.main-page body {\n  font-family: \"Roboto\", sans-serif;\n  position: relative;\n  font-weight: 400px;\n}\n.main-page ul li {\n  list-style: none;\n}\n.main-page a:hover {\n  outline: none;\n  text-decoration: none;\n}\n.main-page a:focus {\n  outline: none;\n  outline-offset: 0;\n}\n.main-page a {\n  transition: 300ms;\n}\n.main-page h1, .main-page h2, .main-page h3, .main-page h4, .main-page h5, .main-page h6 {\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .btn:hover,\n.main-page .btn:focus {\n  outline: none;\n  box-shadow: none;\n}\n.main-page .navbar-toggle {\n  background-color: #000;\n}\n.main-page a#scrollUp {\n  bottom: 0px;\n  right: 10px;\n  padding: 5px 10px;\n  background: #FE980F;\n  color: #FFF;\n  -webkit-animation: bounce 2s ease infinite;\n  animation: bounce 2s ease infinite;\n}\n.main-page a#scrollUp i {\n  font-size: 30px;\n}\n.main-page .header_top {\n  background: none repeat scroll 0 0 #F0F0E9;\n}\n.main-page .contactinfo ul li:first-child {\n  margin-left: -15px;\n}\n.main-page .contactinfo ul li a {\n  font-size: 12px;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .contactinfo ul li a:hover {\n  background: inherit;\n}\n.main-page .social-icons ul li a {\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  padding: 0px;\n}\n.main-page .social-icons ul li {\n  display: inline-block;\n}\n.main-page .social-icons ul li a i {\n  padding: 11px 15px;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n.main-page .social-icons ul li a i:hover {\n  color: #fff;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n.main-page .fa-facebook:hover {\n  background: #0083C9;\n}\n.main-page .fa-twitter:hover {\n  background: #5BBCEC;\n}\n.main-page .fa-linkedin:hover {\n  background: #FF4518;\n}\n.main-page .fa-dribbble:hover {\n  background: #90C9DC;\n}\n.main-page .fa-google-plus:hover {\n  background: #CE3C2D;\n}\n.main-page .header-middle .container .row {\n  border-bottom: 1px solid #f5f5f5;\n  margin-left: 0;\n  margin-right: 0;\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.main-page .header-middle .container .row .col-sm-4 {\n  padding-left: 0;\n}\n.main-page .header-middle .container .row .col-sm-8 {\n  padding-right: 0;\n}\n.main-page .usa {\n  border-radius: 0;\n  color: #B4B1AB;\n  font-size: 12px;\n  margin-right: 20px;\n  padding: 2px 15px;\n  margin-top: 10px;\n}\n.main-page .usa:hover {\n  background: #FE980F;\n  color: #fff;\n  border-color: #FE980F;\n}\n.main-page .usa:active, .main-page .usa.active {\n  background: none repeat scroll 0 0 #FE980F;\n  box-shadow: inherit;\n  outline: 0 none;\n}\n.main-page .btn-group.open .dropdown-toggle {\n  background: rgba(0, 0, 0, 0);\n  box-shadow: none;\n}\n.main-page .dropdown-menu li a:hover, .main-page .dropdown-menu li a:focus {\n  background-color: #FE980F;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  text-decoration: none;\n}\n.main-page .shop-menu ul li {\n  display: inline-block;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n.main-page .shop-menu ul li:last-child {\n  padding-right: 0;\n}\n.main-page .shop-menu ul li a {\n  background: #FFFFFF;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  padding: 0;\n  padding-right: 0;\n  margin-top: 10px;\n}\n.main-page .shop-menu ul li a i {\n  margin-right: 3px;\n}\n.main-page .shop-menu ul li a:hover {\n  color: #fe980f;\n  background: #fff;\n}\n.main-page .header-bottom {\n  padding-bottom: 30px;\n  padding-top: 30px;\n}\n.main-page .navbar-collapse.collapse {\n  padding-left: 0;\n}\n.main-page .mainmenu ul li {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.main-page .mainmenu ul li:first-child {\n  padding-left: 0px;\n}\n.main-page .mainmenu ul li a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 17px;\n  font-weight: 300;\n  padding: 0;\n  padding-bottom: 10px;\n}\n.main-page .mainmenu ul li a:hover, .main-page .mainmenu ul li a.active, .main-page .shop-menu ul li a.active {\n  background: none;\n  color: #fdb45e;\n}\n.main-page .search_box input {\n  background: #F0F0E9;\n  border: medium none;\n  color: #B2B2B2;\n  font-family: \"roboto\";\n  font-size: 12px;\n  font-weight: 300;\n  height: 35px;\n  outline: medium none;\n  padding-left: 10px;\n  width: 155px;\n  background-image: url(" + escape(__webpack_require__(/*! ../images/home/searchicon.png */ "./resources/js/components/assets/Main/images/home/searchicon.png")) + ");\n  background-repeat: no-repeat;\n  background-position: 130px;\n}\n.main-page .navbar-header .navbar-toggle .icon-bar {\n  background-color: #fff;\n}\n.main-page .nav.navbar-nav > li:hover > ul.sub-menu {\n  display: block;\n  -webkit-animation: fadeInUp 400ms;\n  animation: fadeInUp 400ms;\n}\n.main-page ul.sub-menu {\n  position: absolute;\n  top: 30px;\n  left: 0;\n  background: rgba(0, 0, 0, 0.6);\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  width: 220px;\n  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);\n  display: none;\n  z-index: 999;\n}\n.main-page .dropdown ul.sub-menu li .active {\n  color: #FDB45E;\n  padding-left: 0;\n}\n.main-page .navbar-nav li ul.sub-menu li {\n  padding: 10px 20px 0;\n}\n.main-page .navbar-nav li ul.sub-menu li:last-child {\n  padding-bottom: 20px;\n}\n.main-page .navbar-nav li ul.sub-menu li a {\n  color: #fff;\n}\n.main-page .navbar-nav li ul.sub-menu li a:hover {\n  color: #FDB45E;\n}\n.main-page .fa-angle-down {\n  padding-left: 5px;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  100% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.main-page #footer {\n  background: #F0F0E9;\n}\n.main-page .footer-top .container {\n  border-bottom: 1px solid #E0E0DA;\n  padding-bottom: 20px;\n}\n.main-page .companyinfo {\n  margin-top: 57px;\n}\n.main-page .companyinfo h2 {\n  color: #B4B1AB;\n  font-family: abel;\n  font-size: 27px;\n  text-transform: uppercase;\n}\n.main-page .companyinfo h2 span {\n  color: #FE980F;\n}\n.main-page .companyinfo p {\n  color: #B3B3AD;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 300;\n}\n.main-page .footer-top .col-sm-3 {\n  overflow: hidden;\n}\n.main-page .video-gallery {\n  margin-top: 57px;\n  position: inherit;\n}\n.main-page .video-gallery a img {\n  height: 100%;\n  width: 100%;\n}\n.main-page .iframe-img {\n  position: relative;\n  display: block;\n  height: 61px;\n  margin-bottom: 10px;\n  border: 2px solid #CCCCC6;\n  border-radius: 3px;\n}\n.main-page .overlay-icon {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 61px;\n  background: #FE980F;\n  border-radius: 3px;\n  color: #FFF;\n  font-size: 20px;\n  line-height: 0;\n  display: block;\n  opacity: 0;\n  transition: 300ms;\n}\n.main-page .overlay-icon i {\n  position: relative;\n  top: 50%;\n  margin-top: -20px;\n}\n.main-page .video-gallery a:hover .overlay-icon {\n  opacity: 1;\n}\n.main-page .video-gallery p {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  margin-bottom: 0px;\n}\n.main-page .video-gallery h2 {\n  color: #8c8c88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 300;\n  text-transform: uppercase;\n  margin-top: 0px;\n}\n.main-page .address {\n  margin-top: 30px;\n  position: relative;\n  overflow: hidden;\n}\n.main-page .address img {\n  width: 100%;\n}\n.main-page .address p {\n  color: #666663;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  left: 25px;\n  position: absolute;\n  top: 50px;\n}\n.main-page .footer-widget {\n  margin-bottom: 68px;\n}\n.main-page .footer-widget .container {\n  border-top: 1px solid #FFFFFF;\n  padding-top: 15px;\n}\n.main-page .single-widget h2 {\n  color: #666663;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  margin-bottom: 22px;\n  text-transform: uppercase;\n}\n.main-page .single-widget h2 i {\n  margin-right: 15px;\n}\n.main-page .single-widget ul li a {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  padding: 5px 0;\n}\n.main-page .single-widget ul li a i {\n  margin-right: 18px;\n}\n.main-page .single-widget ul li a:hover {\n  background: none;\n  color: #FE980F;\n}\n.main-page .searchform input {\n  border: 1px solid #DDDDDD;\n  color: #CCCCC6;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  margin-top: 0;\n  outline: medium none;\n  padding: 7px;\n  width: 212px;\n}\n.main-page .searchform button {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  margin-left: -5px;\n  margin-top: -3px;\n  padding: 7px 17px;\n}\n.main-page .searchform button i {\n  color: #FFFFFF;\n  font-size: 20px;\n}\n.main-page .searchform button:hover,\n.main-page .searchform button:focus {\n  background-color: #FE980F;\n}\n.main-page .searchform p {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  margin-top: 25px;\n}\n.main-page .footer-bottom {\n  background: #D6D6D0;\n  padding-top: 10px;\n}\n.main-page .footer-bottom p {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n  margin-left: 15px;\n}\n.main-page .footer-bottom p span a {\n  color: #FE980F;\n  font-style: italic;\n  text-decoration: underline;\n}\n.main-page #slider {\n  padding-bottom: 45px;\n}\n.main-page .carousel-indicators li {\n  background: #C4C4BE;\n}\n.main-page .carousel-indicators li.active {\n  background: #FE980F;\n}\n.main-page .item {\n  padding-left: 100px;\n}\n.main-page .pricing {\n  position: absolute;\n  right: 40%;\n  top: 52%;\n}\n.main-page .girl {\n  margin-left: 0;\n}\n.main-page .item h1 {\n  color: #B4B1AB;\n  font-family: abel;\n  font-size: 48px;\n  margin-top: 115px;\n}\n.main-page .item h1 span {\n  color: #FE980F;\n}\n.main-page .item h2 {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 28px;\n  font-weight: 700;\n  margin-bottom: 22px;\n  margin-top: 10px;\n}\n.main-page .item p {\n  color: #363432;\n  font-size: 16px;\n  font-weight: 300;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .get {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  font-weight: 300;\n  margin-top: 23px;\n}\n.main-page .item button:hover {\n  background: #FE980F;\n}\n.main-page .control-carousel {\n  position: absolute;\n  top: 50%;\n  font-size: 60px;\n  color: #C2C2C1;\n}\n.main-page .control-carousel:hover {\n  color: #FE980F;\n}\n.main-page .right {\n  right: 0;\n}\n.main-page .category-products {\n  border: 1px solid #F7F7F0;\n  margin-bottom: 35px;\n  padding-bottom: 20px;\n  padding-top: 15px;\n}\n.main-page .left-sidebar h2, .main-page .brands_products h2 {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  margin: 0 auto 30px;\n  text-align: center;\n  text-transform: uppercase;\n  position: relative;\n  z-index: 3;\n}\n.main-page .left-sidebar h2:after, .main-page h2.title:after {\n  content: \" \";\n  position: absolute;\n  border: 1px solid #f5f5f5;\n  bottom: 8px;\n  left: 0;\n  width: 100%;\n  height: 0;\n  z-index: -2;\n}\n.main-page .left-sidebar h2:before {\n  content: \" \";\n  position: absolute;\n  background: #fff;\n  bottom: -6px;\n  width: 130px;\n  height: 30px;\n  z-index: -1;\n  left: 50%;\n  margin-left: -65px;\n}\n.main-page h2.title:before {\n  content: \" \";\n  position: absolute;\n  background: #fff;\n  bottom: -6px;\n  width: 220px;\n  height: 30px;\n  z-index: -1;\n  left: 50%;\n  margin-left: -110px;\n}\n.main-page .category-products .panel {\n  background-color: #FFFFFF;\n  border: 0px;\n  border-radius: 0px;\n  box-shadow: none;\n  margin-bottom: 0px;\n}\n.main-page .category-products .panel-default .panel-heading {\n  background-color: #FFFFFF;\n  border: 0 none;\n  color: #FFFFFF;\n  padding: 5px 20px;\n}\n.main-page .category-products .panel-default .panel-heading .panel-title a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n.main-page .panel-group .panel-heading + .panel-collapse .panel-body {\n  border-top: 0 none;\n}\n.main-page .category-products .badge {\n  background: none;\n  border-radius: 10px;\n  color: #696763;\n  display: inline-block;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  min-width: 10px;\n  padding: 3px 7px;\n  text-align: center;\n  vertical-align: baseline;\n  white-space: nowrap;\n}\n.main-page .panel-body ul {\n  padding-left: 20px;\n}\n.main-page .panel-body ul li a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n.main-page .brands-name {\n  border: 1px solid #F7F7F0;\n  padding-bottom: 20px;\n  padding-top: 15px;\n}\n.main-page .brands-name .nav-stacked li a {\n  background-color: #FFFFFF;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  padding: 5px 25px;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n.main-page .brands-name .nav-stacked li a:hover {\n  background-color: #fff;\n  color: #696763;\n}\n.main-page .shipping {\n  background-color: #F2F2F2;\n  margin-top: 40px;\n  overflow: hidden;\n  padding-top: 20px;\n  position: relative;\n}\n.main-page .price-range {\n  margin-top: 30px;\n}\n.main-page .well {\n  background-color: #FFFFFF;\n  border: 1px solid #F7F7F0;\n  border-radius: 4px;\n  box-shadow: none;\n  margin-bottom: 20px;\n  min-height: 20px;\n  padding: 35px;\n}\n.main-page .tooltip-inner {\n  background-color: #FE980F;\n  border-radius: 4px;\n  color: #FFFFFF;\n  max-width: 200px;\n  padding: 3px 8px;\n  text-align: center;\n  text-decoration: none;\n}\n.main-page .tooltip.top .tooltip-arrow {\n  border-top-color: #FE980F;\n  border-width: 5px 5px 0;\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n}\n.main-page .padding-right {\n  padding-right: 0;\n}\n.main-page .features_items {\n  overflow: hidden;\n}\n.main-page h2.title {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  margin: 0 15px;\n  text-transform: uppercase;\n  margin-bottom: 30px;\n  position: relative;\n}\n.main-page .product-image-wrapper {\n  border: 1px solid #F7F7F5;\n  overflow: hidden;\n  margin-bottom: 30px;\n}\n.main-page .single-products {\n  position: relative;\n}\n.main-page .new, .main-page .sale {\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.main-page .productinfo h2 {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n}\n.main-page .product-overlay h2 {\n  color: #fff;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n}\n.main-page .productinfo p {\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 400;\n  color: #696763;\n}\n.main-page .productinfo img {\n  width: 100%;\n}\n.main-page .productinfo {\n  position: relative;\n}\n.main-page .product-overlay {\n  background: #FE980F;\n  top: 0;\n  display: none;\n  height: 0;\n  position: absolute;\n  transition: height 500ms ease 0s;\n  width: 100%;\n  display: block;\n}\n.main-page .single-products:hover .product-overlay {\n  display: block;\n  height: 100%;\n}\n.main-page .product-overlay .overlay-content {\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  text-align: center;\n  width: 100%;\n}\n.main-page .product-overlay .add-to-cart {\n  background: #fff;\n  border: 0 none;\n  border-radius: 0;\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 25px;\n}\n.main-page .product-overlay .add-to-cart:hover {\n  background: #fff;\n  color: #FE980F;\n}\n.main-page .product-overlay p {\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 400;\n  color: #fff;\n}\n.main-page .add-to-cart {\n  background: #F5F5ED;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 25px;\n}\n.main-page .add-to-cart:hover {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n}\n.main-page .add-to {\n  margin-bottom: 10px;\n}\n.main-page .add-to-cart i {\n  margin-right: 5px;\n}\n.main-page .add-to-cart:hover {\n  background: #FE980F;\n  color: #FFFFFF;\n}\n.main-page .choose {\n  border-top: 1px solid #F7F7F0;\n}\n.main-page .choose ul li a {\n  color: #B3AFA8;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 13px;\n  padding-left: 0;\n  padding-right: 0;\n}\n.main-page .choose ul li a i {\n  margin-right: 5px;\n}\n.main-page .choose ul li a:hover {\n  background: none;\n  color: #FE980F;\n}\n.main-page .category-tab {\n  overflow: hidden;\n}\n.main-page .category-tab ul {\n  background: #40403E;\n  border-bottom: 1px solid #FE980F;\n  list-style: none outside none;\n  margin: 0 0 30px;\n  padding: 0;\n  width: 100%;\n}\n.main-page .category-tab ul li a {\n  border: 0 none;\n  border-radius: 0;\n  color: #B3AFA8;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  text-transform: uppercase;\n}\n.main-page .category-tab ul li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .nav-tabs li.active a, .main-page .nav-tabs li.active a:hover, .main-page .nav-tabs li.active a:focus {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #FE980F;\n  border: 0px;\n  color: #FFFFFF;\n  cursor: default;\n  margin-right: 0;\n  margin-left: 0;\n}\n.main-page .nav-tabs li a {\n  border: 1px solid rgba(0, 0, 0, 0);\n  border-radius: 4px 4px 0 0;\n  line-height: 1.42857;\n  margin-right: 0;\n}\n.main-page .recommended_items {\n  overflow: hidden;\n}\n.main-page #recommended-item-carousel .carousel-inner .item {\n  padding-left: 0;\n}\n.main-page .recommended-item-control {\n  position: absolute;\n  top: 41%;\n}\n.main-page .recommended-item-control i {\n  background: none repeat scroll 0 0 #FE980F;\n  color: #FFFFFF;\n  font-size: 20px;\n  padding: 4px 10px;\n}\n.main-page .recommended-item-control i:hover {\n  background: #ccccc6;\n}\n.main-page .our_partners {\n  overflow: hidden;\n}\n.main-page .our_partners ul {\n  background: #F7F7F0;\n  margin-bottom: 50px;\n}\n.main-page .our_partners ul li a:hover {\n  background: none;\n}\n.main-page #advertisement {\n  padding-bottom: 45px;\n}\n.main-page #advertisement img {\n  width: 100%;\n}\n.main-page .pagination {\n  display: inline-block;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding-left: 15px;\n}\n.main-page .pagination li:first-child a, .main-page .pagination li:first-child span {\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n  margin-left: 0;\n}\n.main-page .pagination li:last-child a, .main-page .pagination li:last-child span {\n  border-bottom-right-radius: 0;\n  border-top-right-radius: 0;\n}\n.main-page .pagination .active a, .main-page .pagination .active span, .main-page .pagination .active a:hover, .main-page .pagination .active span:hover, .main-page .pagination .active a:focus, .main-page .pagination .active span:focus {\n  background-color: #FE980F;\n  border-color: #FE980F;\n  color: #FFFFFF;\n  cursor: default;\n  z-index: 2;\n}\n.main-page .pagination li a, .main-page .pagination li span {\n  background-color: #f0f0e9;\n  border: 0;\n  float: left;\n  line-height: 1.42857;\n  margin-left: -1px;\n  padding: 6px 12px;\n  position: relative;\n  text-decoration: none;\n  margin-right: 5px;\n  color: #000;\n}\n.main-page .pagination li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .product-details {\n  overflow: hidden;\n}\n.main-page #similar-product {\n  margin-top: 40px;\n}\n.main-page #reviews {\n  padding-left: 25px;\n  padding-right: 25px;\n}\n.main-page .product-details {\n  margin-bottom: 40px;\n  overflow: hidden;\n  margin-top: 10px;\n}\n.main-page .view-product {\n  position: relative;\n}\n.main-page .view-product img {\n  border: 1px solid #F7F7F0;\n  height: 380px;\n  width: 100%;\n}\n.main-page .view-product h3 {\n  background: #FE980F;\n  bottom: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 700;\n  margin-bottom: 0;\n  padding: 8px 20px;\n  position: absolute;\n  right: 0;\n}\n.main-page #similar-product .carousel-inner .item {\n  padding-left: 0px;\n}\n.main-page #similar-product .carousel-inner .item img {\n  display: inline-block;\n  margin-left: 15px;\n}\n.main-page .item-control {\n  position: absolute;\n  top: 35%;\n}\n.main-page .item-control i {\n  background: #FE980F;\n  color: #FFFFFF;\n  font-size: 20px;\n  padding: 5px 10px;\n}\n.main-page .item-control i:hover {\n  background: #ccccc6;\n}\n.main-page .product-information {\n  border: 1px solid #F7F7F0;\n  overflow: hidden;\n  padding-bottom: 60px;\n  padding-left: 60px;\n  padding-top: 60px;\n  position: relative;\n}\n.main-page .newarrival {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.main-page .product-information h2 {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  margin-top: 0;\n}\n.main-page .product-information p {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  margin-bottom: 5px;\n}\n.main-page .product-information span {\n  display: inline-block;\n  margin-bottom: 8px;\n  margin-top: 18px;\n}\n.main-page .product-information span span {\n  color: #FE980F;\n  float: left;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 30px;\n  font-weight: 700;\n  margin-right: 20px;\n  margin-top: 0px;\n}\n.main-page .product-information span input {\n  border: 1px solid #DEDEDC;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: 700;\n  height: 33px;\n  outline: medium none;\n  text-align: center;\n  width: 50px;\n}\n.main-page .product-information span label {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 700;\n  margin-right: 5px;\n}\n.main-page .share {\n  margin-top: 15px;\n}\n.main-page .cart {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 10px;\n  margin-left: 20px;\n}\n.main-page .shop-details-tab {\n  border: 1px solid #F7F7F0;\n  margin-bottom: 75px;\n  margin-left: 15px;\n  margin-right: 15px;\n  padding-bottom: 10px;\n}\n.main-page .shop-details-tab .col-sm-12 {\n  padding-left: 0;\n  padding-right: 0;\n}\n.main-page #reviews ul {\n  background: #FFFFFF;\n  border: 0 none;\n  list-style: none outside none;\n  margin: 0 0 20px;\n  padding: 0;\n}\n.main-page #reviews ul li {\n  display: inline-block;\n}\n.main-page #reviews ul li a {\n  color: #696763;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  padding-right: 15px;\n}\n.main-page #reviews ul li a i {\n  color: #FE980F;\n  padding-right: 8px;\n}\n.main-page #reviews ul li a:hover {\n  background: #fff;\n  color: #FE980F;\n}\n.main-page #reviews p {\n  color: #363432;\n}\n.main-page #reviews form span {\n  display: block;\n}\n.main-page #reviews form span input {\n  background: #F0F0E9;\n  border: 0 none;\n  color: #A6A6A1;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  outline: medium none;\n  padding: 8px;\n  width: 48%;\n}\n.main-page #reviews form span input:last-child {\n  margin-left: 3%;\n}\n.main-page #reviews textarea {\n  background: #F0F0E9;\n  border: medium none;\n  color: #A6A6A1;\n  height: 195px;\n  margin-bottom: 25px;\n  margin-top: 15px;\n  outline: medium none;\n  padding-left: 10px;\n  padding-top: 15px;\n  resize: none;\n  width: 99.5%;\n}\n.main-page #reviews button {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n}\n.main-page .logo-404 {\n  margin-top: 60px;\n}\n.main-page .content-404 h1 {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 41px;\n  font-weight: 300;\n}\n.main-page .content-404 img {\n  margin: 0 auto;\n}\n.main-page .content-404 p {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n}\n.main-page .content-404 h2 {\n  margin-top: 50px;\n}\n.main-page .content-404 h2 a {\n  background: #FE980F;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 44px;\n  font-weight: 300;\n  padding: 8px 40px;\n}\n.main-page #form {\n  display: block;\n  margin-bottom: 185px;\n  margin-top: 185px;\n  overflow: hidden;\n}\n.main-page .login-form h2, .main-page .signup-form h2 {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  margin-bottom: 30px;\n}\n.main-page .login-form form input, .main-page .signup-form form input {\n  background: #F0F0E9;\n  border: medium none;\n  color: #696763;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  height: 40px;\n  margin-bottom: 10px;\n  outline: medium none;\n  padding-left: 10px;\n  width: 100%;\n}\n.main-page .login-form form span {\n  line-height: 25px;\n}\n.main-page .login-form form span input {\n  width: 15px;\n  float: left;\n  height: 15px;\n  margin-right: 5px;\n}\n.main-page .login-form form button {\n  margin-top: 23px;\n}\n.main-page .login-form form button, .main-page .signup-form form button {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  color: #FFFFFF;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  padding: 6px 25px;\n}\n.main-page .login-form label input {\n  border: medium none;\n  display: inline-block;\n  height: 0;\n  margin-bottom: 0;\n  outline: medium none;\n  padding-left: 0;\n}\n.main-page .or {\n  background: #FE980F;\n  border-radius: 40px;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  height: 50px;\n  line-height: 50px;\n  margin-top: 75px;\n  text-align: center;\n  width: 50px;\n}\n.main-page #do_action {\n  margin-bottom: 50px;\n}\n.main-page .breadcrumbs {\n  position: relative;\n}\n.main-page .breadcrumbs .breadcrumb {\n  background: transparent;\n  margin-bottom: 75px;\n  padding-left: 0;\n}\n.main-page .breadcrumbs .breadcrumb li a {\n  background: #FE980F;\n  color: #FFFFFF;\n  padding: 3px 7px;\n}\n.main-page .breadcrumbs .breadcrumb li a:after {\n  content: \"\";\n  height: auto;\n  width: auto;\n  border-width: 8px;\n  border-style: solid;\n  border-color: transparent transparent transparent #FE980F;\n  position: absolute;\n  top: 11px;\n  left: 48px;\n}\n.main-page .breadcrumbs .breadcrumb > li + li:before {\n  content: \"\\A0\";\n}\n.main-page #cart_items .cart_info {\n  border: 1px solid #E6E4DF;\n  margin-bottom: 50px;\n}\n.main-page #cart_items .cart_info .cart_menu {\n  background: #FE980F;\n  color: #fff;\n  font-size: 16px;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: normal;\n}\n.main-page #cart_items .cart_info .table.table-condensed thead tr {\n  height: 51px;\n}\n.main-page #cart_items .cart_info .table.table-condensed tr {\n  border-bottom: 1px solid #F7F7F0;\n}\n.main-page #cart_items .cart_info .table.table-condensed tr:last-child {\n  border-bottom: 0;\n}\n.main-page .cart_info table tr td {\n  border-top: 0 none;\n  vertical-align: inherit;\n}\n.main-page #cart_items .cart_info .image {\n  padding-left: 30px;\n}\n.main-page #cart_items .cart_info .cart_description h4 {\n  margin-bottom: 0;\n}\n.main-page #cart_items .cart_info .cart_description h4 a {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: normal;\n}\n.main-page #cart_items .cart_info .cart_description p {\n  color: #696763;\n}\n.main-page #cart_items .cart_info .cart_price p {\n  color: #696763;\n  font-size: 18px;\n}\n.main-page #cart_items .cart_info .cart_total_price {\n  color: #FE980F;\n  font-size: 24px;\n}\n.main-page .cart_product {\n  display: block;\n  margin: 15px -70px 10px 25px;\n}\n.main-page .cart_quantity_button a {\n  background: #F0F0E9;\n  color: #696763;\n  display: inline-block;\n  font-size: 16px;\n  height: 28px;\n  overflow: hidden;\n  text-align: center;\n  width: 35px;\n  float: left;\n}\n.main-page .cart_quantity_input {\n  color: #696763;\n  float: left;\n  font-size: 16px;\n  text-align: center;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .cart_delete {\n  display: block;\n  margin-right: -12px;\n  overflow: hidden;\n}\n.main-page .cart_delete a {\n  background: #F0F0E9;\n  color: #FFFFFF;\n  padding: 5px 7px;\n  font-size: 16px;\n}\n.main-page .cart_delete a:hover {\n  background: #FE980F;\n}\n.main-page .bg h2.title {\n  margin-right: 0;\n  margin-left: 0;\n  margin-top: 0;\n}\n.main-page .heading h3 {\n  color: #363432;\n  font-size: 20px;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .heading p {\n  color: #434343;\n  font-size: 16px;\n  font-weight: 300;\n}\n.main-page #do_action .total_area {\n  padding-bottom: 18px !important;\n}\n.main-page #do_action .total_area, .main-page #do_action .chose_area {\n  border: 1px solid #E6E4DF;\n  color: #696763;\n  padding: 30px 25px 30px 0;\n  margin-bottom: 80px;\n}\n.main-page .total_area span {\n  float: right;\n}\n.main-page .total_area ul li {\n  background: #E6E4DF;\n  color: #696763;\n  margin-top: 10px;\n  padding: 7px 20px;\n}\n.main-page .user_option label {\n  color: #696763;\n  font-weight: normal;\n  margin-left: 10px;\n}\n.main-page .user_info {\n  display: block;\n  margin-bottom: 15px;\n  margin-top: 20px;\n  overflow: hidden;\n}\n.main-page .user_info label {\n  color: #696763;\n  display: block;\n  font-size: 15px;\n  font-weight: normal;\n}\n.main-page .user_info .single_field {\n  width: 31%;\n}\n.main-page .user_info .single_field.zip-field input {\n  background: transparent;\n  border: 1px solid #F0F0E9;\n}\n.main-page .user_info > li {\n  float: left;\n  margin-right: 10px;\n}\n.main-page .user_info input, .main-page select, .main-page textarea {\n  background: #F0F0E9;\n  border: 0;\n  color: #696763;\n  padding: 5px;\n  width: 100%;\n  border-radius: 0;\n  resize: none;\n}\n.main-page .user_info select:focus {\n  border: 0;\n}\n.main-page .chose_area .update {\n  margin-left: 40px;\n}\n.main-page .update, .main-page .check_out {\n  background: #FE980F;\n  border-radius: 0;\n  color: #FFFFFF;\n  margin-top: 18px;\n  border: none;\n  padding: 5px 15px;\n}\n.main-page .update {\n  margin-left: 40px;\n}\n.main-page .check_out {\n  margin-left: 20px;\n}\n.main-page .step-one {\n  margin-bottom: -10px;\n}\n.main-page .register-req, .main-page .step-one .heading {\n  background: none repeat scroll 0 0 #F0F0E9;\n  color: #363432;\n  font-size: 20px;\n  margin-bottom: 35px;\n  padding: 10px 25px;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .checkout-options {\n  padding-left: 20px;\n}\n.main-page .checkout-options h3 {\n  color: #363432;\n  font-size: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .checkout-options p {\n  color: #434343;\n  font-weight: 300;\n  margin-bottom: 25px;\n}\n.main-page .checkout-options .nav li {\n  float: left;\n  margin-right: 45px;\n  color: #696763;\n  font-size: 18px;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: normal;\n}\n.main-page .checkout-options .nav label {\n  font-weight: normal;\n}\n.main-page .checkout-options .nav li a {\n  color: #FE980F;\n  font-size: 18px;\n  font-weight: normal;\n  padding: 0;\n}\n.main-page .checkout-options .nav li a:hover {\n  background: inherit;\n}\n.main-page .checkout-options .nav i {\n  margin-right: 10px;\n  border-radius: 50%;\n  padding: 5px;\n  background: #FE980F;\n  color: #fff;\n  font-size: 14px;\n  padding: 2px 3px;\n}\n.main-page .register-req {\n  font-size: 14px;\n  font-weight: 300;\n  padding: 15px 20px;\n  margin-top: 35px;\n}\n.main-page .register-req p {\n  margin-bottom: 0;\n}\n.main-page .shopper-info p,\n.main-page .bill-to p,\n.main-page .order-message p {\n  color: #696763;\n  font-size: 20px;\n  font-weight: 300;\n}\n.main-page .shopper-info .btn-primary {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  margin-right: 15px;\n  margin-top: 20px;\n}\n.main-page .form-two, .main-page .form-one {\n  float: left;\n  width: 47%;\n}\n.main-page .shopper-info > form > input,\n.main-page .form-two > form > select,\n.main-page .form-two > form > input,\n.main-page .form-one > form > input {\n  background: #F0F0E9;\n  border: 0 none;\n  margin-bottom: 10px;\n  padding: 10px;\n  width: 100%;\n  font-weight: 300;\n}\n.main-page .form-two > form > select {\n  padding: 10px 5px;\n}\n.main-page .form-two {\n  margin-left: 5%;\n}\n.main-page .order-message textarea {\n  font-size: 12px;\n  height: 335px;\n  margin-bottom: 20px;\n  padding: 15px 20px;\n}\n.main-page .order-message label {\n  font-weight: 300;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  margin-left: 10px;\n  font-size: 14px;\n}\n.main-page .review-payment h2 {\n  color: #696763;\n  font-size: 20px;\n  font-weight: 300;\n  margin-top: 45px;\n  margin-bottom: 20px;\n}\n.main-page .payment-options {\n  margin-bottom: 125px;\n  margin-top: -25px;\n}\n.main-page .payment-options span label {\n  color: #696763;\n  font-size: 14px;\n  font-weight: 300;\n  margin-right: 30px;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result {\n  margin-bottom: 10px;\n  margin-top: 35px;\n  color: #696763;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result tr {\n  border-bottom: 0;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result span {\n  color: #FE980F;\n  font-weight: 700;\n  font-size: 16px;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result .shipping-cost {\n  border-bottom: 1px solid #F7F7F0;\n}\n.main-page .blog-post-area .single-blog-post h3 {\n  color: #696763;\n  font-size: 16px;\n  font-family: \"Roboto\", sans-serif;\n  text-transform: uppercase;\n  font-weight: 500;\n  margin-bottom: 17px;\n}\n.main-page .blog-post-area .single-blog-post a img {\n  border: 1px solid #F7F7F0;\n  width: 100%;\n  margin-bottom: 30px;\n}\n.main-page .blog-post-area .single-blog-post p {\n  color: #363432;\n}\n.main-page .blog-post-area .post-meta {\n  display: block;\n  margin-bottom: 25px;\n  overflow: hidden;\n}\n.main-page .blog-post-area .post-meta ul {\n  padding: 0;\n  display: inline;\n}\n.main-page .blog-post-area .post-meta ul li {\n  background: #F0F0E9;\n  float: left;\n  margin-right: 10px;\n  padding: 0 5px;\n  font-size: 11px;\n  color: #393b3b;\n  position: relative;\n}\n.main-page .blog-post-area .post-meta ul li i {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-left: -4px;\n  margin-right: 7px;\n  padding: 4px 7px;\n}\n.main-page .sinlge-post-meta li i:after,\n.main-page .blog-post-area .post-meta ul li i:after {\n  content: \"\";\n  position: absolute;\n  width: auto;\n  height: auto;\n  border-color: transparent transparent transparent #FE980F;\n  border-width: 4px;\n  border-style: solid;\n  top: 6px;\n  left: 24px;\n}\n.main-page .blog-post-area .post-meta ul span {\n  float: right;\n  color: #FE980F;\n}\n.main-page .post-meta span {\n  float: right;\n}\n.main-page .post-meta span i {\n  color: #FE980F;\n}\n.main-page .blog-post-area .single-blog-post .btn-primary {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  color: #FFFFFF;\n  margin-top: 17px;\n}\n.main-page .pagination-area {\n  margin-bottom: 45px;\n  margin-top: 45px;\n}\n.main-page .pagination-area .pagination li a {\n  background: #F0F0E9;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  margin-right: 5px;\n  padding: 4px 12px;\n}\n.main-page .pagination-area .pagination li a:hover,\n.main-page .pagination-area .pagination li .active {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .pager-area {\n  overflow: hidden;\n}\n.main-page .pager-area .pager li a {\n  background: #F0F0E9;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  font-size: 12px;\n  font-weight: 700;\n  padding: 4px;\n  text-transform: uppercase;\n  width: 57px;\n}\n.main-page .pager-area .pager li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .rating-area {\n  border: 1px solid #F7F7F0;\n  direction: block;\n  overflow: hidden;\n}\n.main-page .rating-area ul li {\n  float: left;\n  padding: 5px;\n  font-size: 12px;\n}\n.main-page .rating-area .ratings {\n  float: left;\n  padding-left: 0;\n  margin-bottom: 0;\n}\n.main-page .rating-area .ratings li i {\n  color: #CCCCCC;\n}\n.main-page .rating-area .rate-this {\n  color: #363432;\n  font-size: 12px;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.main-page .rating-area .ratings .color,\n.main-page .rating-area .color {\n  color: #FE980F;\n}\n.main-page .rating-area .tag {\n  float: right;\n  margin-bottom: 0;\n  margin-right: 10px;\n}\n.main-page .rating-area .tag li {\n  padding: 5px 2px;\n}\n.main-page .rating-area .tag li span {\n  color: #363432;\n}\n.main-page .socials-share {\n  margin-bottom: 30px;\n  margin-top: 18px;\n}\n.main-page .commnets .media-object {\n  margin-right: 15px;\n  width: 100%;\n}\n.main-page .commnets {\n  border: 1px solid #F7F7F0;\n  padding: 18px 18px 18px 0;\n  margin-bottom: 50px;\n}\n.main-page .commnets .pull-left {\n  margin-right: 22px;\n}\n.main-page .commnets p,\n.main-page .response-area p,\n.main-page .replay-box p {\n  font-size: 12px;\n}\n.main-page .media-heading {\n  color: #363432;\n  font-size: 14px;\n  font-weight: 700;\n  font-family: \"Roboto\", sans-serif;\n  margin-bottom: 15px;\n}\n.main-page .blog-socials {\n  margin-bottom: -9px;\n  margin-top: 14px;\n}\n.main-page .blog-socials ul {\n  padding-left: 0;\n  overflow: hidden;\n  float: left;\n}\n.main-page .blog-socials .btn.btn-primary {\n  margin-top: 0;\n}\n.main-page .blog-socials ul li {\n  float: left;\n  height: 17px;\n  margin-right: 5px;\n  text-align: center;\n  width: 17px;\n}\n.main-page .blog-socials ul li a {\n  color: #393B3B;\n  display: block;\n  font-size: 10px;\n  padding: 1px;\n  background: #F0F0E9;\n}\n.main-page .blog-socials ul li a:hover {\n  color: #fff;\n  background: #FE980F;\n}\n.main-page .media-list .btn-primary,\n.main-page .commnets .btn-primary {\n  background: #FC9A11;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  float: left;\n  font-size: 10px;\n  padding: 1px 7px;\n  text-transform: uppercase;\n}\n.main-page .response-area h2 {\n  color: #363432;\n  font-size: 20px;\n  font-weight: 700;\n}\n.main-page .response-area .media {\n  border: 1px solid #F7F7F0;\n  padding: 18px 18px 18px 0;\n  margin-bottom: 27px;\n}\n.main-page .response-area .media img {\n  height: 102px;\n  width: 100%;\n}\n.main-page .response-area .media .pull-left {\n  margin-right: 25px;\n}\n.main-page .response-area .second-media {\n  margin-left: 5%;\n  width: 95%;\n}\n.main-page .sinlge-post-meta {\n  overflow: hidden;\n  padding-left: 0;\n  margin-bottom: 15px;\n}\n.main-page .sinlge-post-meta li {\n  background: #F0F0E9;\n  color: #363432;\n  float: left;\n  font-size: 10px;\n  font-weight: 700;\n  margin-right: 10px;\n  padding: 0 10px 0 0;\n  position: relative;\n  text-transform: uppercase;\n}\n.main-page .sinlge-post-meta li i {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-right: 10px;\n  padding: 8px 10px;\n}\n.main-page .sinlge-post-meta li i:after {\n  top: 7px;\n  border-width: 6px;\n  left: 27px;\n}\n.main-page .replay-box {\n  margin-bottom: 107px;\n  margin-top: 55px;\n}\n.main-page .replay-box h2 {\n  font-weight: 700;\n  font-size: 20px;\n  color: #363432;\n  margin-top: 0;\n  margin-bottom: 45px;\n}\n.main-page .replay-box label {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-bottom: 15px;\n  padding: 3px 15px;\n  float: left;\n  font-weight: 400;\n}\n.main-page .replay-box span {\n  color: #FE980F;\n  float: right;\n  font-weight: 700;\n  margin-top: 21px;\n}\n.main-page .replay-box form input {\n  border: 1px solid #F7F7F0;\n  color: #ADB2B2;\n  font-size: 12px;\n  margin-bottom: 22px;\n  padding: 8px;\n  width: 100%;\n}\n.main-page .replay-box form input:hover,\n.main-page .text-area textarea:hover {\n  border: 1px solid #FE980F;\n}\n.main-page .text-area {\n  margin-top: 66px;\n}\n.main-page .text-area textarea {\n  background: transparent;\n  border: 1px solid #F7F7F0;\n}\n.main-page .btn.btn-primary {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  margin-top: 16px;\n}\n.main-page .blank-arrow {\n  position: relative;\n}\n.main-page .blank-arrow label:after {\n  content: \"\";\n  position: absolute;\n  width: auto;\n  height: auto;\n  border-style: solid;\n  border-width: 8px;\n  border-color: #FE980F transparent transparent transparent;\n  top: 25px;\n  left: 5px;\n}\n.main-page .contact-map {\n  width: 100%;\n  height: 385px;\n  margin-bottom: 70px;\n}\n.main-page .contact-info .heading,\n.main-page .contact-form .heading {\n  text-transform: capitalize;\n}\n.main-page .contact-form .form-group {\n  margin-bottom: 20px;\n}\n.main-page #contact-page .form-control::-moz-placeholder {\n  color: #8D8D8D;\n}\n.main-page #contact-page .form-control {\n  background-color: #fff;\n  border: 1px solid #ddd;\n  color: #696763;\n  height: 46px;\n  padding: 6px 12px;\n  width: 100%;\n  font-size: 16px;\n  border-radius: 4px;\n  box-shadow: inherit;\n}\n.main-page #contact-page #message {\n  height: 160px;\n  resize: none;\n}\n.main-page #main-contact-form .btn-primary {\n  margin-bottom: 15px;\n  margin-top: 20px;\n}\n.main-page #contact-page .form-control:focus,\n.main-page #contact-page .form-control:hover {\n  box-shadow: inherit;\n  border-color: #FDB45E;\n}\n.main-page #contact-page .contact-info {\n  padding: 0 20px;\n}\n.main-page #contact-page .contact-info address {\n  margin-bottom: 40px;\n  margin-top: -5px;\n}\n.main-page #contact-page .contact-info p {\n  margin-bottom: 0;\n  color: #696763;\n  font-size: 16px;\n  line-height: 25px;\n}\n.main-page .social-networks {\n  overflow: hidden;\n  text-align: center;\n}\n.main-page .social-networks ul {\n  margin-top: -5px;\n  padding: 0;\n  display: inline-block;\n}\n.main-page .social-networks ul li {\n  float: left;\n  text-decoration: none;\n  list-style: none;\n  margin-right: 20px;\n}\n.main-page .social-networks ul li:last-child {\n  margin-right: 0;\n}\n.main-page .social-networks ul li a {\n  color: #999;\n  font-size: 25px;\n}\n.main-page .contact-info .social-networks ul li a i {\n  background: none;\n}\n.main-page .contact-info .social-networks ul li a:hover {\n  color: #FE980F;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/*************************\n*******Typography******\n**************************/\n.main-page {\n  /*************************\n  *******Header CSS******\n  **************************/\n  /*  Dropdown menu*/\n  /*************************\n  *******Footer CSS******\n  **************************/\n  /*************************\n  ******* Home ******\n  **************************/\n  /*************************\n  *******Shop CSS******\n  **************************/\n  /*************************\n  *******Product Details CSS******\n  **************************/\n  /*************************\n  *******404 CSS******\n  **************************/\n  /*************************\n  *******login page CSS******\n  **************************/\n  /*************************\n  *******Cart CSS******\n  **************************/\n  /*************************\n  *******checkout CSS******\n  **************************/\n  /*************************\n  *******Blog CSS******\n  **************************/\n  /*************************\n  *******Blog Single CSS******\n  **************************/\n  /*************************\n  ******* Contact CSS ********\n  **************************/\n}\n.main-page body {\n  font-family: \"Roboto\", sans-serif;\n  position: relative;\n  font-weight: 400px;\n}\n.main-page ul li {\n  list-style: none;\n}\n.main-page a:hover {\n  outline: none;\n  text-decoration: none;\n}\n.main-page a:focus {\n  outline: none;\n  outline-offset: 0;\n}\n.main-page a {\n  transition: 300ms;\n}\n.main-page h1, .main-page h2, .main-page h3, .main-page h4, .main-page h5, .main-page h6 {\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .btn:hover,\n.main-page .btn:focus {\n  outline: none;\n  box-shadow: none;\n}\n.main-page .navbar-toggle {\n  background-color: #000;\n}\n.main-page a#scrollUp {\n  bottom: 0px;\n  right: 10px;\n  padding: 5px 10px;\n  background: #FE980F;\n  color: #FFF;\n  -webkit-animation: bounce 2s ease infinite;\n  animation: bounce 2s ease infinite;\n}\n.main-page a#scrollUp i {\n  font-size: 30px;\n}\n.main-page .header_top {\n  background: none repeat scroll 0 0 #F0F0E9;\n}\n.main-page .contactinfo ul li:first-child {\n  margin-left: -15px;\n}\n.main-page .contactinfo ul li a {\n  font-size: 12px;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .contactinfo ul li a:hover {\n  background: inherit;\n}\n.main-page .social-icons ul li a {\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  padding: 0px;\n}\n.main-page .social-icons ul li {\n  display: inline-block;\n}\n.main-page .social-icons ul li a i {\n  padding: 11px 15px;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n.main-page .social-icons ul li a i:hover {\n  color: #fff;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n.main-page .fa-facebook:hover {\n  background: #0083C9;\n}\n.main-page .fa-twitter:hover {\n  background: #5BBCEC;\n}\n.main-page .fa-linkedin:hover {\n  background: #FF4518;\n}\n.main-page .fa-dribbble:hover {\n  background: #90C9DC;\n}\n.main-page .fa-google-plus:hover {\n  background: #CE3C2D;\n}\n.main-page .header-middle .container .row {\n  border-bottom: 1px solid #f5f5f5;\n  margin-left: 0;\n  margin-right: 0;\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.main-page .header-middle .container .row .col-sm-4 {\n  padding-left: 0;\n}\n.main-page .header-middle .container .row .col-sm-8 {\n  padding-right: 0;\n}\n.main-page .usa {\n  border-radius: 0;\n  color: #B4B1AB;\n  font-size: 12px;\n  margin-right: 20px;\n  padding: 2px 15px;\n  margin-top: 10px;\n}\n.main-page .usa:hover {\n  background: #FE980F;\n  color: #fff;\n  border-color: #FE980F;\n}\n.main-page .usa:active, .main-page .usa.active {\n  background: none repeat scroll 0 0 #FE980F;\n  box-shadow: inherit;\n  outline: 0 none;\n}\n.main-page .btn-group.open .dropdown-toggle {\n  background: rgba(0, 0, 0, 0);\n  box-shadow: none;\n}\n.main-page .dropdown-menu li a:hover, .main-page .dropdown-menu li a:focus {\n  background-color: #FE980F;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  text-decoration: none;\n}\n.main-page .shop-menu ul li {\n  display: inline-block;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n.main-page .shop-menu ul li:last-child {\n  padding-right: 0;\n}\n.main-page .shop-menu ul li a {\n  background: #FFFFFF;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  padding: 0;\n  padding-right: 0;\n  margin-top: 10px;\n}\n.main-page .shop-menu ul li a i {\n  margin-right: 3px;\n}\n.main-page .shop-menu ul li a:hover {\n  color: #fe980f;\n  background: #fff;\n}\n.main-page .header-bottom {\n  padding-bottom: 30px;\n  padding-top: 30px;\n}\n.main-page .navbar-collapse.collapse {\n  padding-left: 0;\n}\n.main-page .mainmenu ul li {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.main-page .mainmenu ul li:first-child {\n  padding-left: 0px;\n}\n.main-page .mainmenu ul li a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 17px;\n  font-weight: 300;\n  padding: 0;\n  padding-bottom: 10px;\n}\n.main-page .mainmenu ul li a:hover, .main-page .mainmenu ul li a.active, .main-page .shop-menu ul li a.active {\n  background: none;\n  color: #fdb45e;\n}\n.main-page .search_box input {\n  background: #F0F0E9;\n  border: medium none;\n  color: #B2B2B2;\n  font-family: \"roboto\";\n  font-size: 12px;\n  font-weight: 300;\n  height: 35px;\n  outline: medium none;\n  padding-left: 10px;\n  width: 155px;\n  background-image: url(" + escape(__webpack_require__(/*! ../images/home/searchicon.png */ "./resources/js/components/assets/Main/images/home/searchicon.png")) + ");\n  background-repeat: no-repeat;\n  background-position: 130px;\n}\n.main-page .navbar-header .navbar-toggle .icon-bar {\n  background-color: #fff;\n}\n.main-page .nav.navbar-nav > li:hover > ul.sub-menu {\n  display: block;\n  -webkit-animation: fadeInUp 400ms;\n  animation: fadeInUp 400ms;\n}\n.main-page ul.sub-menu {\n  position: absolute;\n  top: 30px;\n  left: 0;\n  background: rgba(0, 0, 0, 0.6);\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  width: 220px;\n  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);\n  display: none;\n  z-index: 999;\n}\n.main-page .dropdown ul.sub-menu li .active {\n  color: #FDB45E;\n  padding-left: 0;\n}\n.main-page .navbar-nav li ul.sub-menu li {\n  padding: 10px 20px 0;\n}\n.main-page .navbar-nav li ul.sub-menu li:last-child {\n  padding-bottom: 20px;\n}\n.main-page .navbar-nav li ul.sub-menu li a {\n  color: #fff;\n}\n.main-page .navbar-nav li ul.sub-menu li a:hover {\n  color: #FDB45E;\n}\n.main-page .fa-angle-down {\n  padding-left: 5px;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  100% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.main-page #footer {\n  background: #F0F0E9;\n}\n.main-page .footer-top .container {\n  border-bottom: 1px solid #E0E0DA;\n  padding-bottom: 20px;\n}\n.main-page .companyinfo {\n  margin-top: 57px;\n}\n.main-page .companyinfo h2 {\n  color: #B4B1AB;\n  font-family: abel;\n  font-size: 27px;\n  text-transform: uppercase;\n}\n.main-page .companyinfo h2 span {\n  color: #FE980F;\n}\n.main-page .companyinfo p {\n  color: #B3B3AD;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 300;\n}\n.main-page .footer-top .col-sm-3 {\n  overflow: hidden;\n}\n.main-page .video-gallery {\n  margin-top: 57px;\n  position: inherit;\n}\n.main-page .video-gallery a img {\n  height: 100%;\n  width: 100%;\n}\n.main-page .iframe-img {\n  position: relative;\n  display: block;\n  height: 61px;\n  margin-bottom: 10px;\n  border: 2px solid #CCCCC6;\n  border-radius: 3px;\n}\n.main-page .overlay-icon {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 61px;\n  background: #FE980F;\n  border-radius: 3px;\n  color: #FFF;\n  font-size: 20px;\n  line-height: 0;\n  display: block;\n  opacity: 0;\n  transition: 300ms;\n}\n.main-page .overlay-icon i {\n  position: relative;\n  top: 50%;\n  margin-top: -20px;\n}\n.main-page .video-gallery a:hover .overlay-icon {\n  opacity: 1;\n}\n.main-page .video-gallery p {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  margin-bottom: 0px;\n}\n.main-page .video-gallery h2 {\n  color: #8c8c88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  font-weight: 300;\n  text-transform: uppercase;\n  margin-top: 0px;\n}\n.main-page .address {\n  margin-top: 30px;\n  position: relative;\n  overflow: hidden;\n}\n.main-page .address img {\n  width: 100%;\n}\n.main-page .address p {\n  color: #666663;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  left: 25px;\n  position: absolute;\n  top: 50px;\n}\n.main-page .footer-widget {\n  margin-bottom: 68px;\n}\n.main-page .footer-widget .container {\n  border-top: 1px solid #FFFFFF;\n  padding-top: 15px;\n}\n.main-page .single-widget h2 {\n  color: #666663;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  margin-bottom: 22px;\n  text-transform: uppercase;\n}\n.main-page .single-widget h2 i {\n  margin-right: 15px;\n}\n.main-page .single-widget ul li a {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  padding: 5px 0;\n}\n.main-page .single-widget ul li a i {\n  margin-right: 18px;\n}\n.main-page .single-widget ul li a:hover {\n  background: none;\n  color: #FE980F;\n}\n.main-page .searchform input {\n  border: 1px solid #DDDDDD;\n  color: #CCCCC6;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  margin-top: 0;\n  outline: medium none;\n  padding: 7px;\n  width: 212px;\n}\n.main-page .searchform button {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  margin-left: -5px;\n  margin-top: -3px;\n  padding: 7px 17px;\n}\n.main-page .searchform button i {\n  color: #FFFFFF;\n  font-size: 20px;\n}\n.main-page .searchform button:hover,\n.main-page .searchform button:focus {\n  background-color: #FE980F;\n}\n.main-page .searchform p {\n  color: #8C8C88;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  margin-top: 25px;\n}\n.main-page .footer-bottom {\n  background: #D6D6D0;\n  padding-top: 10px;\n}\n.main-page .footer-bottom p {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n  margin-left: 15px;\n}\n.main-page .footer-bottom p span a {\n  color: #FE980F;\n  font-style: italic;\n  text-decoration: underline;\n}\n.main-page #slider {\n  padding-bottom: 45px;\n}\n.main-page .carousel-indicators li {\n  background: #C4C4BE;\n}\n.main-page .carousel-indicators li.active {\n  background: #FE980F;\n}\n.main-page .item {\n  padding-left: 100px;\n}\n.main-page .pricing {\n  position: absolute;\n  right: 40%;\n  top: 52%;\n}\n.main-page .girl {\n  margin-left: 0;\n}\n.main-page .item h1 {\n  color: #B4B1AB;\n  font-family: abel;\n  font-size: 48px;\n  margin-top: 115px;\n}\n.main-page .item h1 span {\n  color: #FE980F;\n}\n.main-page .item h2 {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 28px;\n  font-weight: 700;\n  margin-bottom: 22px;\n  margin-top: 10px;\n}\n.main-page .item p {\n  color: #363432;\n  font-size: 16px;\n  font-weight: 300;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .get {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  font-weight: 300;\n  margin-top: 23px;\n}\n.main-page .item button:hover {\n  background: #FE980F;\n}\n.main-page .control-carousel {\n  position: absolute;\n  top: 50%;\n  font-size: 60px;\n  color: #C2C2C1;\n}\n.main-page .control-carousel:hover {\n  color: #FE980F;\n}\n.main-page .right {\n  right: 0;\n}\n.main-page .category-products {\n  border: 1px solid #F7F7F0;\n  margin-bottom: 35px;\n  padding-bottom: 20px;\n  padding-top: 15px;\n}\n.main-page .left-sidebar h2, .main-page .brands_products h2 {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  margin: 0 auto 30px;\n  text-align: center;\n  text-transform: uppercase;\n  position: relative;\n  z-index: 3;\n}\n.main-page .left-sidebar h2:after, .main-page h2.title:after {\n  content: \" \";\n  position: absolute;\n  border: 1px solid #f5f5f5;\n  bottom: 8px;\n  left: 0;\n  width: 100%;\n  height: 0;\n  z-index: -2;\n}\n.main-page .left-sidebar h2:before {\n  content: \" \";\n  position: absolute;\n  background: #fff;\n  bottom: -6px;\n  width: 130px;\n  height: 30px;\n  z-index: -1;\n  left: 50%;\n  margin-left: -65px;\n}\n.main-page h2.title:before {\n  content: \" \";\n  position: absolute;\n  background: #fff;\n  bottom: -6px;\n  width: 220px;\n  height: 30px;\n  z-index: -1;\n  left: 50%;\n  margin-left: -110px;\n}\n.main-page .category-products .panel {\n  background-color: #FFFFFF;\n  border: 0px;\n  border-radius: 0px;\n  box-shadow: none;\n  margin-bottom: 0px;\n}\n.main-page .category-products .panel-default .panel-heading {\n  background-color: #FFFFFF;\n  border: 0 none;\n  color: #FFFFFF;\n  padding: 5px 20px;\n}\n.main-page .category-products .panel-default .panel-heading .panel-title a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n.main-page .panel-group .panel-heading + .panel-collapse .panel-body {\n  border-top: 0 none;\n}\n.main-page .category-products .badge {\n  background: none;\n  border-radius: 10px;\n  color: #696763;\n  display: inline-block;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  min-width: 10px;\n  padding: 3px 7px;\n  text-align: center;\n  vertical-align: baseline;\n  white-space: nowrap;\n}\n.main-page .panel-body ul {\n  padding-left: 20px;\n}\n.main-page .panel-body ul li a {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 12px;\n  text-transform: uppercase;\n}\n.main-page .brands-name {\n  border: 1px solid #F7F7F0;\n  padding-bottom: 20px;\n  padding-top: 15px;\n}\n.main-page .brands-name .nav-stacked li a {\n  background-color: #FFFFFF;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  padding: 5px 25px;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n.main-page .brands-name .nav-stacked li a:hover {\n  background-color: #fff;\n  color: #696763;\n}\n.main-page .shipping {\n  background-color: #F2F2F2;\n  margin-top: 40px;\n  overflow: hidden;\n  padding-top: 20px;\n  position: relative;\n}\n.main-page .price-range {\n  margin-top: 30px;\n}\n.main-page .well {\n  background-color: #FFFFFF;\n  border: 1px solid #F7F7F0;\n  border-radius: 4px;\n  box-shadow: none;\n  margin-bottom: 20px;\n  min-height: 20px;\n  padding: 35px;\n}\n.main-page .tooltip-inner {\n  background-color: #FE980F;\n  border-radius: 4px;\n  color: #FFFFFF;\n  max-width: 200px;\n  padding: 3px 8px;\n  text-align: center;\n  text-decoration: none;\n}\n.main-page .tooltip.top .tooltip-arrow {\n  border-top-color: #FE980F;\n  border-width: 5px 5px 0;\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n}\n.main-page .padding-right {\n  padding-right: 0;\n}\n.main-page .features_items {\n  overflow: hidden;\n}\n.main-page h2.title {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n  font-weight: 700;\n  margin: 0 15px;\n  text-transform: uppercase;\n  margin-bottom: 30px;\n  position: relative;\n}\n.main-page .product-image-wrapper {\n  border: 1px solid #F7F7F5;\n  overflow: hidden;\n  margin-bottom: 30px;\n}\n.main-page .single-products {\n  position: relative;\n}\n.main-page .new, .main-page .sale {\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.main-page .productinfo h2 {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n}\n.main-page .product-overlay h2 {\n  color: #fff;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 24px;\n  font-weight: 700;\n}\n.main-page .productinfo p {\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 400;\n  color: #696763;\n}\n.main-page .productinfo img {\n  width: 100%;\n}\n.main-page .productinfo {\n  position: relative;\n}\n.main-page .product-overlay {\n  background: #FE980F;\n  top: 0;\n  display: none;\n  height: 0;\n  position: absolute;\n  transition: height 500ms ease 0s;\n  width: 100%;\n  display: block;\n}\n.main-page .single-products:hover .product-overlay {\n  display: block;\n  height: 100%;\n}\n.main-page .product-overlay .overlay-content {\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  text-align: center;\n  width: 100%;\n}\n.main-page .product-overlay .add-to-cart {\n  background: #fff;\n  border: 0 none;\n  border-radius: 0;\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 25px;\n}\n.main-page .product-overlay .add-to-cart:hover {\n  background: #fff;\n  color: #FE980F;\n}\n.main-page .product-overlay p {\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 400;\n  color: #fff;\n}\n.main-page .add-to-cart {\n  background: #F5F5ED;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 25px;\n}\n.main-page .add-to-cart:hover {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n}\n.main-page .add-to {\n  margin-bottom: 10px;\n}\n.main-page .add-to-cart i {\n  margin-right: 5px;\n}\n.main-page .add-to-cart:hover {\n  background: #FE980F;\n  color: #FFFFFF;\n}\n.main-page .choose {\n  border-top: 1px solid #F7F7F0;\n}\n.main-page .choose ul li a {\n  color: #B3AFA8;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 13px;\n  padding-left: 0;\n  padding-right: 0;\n}\n.main-page .choose ul li a i {\n  margin-right: 5px;\n}\n.main-page .choose ul li a:hover {\n  background: none;\n  color: #FE980F;\n}\n.main-page .category-tab {\n  overflow: hidden;\n}\n.main-page .category-tab ul {\n  background: #40403E;\n  border-bottom: 1px solid #FE980F;\n  list-style: none outside none;\n  margin: 0 0 30px;\n  padding: 0;\n  width: 100%;\n}\n.main-page .category-tab ul li a {\n  border: 0 none;\n  border-radius: 0;\n  color: #B3AFA8;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  text-transform: uppercase;\n}\n.main-page .category-tab ul li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .nav-tabs li.active a, .main-page .nav-tabs li.active a:hover, .main-page .nav-tabs li.active a:focus {\n  -moz-border-bottom-colors: none;\n  -moz-border-left-colors: none;\n  -moz-border-right-colors: none;\n  -moz-border-top-colors: none;\n  background-color: #FE980F;\n  border: 0px;\n  color: #FFFFFF;\n  cursor: default;\n  margin-right: 0;\n  margin-left: 0;\n}\n.main-page .nav-tabs li a {\n  border: 1px solid rgba(0, 0, 0, 0);\n  border-radius: 4px 4px 0 0;\n  line-height: 1.42857;\n  margin-right: 0;\n}\n.main-page .recommended_items {\n  overflow: hidden;\n}\n.main-page #recommended-item-carousel .carousel-inner .item {\n  padding-left: 0;\n}\n.main-page .recommended-item-control {\n  position: absolute;\n  top: 41%;\n}\n.main-page .recommended-item-control i {\n  background: none repeat scroll 0 0 #FE980F;\n  color: #FFFFFF;\n  font-size: 20px;\n  padding: 4px 10px;\n}\n.main-page .recommended-item-control i:hover {\n  background: #ccccc6;\n}\n.main-page .our_partners {\n  overflow: hidden;\n}\n.main-page .our_partners ul {\n  background: #F7F7F0;\n  margin-bottom: 50px;\n}\n.main-page .our_partners ul li a:hover {\n  background: none;\n}\n.main-page #advertisement {\n  padding-bottom: 45px;\n}\n.main-page #advertisement img {\n  width: 100%;\n}\n.main-page .pagination {\n  display: inline-block;\n  margin-bottom: 25px;\n  margin-top: 0;\n  padding-left: 15px;\n}\n.main-page .pagination li:first-child a, .main-page .pagination li:first-child span {\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n  margin-left: 0;\n}\n.main-page .pagination li:last-child a, .main-page .pagination li:last-child span {\n  border-bottom-right-radius: 0;\n  border-top-right-radius: 0;\n}\n.main-page .pagination .active a, .main-page .pagination .active span, .main-page .pagination .active a:hover, .main-page .pagination .active span:hover, .main-page .pagination .active a:focus, .main-page .pagination .active span:focus {\n  background-color: #FE980F;\n  border-color: #FE980F;\n  color: #FFFFFF;\n  cursor: default;\n  z-index: 2;\n}\n.main-page .pagination li a, .main-page .pagination li span {\n  background-color: #f0f0e9;\n  border: 0;\n  float: left;\n  line-height: 1.42857;\n  margin-left: -1px;\n  padding: 6px 12px;\n  position: relative;\n  text-decoration: none;\n  margin-right: 5px;\n  color: #000;\n}\n.main-page .pagination li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .product-details {\n  overflow: hidden;\n}\n.main-page #similar-product {\n  margin-top: 40px;\n}\n.main-page #reviews {\n  padding-left: 25px;\n  padding-right: 25px;\n}\n.main-page .product-details {\n  margin-bottom: 40px;\n  overflow: hidden;\n  margin-top: 10px;\n}\n.main-page .view-product {\n  position: relative;\n}\n.main-page .view-product img {\n  border: 1px solid #F7F7F0;\n  margin-top: 50px;\n  width: 100%;\n}\n.main-page .view-product h3 {\n  background: #FE980F;\n  bottom: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 700;\n  margin-bottom: 0;\n  padding: 8px 20px;\n  position: absolute;\n  right: 0;\n}\n.main-page #similar-product .carousel-inner .item {\n  padding-left: 0px;\n}\n.main-page #similar-product .carousel-inner .item img {\n  display: inline-block;\n  margin-left: 15px;\n}\n.main-page .item-control {\n  position: absolute;\n  top: 35%;\n}\n.main-page .item-control i {\n  background: #FE980F;\n  color: #FFFFFF;\n  font-size: 20px;\n  padding: 5px 10px;\n}\n.main-page .item-control i:hover {\n  background: #ccccc6;\n}\n.main-page .product-information {\n  border: 1px solid #F7F7F0;\n  overflow: hidden;\n  padding-bottom: 60px;\n  padding-left: 60px;\n  padding-top: 60px;\n  position: relative;\n}\n.main-page .newarrival {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.main-page .product-information h2 {\n  color: #FE980F;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 27px;\n  margin-top: 0;\n  margin-bottom: 20px;\n}\n.main-page .product-information p {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  margin-bottom: 5px;\n}\n.main-page .product-information h3 {\n  font-size: 20px;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  margin-bottom: 5px;\n}\n.main-page .product-information span {\n  display: inline-block;\n  margin-bottom: 8px;\n  margin-top: 18px;\n}\n.main-page .product-information span span {\n  color: #FE980F;\n  float: left;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 30px;\n  font-weight: 700;\n  margin-right: 20px;\n  margin-top: 0px;\n}\n.main-page .product-information span input {\n  border: 1px solid #DEDEDC;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: 700;\n  height: 33px;\n  outline: medium none;\n  text-align: center;\n  width: 50px;\n}\n.main-page .product-information span label {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 700;\n  margin-right: 5px;\n}\n.main-page .share {\n  margin-top: 15px;\n}\n.main-page .cart {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 10px;\n  margin-left: 20px;\n}\n.main-page .cart-detail {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 15px;\n  margin-bottom: 10px;\n  margin-top: 10px;\n}\n.main-page .shop-details-tab {\n  border: 1px solid #F7F7F0;\n  margin-bottom: 75px;\n  margin-left: 15px;\n  margin-right: 15px;\n  padding-bottom: 10px;\n}\n.main-page .shop-details-tab .col-sm-12 {\n  padding-left: 0;\n  padding-right: 0;\n}\n.main-page #reviews ul {\n  background: #FFFFFF;\n  border: 0 none;\n  list-style: none outside none;\n  margin: 0 0 20px;\n  padding: 0;\n}\n.main-page #reviews ul li {\n  display: inline-block;\n}\n.main-page #reviews ul li a {\n  color: #696763;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  padding-right: 15px;\n}\n.main-page #reviews ul li a i {\n  color: #FE980F;\n  padding-right: 8px;\n}\n.main-page #reviews ul li a:hover {\n  background: #fff;\n  color: #FE980F;\n}\n.main-page #reviews p {\n  color: #363432;\n}\n.main-page #reviews form span {\n  display: block;\n}\n.main-page #reviews form span input {\n  background: #F0F0E9;\n  border: 0 none;\n  color: #A6A6A1;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  outline: medium none;\n  padding: 8px;\n  width: 48%;\n}\n.main-page #reviews form span input:last-child {\n  margin-left: 3%;\n}\n.main-page #reviews textarea {\n  background: #F0F0E9;\n  border: medium none;\n  color: #A6A6A1;\n  height: 195px;\n  margin-bottom: 25px;\n  margin-top: 15px;\n  outline: medium none;\n  padding-left: 10px;\n  padding-top: 15px;\n  resize: none;\n  width: 99.5%;\n}\n.main-page #reviews button {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n}\n.main-page .logo-404 {\n  margin-top: 60px;\n}\n.main-page .content-404 h1 {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 41px;\n  font-weight: 300;\n}\n.main-page .content-404 img {\n  margin: 0 auto;\n}\n.main-page .content-404 p {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 18px;\n}\n.main-page .content-404 h2 {\n  margin-top: 50px;\n}\n.main-page .content-404 h2 a {\n  background: #FE980F;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 44px;\n  font-weight: 300;\n  padding: 8px 40px;\n}\n.main-page #form {\n  display: block;\n  margin-bottom: 185px;\n  margin-top: 185px;\n  overflow: hidden;\n}\n.main-page .login-form h2, .main-page .signup-form h2 {\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  margin-bottom: 30px;\n}\n.main-page .login-form form input, .main-page .signup-form form input {\n  background: #F0F0E9;\n  border: medium none;\n  color: #696763;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  font-weight: 300;\n  height: 40px;\n  margin-bottom: 10px;\n  outline: medium none;\n  padding-left: 10px;\n  width: 100%;\n}\n.main-page .login-form form span {\n  line-height: 25px;\n}\n.main-page .login-form form span input {\n  width: 15px;\n  float: left;\n  height: 15px;\n  margin-right: 5px;\n}\n.main-page .login-form form button {\n  margin-top: 23px;\n}\n.main-page .login-form form button, .main-page .signup-form form button {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  color: #FFFFFF;\n  display: block;\n  font-family: \"Roboto\", sans-serif;\n  padding: 6px 25px;\n}\n.main-page .login-form label input {\n  border: medium none;\n  display: inline-block;\n  height: 0;\n  margin-bottom: 0;\n  outline: medium none;\n  padding-left: 0;\n}\n.main-page .or {\n  background: #FE980F;\n  border-radius: 40px;\n  color: #FFFFFF;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  height: 50px;\n  line-height: 50px;\n  margin-top: 75px;\n  text-align: center;\n  width: 50px;\n}\n.main-page #do_action {\n  margin-bottom: 50px;\n}\n.main-page .breadcrumbs {\n  position: relative;\n}\n.main-page .breadcrumbs .breadcrumb {\n  background: transparent;\n  margin-bottom: 75px;\n  padding-left: 0;\n}\n.main-page .breadcrumbs .breadcrumb li a {\n  background: #FE980F;\n  color: #FFFFFF;\n  padding: 3px 7px;\n}\n.main-page .breadcrumbs .breadcrumb li a:after {\n  content: \"\";\n  height: auto;\n  width: auto;\n  border-width: 8px;\n  border-style: solid;\n  border-color: transparent transparent transparent #FE980F;\n  position: absolute;\n  top: 11px;\n  left: 48px;\n}\n.main-page .breadcrumbs .breadcrumb > li + li:before {\n  content: \"\\A0\";\n}\n.main-page #cart_items .cart_info {\n  border: 1px solid #E6E4DF;\n  margin-bottom: 50px;\n}\n.main-page #cart_items .cart_info .cart_menu {\n  background: #FE980F;\n  color: #fff;\n  font-size: 16px;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: normal;\n}\n.main-page #cart_items .cart_info .table.table-condensed thead tr {\n  height: 51px;\n}\n.main-page #cart_items .cart_info .table.table-condensed tr {\n  border-bottom: 1px solid #F7F7F0;\n}\n.main-page #cart_items .cart_info .table.table-condensed tr:last-child {\n  border-bottom: 0;\n}\n.main-page .cart_info table tr td {\n  border-top: 0 none;\n  vertical-align: inherit;\n}\n.main-page #cart_items .cart_info .image {\n  padding-left: 30px;\n}\n.main-page #cart_items .cart_info .cart_description h4 {\n  margin-bottom: 0;\n}\n.main-page #cart_items .cart_info .cart_description h4 a {\n  color: #363432;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 20px;\n  font-weight: normal;\n}\n.main-page #cart_items .cart_info .cart_description p {\n  color: #696763;\n}\n.main-page #cart_items .cart_info .cart_price p {\n  color: #696763;\n  font-size: 18px;\n}\n.main-page #cart_items .cart_info .cart_total_price {\n  color: #FE980F;\n  font-size: 24px;\n}\n.main-page .cart_product {\n  display: block;\n  margin: 15px -70px 10px 25px;\n}\n.main-page .cart_quantity_button a {\n  background: #F0F0E9;\n  color: #696763;\n  display: inline-block;\n  font-size: 16px;\n  height: 28px;\n  overflow: hidden;\n  text-align: center;\n  width: 35px;\n  float: left;\n}\n.main-page .cart_quantity_input {\n  color: #696763;\n  float: left;\n  font-size: 16px;\n  text-align: center;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .cart_delete {\n  display: block;\n  margin-right: -12px;\n  overflow: hidden;\n}\n.main-page .cart_delete a {\n  background: #F0F0E9;\n  color: #FFFFFF;\n  padding: 5px 7px;\n  font-size: 16px;\n}\n.main-page .cart_delete a:hover {\n  background: #FE980F;\n}\n.main-page .bg h2.title {\n  margin-right: 0;\n  margin-left: 0;\n  margin-top: 0;\n}\n.main-page .heading h3 {\n  color: #363432;\n  font-size: 20px;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .heading p {\n  color: #434343;\n  font-size: 16px;\n  font-weight: 300;\n}\n.main-page #do_action .total_area {\n  padding-bottom: 18px !important;\n}\n.main-page #do_action .total_area, .main-page #do_action .chose_area {\n  border: 1px solid #E6E4DF;\n  color: #696763;\n  padding: 30px 25px 30px 0;\n  margin-bottom: 80px;\n}\n.main-page .total_area span {\n  float: right;\n}\n.main-page .total_area ul li {\n  background: #E6E4DF;\n  color: #696763;\n  margin-top: 10px;\n  padding: 7px 20px;\n}\n.main-page .user_option label {\n  color: #696763;\n  font-weight: normal;\n  margin-left: 10px;\n}\n.main-page .user_info {\n  display: block;\n  margin-bottom: 15px;\n  margin-top: 20px;\n  overflow: hidden;\n}\n.main-page .user_info label {\n  color: #696763;\n  display: block;\n  font-size: 15px;\n  font-weight: normal;\n}\n.main-page .user_info .single_field {\n  width: 31%;\n}\n.main-page .user_info .single_field.zip-field input {\n  background: transparent;\n  border: 1px solid #F0F0E9;\n}\n.main-page .user_info > li {\n  float: left;\n  margin-right: 10px;\n}\n.main-page .user_info input, .main-page select, .main-page textarea {\n  background: #F0F0E9;\n  border: 0;\n  color: #696763;\n  padding: 5px;\n  width: 100%;\n  border-radius: 0;\n  resize: none;\n}\n.main-page .user_info select:focus {\n  border: 0;\n}\n.main-page .chose_area .update {\n  margin-left: 40px;\n}\n.main-page .update, .main-page .check_out {\n  background: #FE980F;\n  border-radius: 0;\n  color: #FFFFFF;\n  margin-top: 18px;\n  border: none;\n  padding: 5px 15px;\n}\n.main-page .update {\n  margin-left: 40px;\n}\n.main-page .check_out {\n  margin-left: 20px;\n}\n.main-page .step-one {\n  margin-bottom: -10px;\n}\n.main-page .register-req, .main-page .step-one .heading {\n  background: none repeat scroll 0 0 #F0F0E9;\n  color: #363432;\n  font-size: 20px;\n  margin-bottom: 35px;\n  padding: 10px 25px;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .checkout-options {\n  padding-left: 20px;\n}\n.main-page .checkout-options h3 {\n  color: #363432;\n  font-size: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  font-family: \"Roboto\", sans-serif;\n}\n.main-page .checkout-options p {\n  color: #434343;\n  font-weight: 300;\n  margin-bottom: 25px;\n}\n.main-page .checkout-options .nav li {\n  float: left;\n  margin-right: 45px;\n  color: #696763;\n  font-size: 18px;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: normal;\n}\n.main-page .checkout-options .nav label {\n  font-weight: normal;\n}\n.main-page .checkout-options .nav li a {\n  color: #FE980F;\n  font-size: 18px;\n  font-weight: normal;\n  padding: 0;\n}\n.main-page .checkout-options .nav li a:hover {\n  background: inherit;\n}\n.main-page .checkout-options .nav i {\n  margin-right: 10px;\n  border-radius: 50%;\n  padding: 5px;\n  background: #FE980F;\n  color: #fff;\n  font-size: 14px;\n  padding: 2px 3px;\n}\n.main-page .register-req {\n  font-size: 14px;\n  font-weight: 300;\n  padding: 15px 20px;\n  margin-top: 35px;\n}\n.main-page .register-req p {\n  margin-bottom: 0;\n}\n.main-page .shopper-info p,\n.main-page .bill-to p,\n.main-page .order-message p {\n  color: #696763;\n  font-size: 20px;\n  font-weight: 300;\n}\n.main-page .shopper-info .btn-primary {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  margin-right: 15px;\n  margin-top: 20px;\n}\n.main-page .form-two, .main-page .form-one {\n  float: left;\n  width: 47%;\n}\n.main-page .shopper-info > form > input,\n.main-page .form-two > form > select,\n.main-page .form-two > form > input,\n.main-page .form-one > form > input {\n  background: #F0F0E9;\n  border: 0 none;\n  margin-bottom: 10px;\n  padding: 10px;\n  width: 100%;\n  font-weight: 300;\n}\n.main-page .form-two > form > select {\n  padding: 10px 5px;\n}\n.main-page .form-two {\n  margin-left: 5%;\n}\n.main-page .order-message textarea {\n  font-size: 12px;\n  height: 335px;\n  margin-bottom: 20px;\n  padding: 15px 20px;\n}\n.main-page .order-message label {\n  font-weight: 300;\n  color: #696763;\n  font-family: \"Roboto\", sans-serif;\n  margin-left: 10px;\n  font-size: 14px;\n}\n.main-page .review-payment h2 {\n  color: #696763;\n  font-size: 20px;\n  font-weight: 300;\n  margin-top: 45px;\n  margin-bottom: 20px;\n}\n.main-page .payment-options {\n  margin-bottom: 125px;\n  margin-top: -25px;\n}\n.main-page .payment-options span label {\n  color: #696763;\n  font-size: 14px;\n  font-weight: 300;\n  margin-right: 30px;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result {\n  margin-bottom: 10px;\n  margin-top: 35px;\n  color: #696763;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result tr {\n  border-bottom: 0;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result span {\n  color: #FE980F;\n  font-weight: 700;\n  font-size: 16px;\n}\n.main-page #cart_items .cart_info .table.table-condensed.total-result .shipping-cost {\n  border-bottom: 1px solid #F7F7F0;\n}\n.main-page .blog-post-area .single-blog-post h3 {\n  color: #696763;\n  font-size: 16px;\n  font-family: \"Roboto\", sans-serif;\n  text-transform: uppercase;\n  font-weight: 500;\n  margin-bottom: 17px;\n}\n.main-page .blog-post-area .single-blog-post a img {\n  border: 1px solid #F7F7F0;\n  width: 100%;\n  margin-bottom: 30px;\n}\n.main-page .blog-post-area .single-blog-post p {\n  color: #363432;\n}\n.main-page .blog-post-area .post-meta {\n  display: block;\n  margin-bottom: 25px;\n  overflow: hidden;\n}\n.main-page .blog-post-area .post-meta ul {\n  padding: 0;\n  display: inline;\n}\n.main-page .blog-post-area .post-meta ul li {\n  background: #F0F0E9;\n  float: left;\n  margin-right: 10px;\n  padding: 0 5px;\n  font-size: 11px;\n  color: #393b3b;\n  position: relative;\n}\n.main-page .blog-post-area .post-meta ul li i {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-left: -4px;\n  margin-right: 7px;\n  padding: 4px 7px;\n}\n.main-page .sinlge-post-meta li i:after,\n.main-page .blog-post-area .post-meta ul li i:after {\n  content: \"\";\n  position: absolute;\n  width: auto;\n  height: auto;\n  border-color: transparent transparent transparent #FE980F;\n  border-width: 4px;\n  border-style: solid;\n  top: 6px;\n  left: 24px;\n}\n.main-page .blog-post-area .post-meta ul span {\n  float: right;\n  color: #FE980F;\n}\n.main-page .post-meta span {\n  float: right;\n}\n.main-page .post-meta span i {\n  color: #FE980F;\n}\n.main-page .blog-post-area .single-blog-post .btn-primary {\n  background: #FE980F;\n  border: medium none;\n  border-radius: 0;\n  color: #FFFFFF;\n  margin-top: 17px;\n}\n.main-page .pagination-area {\n  margin-bottom: 45px;\n  margin-top: 45px;\n}\n.main-page .pagination-area .pagination li a {\n  background: #F0F0E9;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  margin-right: 5px;\n  padding: 4px 12px;\n}\n.main-page .pagination-area .pagination li a:hover,\n.main-page .pagination-area .pagination li .active {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .pager-area {\n  overflow: hidden;\n}\n.main-page .pager-area .pager li a {\n  background: #F0F0E9;\n  border: 0 none;\n  border-radius: 0;\n  color: #696763;\n  font-size: 12px;\n  font-weight: 700;\n  padding: 4px;\n  text-transform: uppercase;\n  width: 57px;\n}\n.main-page .pager-area .pager li a:hover {\n  background: #FE980F;\n  color: #fff;\n}\n.main-page .rating-area {\n  border: 1px solid #F7F7F0;\n  direction: block;\n  overflow: hidden;\n}\n.main-page .rating-area ul li {\n  float: left;\n  padding: 5px;\n  font-size: 12px;\n}\n.main-page .rating-area .ratings {\n  float: left;\n  padding-left: 0;\n  margin-bottom: 0;\n}\n.main-page .rating-area .ratings li i {\n  color: #CCCCCC;\n}\n.main-page .rating-area .rate-this {\n  color: #363432;\n  font-size: 12px;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n.main-page .rating-area .ratings .color,\n.main-page .rating-area .color {\n  color: #FE980F;\n}\n.main-page .rating-area .tag {\n  float: right;\n  margin-bottom: 0;\n  margin-right: 10px;\n}\n.main-page .rating-area .tag li {\n  padding: 5px 2px;\n}\n.main-page .rating-area .tag li span {\n  color: #363432;\n}\n.main-page .socials-share {\n  margin-bottom: 30px;\n  margin-top: 18px;\n}\n.main-page .commnets .media-object {\n  margin-right: 15px;\n  width: 100%;\n}\n.main-page .commnets {\n  border: 1px solid #F7F7F0;\n  padding: 18px 18px 18px 0;\n  margin-bottom: 50px;\n}\n.main-page .commnets .pull-left {\n  margin-right: 22px;\n}\n.main-page .commnets p,\n.main-page .response-area p,\n.main-page .replay-box p {\n  font-size: 12px;\n}\n.main-page .media-heading {\n  color: #363432;\n  font-size: 14px;\n  font-weight: 700;\n  font-family: \"Roboto\", sans-serif;\n  margin-bottom: 15px;\n}\n.main-page .blog-socials {\n  margin-bottom: -9px;\n  margin-top: 14px;\n}\n.main-page .blog-socials ul {\n  padding-left: 0;\n  overflow: hidden;\n  float: left;\n}\n.main-page .blog-socials .btn.btn-primary {\n  margin-top: 0;\n}\n.main-page .blog-socials ul li {\n  float: left;\n  height: 17px;\n  margin-right: 5px;\n  text-align: center;\n  width: 17px;\n}\n.main-page .blog-socials ul li a {\n  color: #393B3B;\n  display: block;\n  font-size: 10px;\n  padding: 1px;\n  background: #F0F0E9;\n}\n.main-page .blog-socials ul li a:hover {\n  color: #fff;\n  background: #FE980F;\n}\n.main-page .media-list .btn-primary,\n.main-page .commnets .btn-primary {\n  background: #FC9A11;\n  border: 0 none;\n  border-radius: 0;\n  color: #FFFFFF;\n  float: left;\n  font-size: 10px;\n  padding: 1px 7px;\n  text-transform: uppercase;\n}\n.main-page .response-area h2 {\n  color: #363432;\n  font-size: 20px;\n  font-weight: 700;\n}\n.main-page .response-area .media {\n  border: 1px solid #F7F7F0;\n  padding: 18px 18px 18px 0;\n  margin-bottom: 27px;\n}\n.main-page .response-area .media img {\n  height: 102px;\n  width: 100%;\n}\n.main-page .response-area .media .pull-left {\n  margin-right: 25px;\n}\n.main-page .response-area .second-media {\n  margin-left: 5%;\n  width: 95%;\n}\n.main-page .sinlge-post-meta {\n  overflow: hidden;\n  padding-left: 0;\n  margin-bottom: 15px;\n}\n.main-page .sinlge-post-meta li {\n  background: #F0F0E9;\n  color: #363432;\n  float: left;\n  font-size: 10px;\n  font-weight: 700;\n  margin-right: 10px;\n  padding: 0 10px 0 0;\n  position: relative;\n  text-transform: uppercase;\n}\n.main-page .sinlge-post-meta li i {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-right: 10px;\n  padding: 8px 10px;\n}\n.main-page .sinlge-post-meta li i:after {\n  top: 7px;\n  border-width: 6px;\n  left: 27px;\n}\n.main-page .replay-box {\n  margin-bottom: 107px;\n  margin-top: 55px;\n}\n.main-page .replay-box h2 {\n  font-weight: 700;\n  font-size: 20px;\n  color: #363432;\n  margin-top: 0;\n  margin-bottom: 45px;\n}\n.main-page .replay-box label {\n  background: #FE980F;\n  color: #FFFFFF;\n  margin-bottom: 15px;\n  padding: 3px 15px;\n  float: left;\n  font-weight: 400;\n}\n.main-page .replay-box span {\n  color: #FE980F;\n  float: right;\n  font-weight: 700;\n  margin-top: 21px;\n}\n.main-page .replay-box form input {\n  border: 1px solid #F7F7F0;\n  color: #ADB2B2;\n  font-size: 12px;\n  margin-bottom: 22px;\n  padding: 8px;\n  width: 100%;\n}\n.main-page .replay-box form input:hover,\n.main-page .text-area textarea:hover {\n  border: 1px solid #FE980F;\n}\n.main-page .text-area {\n  margin-top: 66px;\n}\n.main-page .text-area textarea {\n  background: transparent;\n  border: 1px solid #F7F7F0;\n}\n.main-page .btn.btn-primary {\n  background: #FE980F;\n  border: 0 none;\n  border-radius: 0;\n  margin-top: 16px;\n}\n.main-page .blank-arrow {\n  position: relative;\n}\n.main-page .blank-arrow label:after {\n  content: \"\";\n  position: absolute;\n  width: auto;\n  height: auto;\n  border-style: solid;\n  border-width: 8px;\n  border-color: #FE980F transparent transparent transparent;\n  top: 25px;\n  left: 5px;\n}\n.main-page .contact-map {\n  width: 100%;\n  height: 385px;\n  margin-bottom: 70px;\n}\n.main-page .contact-info .heading,\n.main-page .contact-form .heading {\n  text-transform: capitalize;\n}\n.main-page .contact-form .form-group {\n  margin-bottom: 20px;\n}\n.main-page #contact-page .form-control::-moz-placeholder {\n  color: #8D8D8D;\n}\n.main-page #contact-page .form-control {\n  background-color: #fff;\n  border: 1px solid #ddd;\n  color: #696763;\n  height: 46px;\n  padding: 6px 12px;\n  width: 100%;\n  font-size: 16px;\n  border-radius: 4px;\n  box-shadow: inherit;\n}\n.main-page #contact-page #message {\n  height: 160px;\n  resize: none;\n}\n.main-page #main-contact-form .btn-primary {\n  margin-bottom: 15px;\n  margin-top: 20px;\n}\n.main-page #contact-page .form-control:focus,\n.main-page #contact-page .form-control:hover {\n  box-shadow: inherit;\n  border-color: #FDB45E;\n}\n.main-page #contact-page .contact-info {\n  padding: 0 20px;\n}\n.main-page #contact-page .contact-info address {\n  margin-bottom: 40px;\n  margin-top: -5px;\n}\n.main-page #contact-page .contact-info p {\n  margin-bottom: 0;\n  color: #696763;\n  font-size: 16px;\n  line-height: 25px;\n}\n.main-page .social-networks {\n  overflow: hidden;\n  text-align: center;\n}\n.main-page .social-networks ul {\n  margin-top: -5px;\n  padding: 0;\n  display: inline-block;\n}\n.main-page .social-networks ul li {\n  float: left;\n  text-decoration: none;\n  list-style: none;\n  margin-right: 20px;\n}\n.main-page .social-networks ul li:last-child {\n  margin-right: 0;\n}\n.main-page .social-networks ul li a {\n  color: #999;\n  font-size: 25px;\n}\n.main-page .contact-info .social-networks ul li a i {\n  background: none;\n}\n.main-page .contact-info .social-networks ul li a:hover {\n  color: #FE980F;\n}", ""]);
 
 // exports
 
@@ -64724,6 +64724,1783 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-hook-form/dist/index.esm.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-hook-form/dist/index.esm.js ***!
+  \********************************************************/
+/*! exports provided: Controller, FormProvider, appendErrors, get, transformToNestObject, useFieldArray, useForm, useFormContext, useWatch */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Controller", function() { return Controller; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormProvider", function() { return FormProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appendErrors", function() { return appendErrors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transformToNestObject", function() { return transformToNestObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useFieldArray", function() { return useFieldArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useForm", function() { return useForm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useFormContext", function() { return useFormContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useWatch", function() { return useWatch; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var isHTMLElement = (value) => value instanceof HTMLElement;
+
+const EVENTS = {
+    BLUR: 'blur',
+    CHANGE: 'change',
+    INPUT: 'input',
+};
+const VALIDATION_MODE = {
+    onBlur: 'onBlur',
+    onChange: 'onChange',
+    onSubmit: 'onSubmit',
+    all: 'all',
+};
+const VALUE = 'value';
+const SELECT = 'select';
+const UNDEFINED = 'undefined';
+const INPUT_VALIDATION_RULES = {
+    max: 'max',
+    min: 'min',
+    maxLength: 'maxLength',
+    minLength: 'minLength',
+    pattern: 'pattern',
+    required: 'required',
+    validate: 'validate',
+};
+
+function attachEventListeners({ ref }, shouldAttachChangeEvent, handleChange) {
+    if (isHTMLElement(ref) && handleChange) {
+        ref.addEventListener(shouldAttachChangeEvent ? EVENTS.CHANGE : EVENTS.INPUT, handleChange);
+        ref.addEventListener(EVENTS.BLUR, handleChange);
+    }
+}
+
+var isNullOrUndefined = (value) => value == null;
+
+var isArray = (value) => Array.isArray(value);
+
+const isObjectType = (value) => typeof value === 'object';
+var isObject = (value) => !isNullOrUndefined(value) && !isArray(value) && isObjectType(value);
+
+var isKey = (value) => !isArray(value) &&
+    (/^\w*$/.test(value) ||
+        !/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/.test(value));
+
+var stringToPath = (input) => {
+    const result = [];
+    input.replace(/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g, (match, mathNumber, mathQuote, originalString) => {
+        result.push(mathQuote
+            ? originalString.replace(/\\(\\)?/g, '$1')
+            : mathNumber || match);
+    });
+    return result;
+};
+
+function set(object, path, value) {
+    let index = -1;
+    const tempPath = isKey(path) ? [path] : stringToPath(path);
+    const length = tempPath.length;
+    const lastIndex = length - 1;
+    while (++index < length) {
+        const key = tempPath[index];
+        let newValue = value;
+        if (index !== lastIndex) {
+            const objValue = object[key];
+            newValue =
+                isObject(objValue) || isArray(objValue)
+                    ? objValue
+                    : !isNaN(+tempPath[index + 1])
+                        ? []
+                        : {};
+        }
+        object[key] = newValue;
+        object = object[key];
+    }
+    return object;
+}
+
+var transformToNestObject = (data) => Object.entries(data).reduce((previous, [key, value]) => {
+    if (!isKey(key)) {
+        set(previous, key, value);
+        return previous;
+    }
+    return Object.assign(Object.assign({}, previous), { [key]: value });
+}, {});
+
+var isUndefined = (val) => val === undefined;
+
+var unique = (value) => value.filter(Boolean);
+
+var get = (obj, path, defaultValue) => {
+    const result = unique(path.split(/[,[\].]+?/)).reduce((result, key) => (isNullOrUndefined(result) ? result : result[key]), obj);
+    return isUndefined(result) || result === obj
+        ? isUndefined(obj[path])
+            ? defaultValue
+            : obj[path]
+        : result;
+};
+
+var focusOnErrorField = (fields, fieldErrors) => {
+    for (const key in fields) {
+        if (get(fieldErrors, key)) {
+            const field = fields[key];
+            if (field) {
+                if (field.ref.focus) {
+                    field.ref.focus();
+                    break;
+                }
+                else if (field.options) {
+                    field.options[0].ref.focus();
+                    break;
+                }
+            }
+        }
+    }
+};
+
+var removeAllEventListeners = (ref, validateWithStateUpdate) => {
+    if (isHTMLElement(ref) && ref.removeEventListener) {
+        ref.removeEventListener(EVENTS.INPUT, validateWithStateUpdate);
+        ref.removeEventListener(EVENTS.CHANGE, validateWithStateUpdate);
+        ref.removeEventListener(EVENTS.BLUR, validateWithStateUpdate);
+    }
+};
+
+const defaultReturn = {
+    isValid: false,
+    value: '',
+};
+var getRadioValue = (options) => isArray(options)
+    ? options.reduce((previous, option) => option && option.ref.checked
+        ? {
+            isValid: true,
+            value: option.ref.value,
+        }
+        : previous, defaultReturn)
+    : defaultReturn;
+
+var getMultipleSelectValue = (options) => [...options]
+    .filter(({ selected }) => selected)
+    .map(({ value }) => value);
+
+var isRadioInput = (element) => element.type === 'radio';
+
+var isFileInput = (element) => element.type === 'file';
+
+var isCheckBoxInput = (element) => element.type === 'checkbox';
+
+var isMultipleSelect = (element) => element.type === `${SELECT}-multiple`;
+
+const defaultResult = {
+    value: false,
+    isValid: false,
+};
+const validResult = { value: true, isValid: true };
+var getCheckboxValue = (options) => {
+    if (isArray(options)) {
+        if (options.length > 1) {
+            const values = options
+                .filter((option) => option && option.ref.checked)
+                .map(({ ref: { value } }) => value);
+            return { value: values, isValid: !!values.length };
+        }
+        const { checked, value, attributes } = options[0].ref;
+        return checked
+            ? attributes && !isUndefined(attributes.value)
+                ? isUndefined(value) || value === ''
+                    ? validResult
+                    : { value: value, isValid: true }
+                : validResult
+            : defaultResult;
+    }
+    return defaultResult;
+};
+
+function getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef) {
+    const field = fieldsRef.current[name];
+    if (field) {
+        const { ref: { value }, ref, } = field;
+        if (isFileInput(ref)) {
+            return ref.files;
+        }
+        if (isRadioInput(ref)) {
+            return getRadioValue(field.options).value;
+        }
+        if (isMultipleSelect(ref)) {
+            return getMultipleSelectValue(ref.options);
+        }
+        if (isCheckBoxInput(ref)) {
+            return getCheckboxValue(field.options).value;
+        }
+        return value;
+    }
+    return ((unmountFieldsStateRef === null || unmountFieldsStateRef === void 0 ? void 0 : unmountFieldsStateRef.current[name]) || (defaultValuesRef === null || defaultValuesRef === void 0 ? void 0 : defaultValuesRef.current[name]));
+}
+
+function isDetached(element) {
+    if (!element) {
+        return true;
+    }
+    if (!(element instanceof HTMLElement) ||
+        element.nodeType === Node.DOCUMENT_NODE) {
+        return false;
+    }
+    return isDetached(element.parentNode);
+}
+
+var isEmptyObject = (value) => isObject(value) && !Object.keys(value).length;
+
+function baseGet(object, updatePath) {
+    const path = updatePath.slice(0, -1);
+    const length = path.length;
+    let index = 0;
+    while (index < length) {
+        object = isUndefined(object) ? index++ : object[updatePath[index++]];
+    }
+    return object;
+}
+function unset(object, path) {
+    const updatePath = isKey(path) ? [path] : stringToPath(path);
+    const childObject = updatePath.length == 1 ? object : baseGet(object, updatePath);
+    const key = updatePath[updatePath.length - 1];
+    let previousObjRef = undefined;
+    if (childObject) {
+        delete childObject[key];
+    }
+    for (let k = 0; k < updatePath.slice(0, -1).length; k++) {
+        let index = -1;
+        let objectRef = undefined;
+        const currentPaths = updatePath.slice(0, -(k + 1));
+        const currentPathsLength = currentPaths.length - 1;
+        if (k > 0) {
+            previousObjRef = object;
+        }
+        while (++index < currentPaths.length) {
+            const item = currentPaths[index];
+            objectRef = objectRef ? objectRef[item] : object[item];
+            if (currentPathsLength === index &&
+                ((isObject(objectRef) && isEmptyObject(objectRef)) ||
+                    (isArray(objectRef) &&
+                        !objectRef.filter((data) => isObject(data) && !isEmptyObject(data))
+                            .length))) {
+                previousObjRef ? delete previousObjRef[item] : delete object[item];
+            }
+            previousObjRef = objectRef;
+        }
+    }
+    return object;
+}
+
+const isSameRef = (fieldValue, ref) => fieldValue && fieldValue.ref === ref;
+function findRemovedFieldAndRemoveListener(fieldsRef, handleChange, field, unmountFieldsStateRef, defaultValuesRef, shouldUnregister, forceDelete) {
+    const { ref, ref: { name, type }, mutationWatcher, } = field;
+    const fieldRef = fieldsRef.current[name];
+    if (!shouldUnregister) {
+        const value = getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef);
+        if (!isUndefined(value)) {
+            unmountFieldsStateRef.current[name] = value;
+        }
+    }
+    if (!type) {
+        delete fieldsRef.current[name];
+        return;
+    }
+    if ((isRadioInput(ref) || isCheckBoxInput(ref)) && fieldRef) {
+        const { options } = fieldRef;
+        if (isArray(options) && options.length) {
+            unique(options).forEach((option, index) => {
+                const { ref, mutationWatcher } = option;
+                if ((ref && isDetached(ref) && isSameRef(option, ref)) || forceDelete) {
+                    removeAllEventListeners(ref, handleChange);
+                    if (mutationWatcher) {
+                        mutationWatcher.disconnect();
+                    }
+                    unset(options, `[${index}]`);
+                }
+            });
+            if (options && !unique(options).length) {
+                delete fieldsRef.current[name];
+            }
+        }
+        else {
+            delete fieldsRef.current[name];
+        }
+    }
+    else if ((isDetached(ref) && isSameRef(fieldRef, ref)) || forceDelete) {
+        removeAllEventListeners(ref, handleChange);
+        if (mutationWatcher) {
+            mutationWatcher.disconnect();
+        }
+        delete fieldsRef.current[name];
+    }
+}
+
+var isString = (value) => typeof value === 'string';
+
+var getFieldsValues = (fieldsRef, unmountFieldsStateRef, defaultValuesRef, search) => {
+    const output = {};
+    for (const name in fieldsRef.current) {
+        if (isUndefined(search) ||
+            (isString(search)
+                ? name.startsWith(search)
+                : isArray(search) && search.find((data) => name.startsWith(data)))) {
+            output[name] = getFieldValue(fieldsRef, name);
+        }
+    }
+    return Object.assign(Object.assign(Object.assign({}, transformToNestObject((defaultValuesRef || {}).current || {})), transformToNestObject(unmountFieldsStateRef.current)), transformToNestObject(output));
+};
+
+var isSameError = (error, { type, types = {}, message }) => isObject(error) &&
+    error.type === type &&
+    error.message === message &&
+    Object.keys(error.types || {}).length === Object.keys(types).length &&
+    Object.entries(error.types || {}).every(([key, value]) => types[key] === value);
+
+function shouldRenderBasedOnError({ errors, name, error, validFields, fieldsWithValidation, }) {
+    const isFieldValid = isEmptyObject(error);
+    const isFormValid = isEmptyObject(errors);
+    const currentFieldError = get(error, name);
+    const existFieldError = get(errors, name);
+    if (isFieldValid && validFields.has(name)) {
+        return false;
+    }
+    if (isFormValid !== isFieldValid ||
+        (!isFormValid && !existFieldError) ||
+        (isFieldValid && fieldsWithValidation.has(name) && !validFields.has(name))) {
+        return true;
+    }
+    return currentFieldError && !isSameError(existFieldError, currentFieldError);
+}
+
+var isRegex = (value) => value instanceof RegExp;
+
+const isValueMessage = (value) => isObject(value) && !isRegex(value);
+var getValueAndMessage = (validationData) => isValueMessage(validationData)
+    ? validationData
+    : {
+        value: validationData,
+        message: '',
+    };
+
+var isFunction = (value) => typeof value === 'function';
+
+var isBoolean = (value) => typeof value === 'boolean';
+
+var isMessage = (value) => isString(value) || (isObject(value) && Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(value));
+
+function getValidateError(result, ref, type = 'validate') {
+    if (isMessage(result) || (isBoolean(result) && !result)) {
+        return {
+            type,
+            message: isMessage(result) ? result : '',
+            ref,
+        };
+    }
+}
+
+var appendErrors = (name, validateAllFieldCriteria, errors, type, message) => {
+    if (validateAllFieldCriteria) {
+        const error = errors[name];
+        return Object.assign(Object.assign({}, error), { types: Object.assign(Object.assign({}, (error && error.types ? error.types : {})), { [type]: message || true }) });
+    }
+    return {};
+};
+
+var validateField = async (fieldsRef, validateAllFieldCriteria, { ref, ref: { type, value }, options, required, maxLength, minLength, min, max, pattern, validate, }, unmountFieldsStateRef, defaultValuesRef) => {
+    const fields = fieldsRef.current;
+    const name = ref.name;
+    const error = {};
+    const isRadio = isRadioInput(ref);
+    const isCheckBox = isCheckBoxInput(ref);
+    const isRadioOrCheckbox = isRadio || isCheckBox;
+    const isEmpty = value === '';
+    const appendErrorsCurry = appendErrors.bind(null, name, validateAllFieldCriteria, error);
+    const getMinMaxMessage = (exceedMax, maxLengthMessage, minLengthMessage, maxType = INPUT_VALIDATION_RULES.maxLength, minType = INPUT_VALIDATION_RULES.minLength) => {
+        const message = exceedMax ? maxLengthMessage : minLengthMessage;
+        error[name] = Object.assign({ type: exceedMax ? maxType : minType, message,
+            ref }, (exceedMax
+            ? appendErrorsCurry(maxType, message)
+            : appendErrorsCurry(minType, message)));
+    };
+    if (required &&
+        ((!isRadio && !isCheckBox && (isEmpty || isNullOrUndefined(value))) ||
+            (isBoolean(value) && !value) ||
+            (isCheckBox && !getCheckboxValue(options).isValid) ||
+            (isRadio && !getRadioValue(options).isValid))) {
+        const { value: requiredValue, message: requiredMessage } = isMessage(required)
+            ? { value: !!required, message: required }
+            : getValueAndMessage(required);
+        if (requiredValue) {
+            error[name] = Object.assign({ type: INPUT_VALIDATION_RULES.required, message: requiredMessage, ref: isRadioOrCheckbox
+                    ? (fields[name].options || [])[0].ref
+                    : ref }, appendErrorsCurry(INPUT_VALIDATION_RULES.required, requiredMessage));
+            if (!validateAllFieldCriteria) {
+                return error;
+            }
+        }
+    }
+    if (!isNullOrUndefined(min) || !isNullOrUndefined(max)) {
+        let exceedMax;
+        let exceedMin;
+        const { value: maxValue, message: maxMessage } = getValueAndMessage(max);
+        const { value: minValue, message: minMessage } = getValueAndMessage(min);
+        if (type === 'number' || (!type && !isNaN(value))) {
+            const valueNumber = ref.valueAsNumber || parseFloat(value);
+            if (!isNullOrUndefined(maxValue)) {
+                exceedMax = valueNumber > maxValue;
+            }
+            if (!isNullOrUndefined(minValue)) {
+                exceedMin = valueNumber < minValue;
+            }
+        }
+        else {
+            const valueDate = ref.valueAsDate || new Date(value);
+            if (isString(maxValue)) {
+                exceedMax = valueDate > new Date(maxValue);
+            }
+            if (isString(minValue)) {
+                exceedMin = valueDate < new Date(minValue);
+            }
+        }
+        if (exceedMax || exceedMin) {
+            getMinMaxMessage(!!exceedMax, maxMessage, minMessage, INPUT_VALIDATION_RULES.max, INPUT_VALIDATION_RULES.min);
+            if (!validateAllFieldCriteria) {
+                return error;
+            }
+        }
+    }
+    if (isString(value) && !isEmpty && (maxLength || minLength)) {
+        const { value: maxLengthValue, message: maxLengthMessage, } = getValueAndMessage(maxLength);
+        const { value: minLengthValue, message: minLengthMessage, } = getValueAndMessage(minLength);
+        const inputLength = value.toString().length;
+        const exceedMax = !isNullOrUndefined(maxLengthValue) && inputLength > maxLengthValue;
+        const exceedMin = !isNullOrUndefined(minLengthValue) && inputLength < minLengthValue;
+        if (exceedMax || exceedMin) {
+            getMinMaxMessage(!!exceedMax, maxLengthMessage, minLengthMessage);
+            if (!validateAllFieldCriteria) {
+                return error;
+            }
+        }
+    }
+    if (pattern && !isEmpty) {
+        const { value: patternValue, message: patternMessage } = getValueAndMessage(pattern);
+        if (isRegex(patternValue) && !patternValue.test(value)) {
+            error[name] = Object.assign({ type: INPUT_VALIDATION_RULES.pattern, message: patternMessage, ref }, appendErrorsCurry(INPUT_VALIDATION_RULES.pattern, patternMessage));
+            if (!validateAllFieldCriteria) {
+                return error;
+            }
+        }
+    }
+    if (validate) {
+        const fieldValue = getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef);
+        const validateRef = isRadioOrCheckbox && options ? options[0].ref : ref;
+        if (isFunction(validate)) {
+            const result = await validate(fieldValue);
+            const validateError = getValidateError(result, validateRef);
+            if (validateError) {
+                error[name] = Object.assign(Object.assign({}, validateError), appendErrorsCurry(INPUT_VALIDATION_RULES.validate, validateError.message));
+                if (!validateAllFieldCriteria) {
+                    return error;
+                }
+            }
+        }
+        else if (isObject(validate)) {
+            let validationResult = {};
+            for (const [key, validateFunction] of Object.entries(validate)) {
+                if (!isEmptyObject(validationResult) && !validateAllFieldCriteria) {
+                    break;
+                }
+                const validateResult = await validateFunction(fieldValue);
+                const validateError = getValidateError(validateResult, validateRef, key);
+                if (validateError) {
+                    validationResult = Object.assign(Object.assign({}, validateError), appendErrorsCurry(key, validateError.message));
+                    if (validateAllFieldCriteria) {
+                        error[name] = validationResult;
+                    }
+                }
+            }
+            if (!isEmptyObject(validationResult)) {
+                error[name] = Object.assign({ ref: validateRef }, validationResult);
+                if (!validateAllFieldCriteria) {
+                    return error;
+                }
+            }
+        }
+    }
+    return error;
+};
+
+var isPrimitive = (value) => isNullOrUndefined(value) || !isObjectType(value);
+
+const getPath = (path, values) => {
+    const getInnerPath = (value, key, isObject) => {
+        const pathWithIndex = isObject ? `${path}.${key}` : `${path}[${key}]`;
+        return isPrimitive(value) ? pathWithIndex : getPath(pathWithIndex, value);
+    };
+    return Object.entries(values)
+        .map(([key, value]) => getInnerPath(value, key, isObject(values)))
+        .flat(Infinity);
+};
+
+var assignWatchFields = (fieldValues, fieldName, watchFields, inputValue, isSingleField) => {
+    let value;
+    watchFields.add(fieldName);
+    if (isEmptyObject(fieldValues)) {
+        value = undefined;
+    }
+    else {
+        value = get(fieldValues, fieldName);
+        if (isObject(value) || isArray(value)) {
+            getPath(fieldName, value).forEach((name) => watchFields.add(name));
+        }
+    }
+    return isUndefined(value)
+        ? isSingleField
+            ? inputValue
+            : get(inputValue, fieldName)
+        : value;
+};
+
+var skipValidation = ({ isOnBlur, isOnChange, isReValidateOnBlur, isReValidateOnChange, isBlurEvent, isSubmitted, }) => {
+    if (isSubmitted ? isReValidateOnBlur : isOnBlur) {
+        return !isBlurEvent;
+    }
+    else if (isSubmitted ? isReValidateOnChange : isOnChange) {
+        return isBlurEvent;
+    }
+    return true;
+};
+
+var getFieldArrayParentName = (name) => name.substring(0, name.indexOf('['));
+
+function getIsFieldsDifferent(referenceArray, differenceArray) {
+    if (!isArray(referenceArray) ||
+        !isArray(differenceArray) ||
+        referenceArray.length !== differenceArray.length) {
+        return true;
+    }
+    for (let i = 0; i < referenceArray.length; i++) {
+        const dataA = referenceArray[i];
+        const dataB = differenceArray[i];
+        if (isUndefined(dataB) ||
+            Object.keys(dataA).length !== Object.keys(dataB).length) {
+            return true;
+        }
+        for (const key in dataA) {
+            if (dataA[key] !== dataB[key]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+const isMatchFieldArrayName = (name, searchName) => RegExp(`^${searchName}[\\d+]`.replace(/\[/g, '\\[').replace(/\]/g, '\\]')).test(name);
+var isNameInFieldArray = (names, name) => [...names].some((current) => isMatchFieldArrayName(name, current));
+
+var isSelectInput = (element) => element.type === `${SELECT}-one`;
+
+function onDomRemove(element, onDetachCallback) {
+    const observer = new MutationObserver(() => {
+        if (isDetached(element)) {
+            observer.disconnect();
+            onDetachCallback();
+        }
+    });
+    observer.observe(window.document, {
+        childList: true,
+        subtree: true,
+    });
+    return observer;
+}
+
+var modeChecker = (mode) => ({
+    isOnSubmit: !mode || mode === VALIDATION_MODE.onSubmit,
+    isOnBlur: mode === VALIDATION_MODE.onBlur,
+    isOnChange: mode === VALIDATION_MODE.onChange,
+    isOnAll: mode === VALIDATION_MODE.all,
+});
+
+var isRadioOrCheckboxFunction = (ref) => isRadioInput(ref) || isCheckBoxInput(ref);
+
+const isWindowUndefined = typeof window === UNDEFINED;
+const isWeb = typeof document !== UNDEFINED &&
+    !isWindowUndefined &&
+    !isUndefined(window.HTMLElement);
+const isProxyEnabled = isWeb ? 'Proxy' in window : typeof Proxy !== UNDEFINED;
+function useForm({ mode = VALIDATION_MODE.onSubmit, reValidateMode = VALIDATION_MODE.onChange, resolver, context, defaultValues = {}, shouldFocusError = true, shouldUnregister = true, criteriaMode, } = {}) {
+    const fieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const errorsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const touchedFieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const fieldArrayDefaultValues = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const dirtyFieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const watchFieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(new Set());
+    const watchFieldsHookRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const watchFieldsHookRenderRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const fieldsWithValidationRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(new Set());
+    const validFieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(new Set());
+    const isValidRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(true);
+    const defaultValuesRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(defaultValues);
+    const defaultValuesAtRenderRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const isUnMount = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+    const isWatchAllRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+    const isSubmittedRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+    const isDirtyRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+    const submitCountRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(0);
+    const isSubmittingRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+    const handleChangeRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+    const unmountFieldsStateRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const resetFieldArrayFunctionRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({});
+    const contextRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(context);
+    const resolverRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(resolver);
+    const fieldArrayNamesRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(new Set());
+    const [, render] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+    const { current: { isOnBlur, isOnSubmit, isOnChange, isOnAll }, } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(modeChecker(mode));
+    const isValidateAllFieldCriteria = criteriaMode === VALIDATION_MODE.all;
+    const readFormStateRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({
+        isDirty: !isProxyEnabled,
+        dirtyFields: !isProxyEnabled,
+        isSubmitted: isOnSubmit,
+        submitCount: !isProxyEnabled,
+        touched: !isProxyEnabled,
+        isSubmitting: !isProxyEnabled,
+        isValid: !isProxyEnabled,
+    });
+    const { current: { isOnBlur: isReValidateOnBlur, isOnChange: isReValidateOnChange }, } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(modeChecker(reValidateMode));
+    contextRef.current = context;
+    resolverRef.current = resolver;
+    const reRender = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => !isUnMount.current && render({}), []);
+    const shouldRenderBaseOnError = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((name, error, shouldRender = false) => {
+        let shouldReRender = shouldRender ||
+            shouldRenderBasedOnError({
+                errors: errorsRef.current,
+                error,
+                name,
+                validFields: validFieldsRef.current,
+                fieldsWithValidation: fieldsWithValidationRef.current,
+            });
+        const previousError = get(errorsRef.current, name);
+        if (isEmptyObject(error)) {
+            if (fieldsWithValidationRef.current.has(name) || resolverRef.current) {
+                validFieldsRef.current.add(name);
+                shouldReRender = shouldReRender || previousError;
+            }
+            errorsRef.current = unset(errorsRef.current, name);
+        }
+        else {
+            validFieldsRef.current.delete(name);
+            shouldReRender =
+                shouldReRender ||
+                    !previousError ||
+                    !isSameError(previousError, error[name]);
+            set(errorsRef.current, name, error[name]);
+        }
+        if (shouldReRender && !isNullOrUndefined(shouldRender)) {
+            reRender();
+            return true;
+        }
+    }, []);
+    const setFieldValue = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(({ ref, options }, rawValue) => {
+        const value = isWeb && isHTMLElement(ref) && isNullOrUndefined(rawValue)
+            ? ''
+            : rawValue;
+        if (isRadioInput(ref) && options) {
+            options.forEach(({ ref: radioRef }) => (radioRef.checked = radioRef.value === value));
+        }
+        else if (isFileInput(ref) && !isString(value)) {
+            ref.files = value;
+        }
+        else if (isMultipleSelect(ref)) {
+            [...ref.options].forEach((selectRef) => (selectRef.selected = value.includes(selectRef.value)));
+        }
+        else if (isCheckBoxInput(ref) && options) {
+            options.length > 1
+                ? options.forEach(({ ref: checkboxRef }) => (checkboxRef.checked = value.includes(checkboxRef.value)))
+                : (options[0].ref.checked = !!value);
+        }
+        else {
+            ref.value = value;
+        }
+    }, []);
+    const setDirty = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((name) => {
+        const { isDirty, dirtyFields } = readFormStateRef.current;
+        if (!fieldsRef.current[name] || (!isDirty && !dirtyFields)) {
+            return false;
+        }
+        const isFieldDirty = defaultValuesAtRenderRef.current[name] !==
+            getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef);
+        const isDirtyFieldExist = get(dirtyFieldsRef.current, name);
+        const isFieldArray = isNameInFieldArray(fieldArrayNamesRef.current, name);
+        const previousIsDirty = isDirtyRef.current;
+        if (isFieldDirty) {
+            set(dirtyFieldsRef.current, name, true);
+        }
+        else {
+            unset(dirtyFieldsRef.current, name);
+        }
+        isDirtyRef.current =
+            (isFieldArray &&
+                getIsFieldsDifferent(get(getValues(), getFieldArrayParentName(name)), get(defaultValuesRef.current, getFieldArrayParentName(name)))) ||
+                !isEmptyObject(dirtyFieldsRef.current);
+        return ((isDirty && previousIsDirty !== isDirtyRef.current) ||
+            (dirtyFields && isDirtyFieldExist !== get(dirtyFieldsRef.current, name)));
+    }, []);
+    const executeValidation = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async (name, skipReRender) => {
+        if (fieldsRef.current[name]) {
+            const error = await validateField(fieldsRef, isValidateAllFieldCriteria, fieldsRef.current[name], unmountFieldsStateRef, defaultValuesRef);
+            shouldRenderBaseOnError(name, error, skipReRender ? null : false);
+            return isEmptyObject(error);
+        }
+        return false;
+    }, [shouldRenderBaseOnError, isValidateAllFieldCriteria]);
+    const executeSchemaOrResolverValidation = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async (payload) => {
+        const { errors } = await resolverRef.current(getValues(), contextRef.current, isValidateAllFieldCriteria);
+        const previousFormIsValid = isValidRef.current;
+        isValidRef.current = isEmptyObject(errors);
+        if (isArray(payload)) {
+            const isInputsValid = payload
+                .map((name) => {
+                const error = get(errors, name);
+                if (error) {
+                    set(errorsRef.current, name, error);
+                }
+                else {
+                    unset(errorsRef.current, name);
+                }
+                return !error;
+            })
+                .every(Boolean);
+            reRender();
+            return isInputsValid;
+        }
+        else {
+            const error = get(errors, payload);
+            shouldRenderBaseOnError(payload, (error ? { [payload]: error } : {}), previousFormIsValid !== isValidRef.current);
+            return !error;
+        }
+    }, [shouldRenderBaseOnError, isValidateAllFieldCriteria]);
+    const trigger = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async (name) => {
+        const fields = name || Object.keys(fieldsRef.current);
+        if (resolverRef.current) {
+            return executeSchemaOrResolverValidation(fields);
+        }
+        if (isArray(fields)) {
+            const result = await Promise.all(fields.map(async (data) => await executeValidation(data, true)));
+            reRender();
+            return result.every(Boolean);
+        }
+        return await executeValidation(fields);
+    }, [executeSchemaOrResolverValidation, executeValidation]);
+    const setInternalValues = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((name, value, { shouldDirty, shouldValidate }) => {
+        getPath(name, value).forEach((fieldName) => {
+            const data = {};
+            const field = fieldsRef.current[fieldName];
+            if (field) {
+                set(data, name, value);
+                setFieldValue(field, get(data, fieldName));
+                if (shouldDirty) {
+                    setDirty(fieldName);
+                }
+                if (shouldValidate) {
+                    trigger(fieldName);
+                }
+            }
+        });
+    }, [trigger, setFieldValue, setDirty]);
+    const setInternalValue = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((name, value, config) => {
+        if (fieldsRef.current[name]) {
+            setFieldValue(fieldsRef.current[name], value);
+            return config.shouldDirty && setDirty(name);
+        }
+        else if (!isPrimitive(value)) {
+            setInternalValues(name, value, config);
+        }
+        if (!shouldUnregister) {
+            unmountFieldsStateRef.current[name] = value;
+        }
+        return true;
+    }, [setDirty, setFieldValue, setInternalValues]);
+    const isFieldWatched = (name) => isWatchAllRef.current ||
+        watchFieldsRef.current.has(name) ||
+        watchFieldsRef.current.has((name.match(/\w+/) || [])[0]);
+    const renderWatchedInputs = (name, found = true) => {
+        if (!isEmptyObject(watchFieldsHookRef.current)) {
+            for (const key in watchFieldsHookRef.current) {
+                if (name === '' ||
+                    watchFieldsHookRef.current[key].has(name) ||
+                    watchFieldsHookRef.current[key].has(getFieldArrayParentName(name)) ||
+                    !watchFieldsHookRef.current[key].size) {
+                    watchFieldsHookRenderRef.current[key]();
+                    found = false;
+                }
+            }
+        }
+        return found;
+    };
+    function setValue(name, value, config = {}) {
+        const shouldRender = setInternalValue(name, value, config) ||
+            isFieldWatched(name);
+        renderWatchedInputs(name);
+        if (shouldRender) {
+            reRender();
+        }
+        if (config.shouldValidate) {
+            trigger(name);
+        }
+    }
+    handleChangeRef.current = handleChangeRef.current
+        ? handleChangeRef.current
+        : async ({ type, target }) => {
+            const name = target.name;
+            const field = fieldsRef.current[name];
+            let error;
+            if (field) {
+                const isBlurEvent = type === EVENTS.BLUR;
+                const shouldSkipValidation = !isOnAll &&
+                    skipValidation({
+                        isOnChange,
+                        isOnBlur,
+                        isBlurEvent,
+                        isReValidateOnChange,
+                        isReValidateOnBlur,
+                        isSubmitted: isSubmittedRef.current,
+                    });
+                let shouldRender = setDirty(name) || isFieldWatched(name);
+                if (isBlurEvent &&
+                    !get(touchedFieldsRef.current, name) &&
+                    readFormStateRef.current.touched) {
+                    set(touchedFieldsRef.current, name, true);
+                    shouldRender = true;
+                }
+                if (shouldSkipValidation) {
+                    renderWatchedInputs(name);
+                    return shouldRender && reRender();
+                }
+                if (resolver) {
+                    const { errors } = await resolver(getValues(), contextRef.current, isValidateAllFieldCriteria);
+                    const previousFormIsValid = isValidRef.current;
+                    isValidRef.current = isEmptyObject(errors);
+                    error = (get(errors, name)
+                        ? { [name]: get(errors, name) }
+                        : {});
+                    if (previousFormIsValid !== isValidRef.current) {
+                        shouldRender = true;
+                    }
+                }
+                else {
+                    error = await validateField(fieldsRef, isValidateAllFieldCriteria, field, unmountFieldsStateRef, defaultValuesRef);
+                }
+                renderWatchedInputs(name);
+                if (!shouldRenderBaseOnError(name, error) && shouldRender) {
+                    reRender();
+                }
+            }
+        };
+    function getValues(payload) {
+        if (isString(payload)) {
+            return getFieldValue(fieldsRef, payload, unmountFieldsStateRef, defaultValuesRef);
+        }
+        if (isArray(payload)) {
+            return payload.reduce((previous, name) => (Object.assign(Object.assign({}, previous), { [name]: getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef) })), {});
+        }
+        return getFieldsValues(fieldsRef, unmountFieldsStateRef, defaultValuesRef);
+    }
+    const validateResolver = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async (values = {}) => {
+        const { errors } = await resolverRef.current(Object.assign(Object.assign(Object.assign({}, defaultValuesRef.current), getValues()), values), contextRef.current, isValidateAllFieldCriteria);
+        const previousFormIsValid = isValidRef.current;
+        isValidRef.current = isEmptyObject(errors);
+        if (previousFormIsValid !== isValidRef.current) {
+            reRender();
+        }
+    }, [isValidateAllFieldCriteria]);
+    const removeFieldEventListener = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((field, forceDelete) => findRemovedFieldAndRemoveListener(fieldsRef, handleChangeRef.current, field, unmountFieldsStateRef, defaultValuesRef, shouldUnregister, forceDelete), [shouldUnregister]);
+    const removeFieldEventListenerAndRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((field, forceDelete) => {
+        if (field &&
+            (!isNameInFieldArray(fieldArrayNamesRef.current, field.ref.name) ||
+                forceDelete)) {
+            removeFieldEventListener(field, forceDelete);
+            if (shouldUnregister) {
+                [
+                    errorsRef,
+                    touchedFieldsRef,
+                    dirtyFieldsRef,
+                    defaultValuesAtRenderRef,
+                ].forEach((data) => unset(data.current, field.ref.name));
+                [fieldsWithValidationRef, validFieldsRef].forEach((data) => data.current.delete(field.ref.name));
+                if (readFormStateRef.current.isValid ||
+                    readFormStateRef.current.touched ||
+                    readFormStateRef.current.isDirty) {
+                    isDirtyRef.current = !isEmptyObject(dirtyFieldsRef.current);
+                    reRender();
+                    if (resolverRef.current) {
+                        validateResolver();
+                    }
+                }
+            }
+        }
+    }, [validateResolver, removeFieldEventListener]);
+    function clearErrors(name) {
+        if (name) {
+            (isArray(name) ? name : [name]).forEach((inputName) => unset(errorsRef.current, inputName));
+        }
+        else {
+            errorsRef.current = {};
+        }
+        reRender();
+    }
+    function setError(name, error) {
+        isValidRef.current = false;
+        set(errorsRef.current, name, Object.assign(Object.assign({}, error), { ref: (fieldsRef.current[name] || {}).ref }));
+        reRender();
+    }
+    const watchInternal = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((fieldNames, defaultValue, watchId) => {
+        const watchFields = watchId
+            ? watchFieldsHookRef.current[watchId]
+            : watchFieldsRef.current;
+        const combinedDefaultValues = isUndefined(defaultValue)
+            ? defaultValuesRef.current
+            : defaultValue;
+        const fieldValues = getFieldsValues(fieldsRef, unmountFieldsStateRef, defaultValuesRef, fieldNames);
+        if (isString(fieldNames)) {
+            return assignWatchFields(fieldValues, fieldNames, watchFields, isUndefined(defaultValue)
+                ? get(combinedDefaultValues, fieldNames)
+                : defaultValue, true);
+        }
+        if (isArray(fieldNames)) {
+            return fieldNames.reduce((previous, name) => (Object.assign(Object.assign({}, previous), { [name]: assignWatchFields(fieldValues, name, watchFields, combinedDefaultValues) })), {});
+        }
+        if (isUndefined(watchId)) {
+            isWatchAllRef.current = true;
+        }
+        return transformToNestObject((!isEmptyObject(fieldValues) && fieldValues) ||
+            combinedDefaultValues);
+    }, []);
+    function watch(fieldNames, defaultValue) {
+        return watchInternal(fieldNames, defaultValue);
+    }
+    function unregister(name) {
+        (isArray(name) ? name : [name]).forEach((fieldName) => removeFieldEventListenerAndRef(fieldsRef.current[fieldName], true));
+    }
+    function registerFieldRef(ref, validateOptions = {}) {
+        if ( true && !ref.name) {
+            // eslint-disable-next-line no-console
+            return console.warn('Missing name @', ref);
+        }
+        const { name, type, value } = ref;
+        const fieldRefAndValidationOptions = Object.assign({ ref }, validateOptions);
+        const fields = fieldsRef.current;
+        const isRadioOrCheckbox = isRadioOrCheckboxFunction(ref);
+        let field = fields[name];
+        let isEmptyDefaultValue = true;
+        let isFieldArray;
+        let defaultValue;
+        if (field &&
+            (isRadioOrCheckbox
+                ? isArray(field.options) &&
+                    unique(field.options).find((option) => {
+                        return value === option.ref.value && option.ref === ref;
+                    })
+                : ref === field.ref)) {
+            fields[name] = Object.assign(Object.assign({}, field), validateOptions);
+            return;
+        }
+        if (type) {
+            const mutationWatcher = onDomRemove(ref, () => removeFieldEventListenerAndRef(field));
+            field = isRadioOrCheckbox
+                ? Object.assign({ options: [
+                        ...unique((field && field.options) || []),
+                        {
+                            ref,
+                            mutationWatcher,
+                        },
+                    ], ref: { type, name } }, validateOptions) : Object.assign(Object.assign({}, fieldRefAndValidationOptions), { mutationWatcher });
+        }
+        else {
+            field = fieldRefAndValidationOptions;
+        }
+        fields[name] = field;
+        const isEmptyUnmountFields = isUndefined(get(unmountFieldsStateRef.current, name));
+        if (!isEmptyObject(defaultValuesRef.current) || !isEmptyUnmountFields) {
+            defaultValue = get(isEmptyUnmountFields
+                ? defaultValuesRef.current
+                : unmountFieldsStateRef.current, name);
+            isEmptyDefaultValue = isUndefined(defaultValue);
+            isFieldArray = isNameInFieldArray(fieldArrayNamesRef.current, name);
+            if (!isEmptyDefaultValue && !isFieldArray) {
+                setFieldValue(field, defaultValue);
+            }
+        }
+        if (resolver && !isFieldArray && readFormStateRef.current.isValid) {
+            validateResolver();
+        }
+        else if (!isEmptyObject(validateOptions)) {
+            fieldsWithValidationRef.current.add(name);
+            if (!isOnSubmit && readFormStateRef.current.isValid) {
+                validateField(fieldsRef, isValidateAllFieldCriteria, field, unmountFieldsStateRef, defaultValuesRef).then((error) => {
+                    const previousFormIsValid = isValidRef.current;
+                    isEmptyObject(error)
+                        ? validFieldsRef.current.add(name)
+                        : (isValidRef.current = false);
+                    if (previousFormIsValid !== isValidRef.current) {
+                        reRender();
+                    }
+                });
+            }
+        }
+        if (!defaultValuesAtRenderRef.current[name] &&
+            !(isFieldArray && isEmptyDefaultValue)) {
+            const fieldValue = getFieldValue(fieldsRef, name, unmountFieldsStateRef, defaultValuesRef);
+            defaultValuesAtRenderRef.current[name] = isEmptyDefaultValue
+                ? isObject(fieldValue)
+                    ? Object.assign({}, fieldValue) : fieldValue
+                : defaultValue;
+        }
+        if (type) {
+            attachEventListeners(isRadioOrCheckbox && field.options
+                ? field.options[field.options.length - 1]
+                : field, isRadioOrCheckbox || isSelectInput(ref), handleChangeRef.current);
+        }
+    }
+    function register(refOrValidationOptions, rules) {
+        if (!isWindowUndefined) {
+            if (isString(refOrValidationOptions)) {
+                registerFieldRef({ name: refOrValidationOptions }, rules);
+            }
+            else if (isObject(refOrValidationOptions) &&
+                'name' in refOrValidationOptions) {
+                registerFieldRef(refOrValidationOptions, rules);
+            }
+            else {
+                return (ref) => ref && registerFieldRef(ref, refOrValidationOptions);
+            }
+        }
+    }
+    const handleSubmit = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((callback) => async (e) => {
+        if (e && e.preventDefault) {
+            e.preventDefault();
+            e.persist();
+        }
+        let fieldErrors = {};
+        let fieldValues = getFieldsValues(fieldsRef, unmountFieldsStateRef);
+        if (readFormStateRef.current.isSubmitting) {
+            isSubmittingRef.current = true;
+            reRender();
+        }
+        try {
+            if (resolverRef.current) {
+                const { errors, values } = await resolverRef.current(fieldValues, contextRef.current, isValidateAllFieldCriteria);
+                errorsRef.current = errors;
+                fieldErrors = errors;
+                fieldValues = values;
+            }
+            else {
+                for (const field of Object.values(fieldsRef.current)) {
+                    if (field) {
+                        const { ref: { name }, } = field;
+                        const fieldError = await validateField(fieldsRef, isValidateAllFieldCriteria, field, unmountFieldsStateRef, defaultValuesRef);
+                        if (fieldError[name]) {
+                            set(fieldErrors, name, fieldError[name]);
+                            validFieldsRef.current.delete(name);
+                        }
+                        else if (fieldsWithValidationRef.current.has(name)) {
+                            unset(errorsRef.current, name);
+                            validFieldsRef.current.add(name);
+                        }
+                    }
+                }
+            }
+            if (isEmptyObject(fieldErrors) &&
+                Object.keys(errorsRef.current).every((name) => Object.keys(fieldsRef.current).includes(name))) {
+                errorsRef.current = {};
+                reRender();
+                await callback(fieldValues, e);
+            }
+            else {
+                errorsRef.current = Object.assign(Object.assign({}, errorsRef.current), fieldErrors);
+                if (shouldFocusError) {
+                    focusOnErrorField(fieldsRef.current, fieldErrors);
+                }
+            }
+        }
+        finally {
+            isSubmittedRef.current = true;
+            isSubmittingRef.current = false;
+            submitCountRef.current = submitCountRef.current + 1;
+            reRender();
+        }
+    }, [shouldFocusError, isValidateAllFieldCriteria]);
+    const resetRefs = ({ errors, isDirty, isSubmitted, touched, isValid, submitCount, dirtyFields, }) => {
+        if (!errors) {
+            errorsRef.current = {};
+        }
+        if (!touched) {
+            touchedFieldsRef.current = {};
+        }
+        if (!isValid) {
+            validFieldsRef.current = new Set();
+            fieldsWithValidationRef.current = new Set();
+            isValidRef.current = true;
+        }
+        if (!isDirty) {
+            isDirtyRef.current = false;
+        }
+        if (!dirtyFields) {
+            dirtyFieldsRef.current = {};
+        }
+        if (!isSubmitted) {
+            isSubmittedRef.current = false;
+        }
+        if (!submitCount) {
+            submitCountRef.current = 0;
+        }
+        defaultValuesAtRenderRef.current = {};
+        fieldArrayDefaultValues.current = {};
+        watchFieldsRef.current = new Set();
+        isWatchAllRef.current = false;
+    };
+    const reset = (values, omitResetState = {}) => {
+        if (isWeb) {
+            for (const field of Object.values(fieldsRef.current)) {
+                if (field) {
+                    const { ref, options } = field;
+                    const inputRef = isRadioOrCheckboxFunction(ref) && isArray(options)
+                        ? options[0].ref
+                        : ref;
+                    if (isHTMLElement(inputRef)) {
+                        try {
+                            inputRef.closest('form').reset();
+                            break;
+                        }
+                        catch (_a) { }
+                    }
+                }
+            }
+        }
+        fieldsRef.current = {};
+        if (values) {
+            defaultValuesRef.current = values;
+            renderWatchedInputs('');
+        }
+        unmountFieldsStateRef.current = shouldUnregister ? {} : values || {};
+        Object.values(resetFieldArrayFunctionRef.current).forEach((resetFieldArray) => isFunction(resetFieldArray) && resetFieldArray());
+        resetRefs(omitResetState);
+        reRender();
+    };
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        isUnMount.current = false;
+        return () => {
+            isUnMount.current = true;
+            fieldsRef.current &&
+                "development" === 'production' &&
+                Object.values(fieldsRef.current).forEach((field) => removeFieldEventListenerAndRef(field, true));
+        };
+    }, [removeFieldEventListenerAndRef]);
+    if (!resolver) {
+        isValidRef.current =
+            validFieldsRef.current.size >= fieldsWithValidationRef.current.size &&
+                isEmptyObject(errorsRef.current);
+    }
+    const formState = {
+        dirtyFields: dirtyFieldsRef.current,
+        isSubmitted: isSubmittedRef.current,
+        submitCount: submitCountRef.current,
+        touched: touchedFieldsRef.current,
+        isDirty: isDirtyRef.current,
+        isSubmitting: isSubmittingRef.current,
+        isValid: isOnSubmit
+            ? isSubmittedRef.current && isEmptyObject(errorsRef.current)
+            : isValidRef.current,
+    };
+    const commonProps = {
+        trigger,
+        setValue: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(setValue, [
+            reRender,
+            setInternalValue,
+            trigger,
+        ]),
+        getValues: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(getValues, []),
+        register: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(register, [defaultValuesRef.current]),
+        unregister: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(unregister, []),
+        formState: isProxyEnabled
+            ? new Proxy(formState, {
+                get: (obj, prop) => {
+                    if (prop in obj) {
+                        readFormStateRef.current[prop] = true;
+                        return obj[prop];
+                    }
+                    return undefined;
+                },
+            })
+            : formState,
+    };
+    const control = Object.assign(Object.assign(Object.assign({ removeFieldEventListener,
+        renderWatchedInputs,
+        watchInternal,
+        reRender }, (resolver ? { validateSchemaIsValid: validateResolver } : {})), { mode: {
+            isOnBlur,
+            isOnSubmit,
+            isOnChange,
+        }, reValidateMode: {
+            isReValidateOnBlur,
+            isReValidateOnChange,
+        }, errorsRef,
+        touchedFieldsRef,
+        fieldsRef,
+        isWatchAllRef,
+        watchFieldsRef,
+        resetFieldArrayFunctionRef,
+        watchFieldsHookRef,
+        watchFieldsHookRenderRef,
+        fieldArrayDefaultValues,
+        validFieldsRef,
+        dirtyFieldsRef,
+        fieldsWithValidationRef,
+        fieldArrayNamesRef,
+        isDirtyRef,
+        isSubmittedRef,
+        readFormStateRef,
+        defaultValuesRef,
+        unmountFieldsStateRef }), commonProps);
+    return Object.assign({ watch,
+        control,
+        handleSubmit, reset: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(reset, []), clearErrors: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(clearErrors, []), setError: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(setError, []), errors: errorsRef.current }, commonProps);
+}
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+const FormContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])(null);
+FormContext.displayName = 'RHFContext';
+const useFormContext = () => Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(FormContext);
+const FormProvider = (_a) => {
+    var { children } = _a, props = __rest(_a, ["children"]);
+    return (Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(FormContext.Provider, { value: Object.assign({}, props) }, children));
+};
+
+var generateId = () => {
+    const d = typeof performance === UNDEFINED ? Date.now() : performance.now() * 1000;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        const r = (Math.random() * 16 + d) % 16 | 0;
+        return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16);
+    });
+};
+
+const removeAt = (data, index) => [
+    ...data.slice(0, index),
+    ...data.slice(index + 1),
+];
+function removeAtIndexes(data, index) {
+    let k = -1;
+    while (++k < data.length) {
+        if (index.indexOf(k) >= 0) {
+            delete data[k];
+        }
+    }
+    return unique(data);
+}
+var removeArrayAt = (data, index) => isUndefined(index)
+    ? []
+    : isArray(index)
+        ? removeAtIndexes(data, index)
+        : removeAt(data, index);
+
+var moveArrayAt = (data, from, to) => {
+    if (isArray(data)) {
+        if (isUndefined(data[to])) {
+            data[to] = undefined;
+        }
+        data.splice(to, 0, data.splice(from, 1)[0]);
+        return data;
+    }
+    return [];
+};
+
+var swapArrayAt = (data, indexA, indexB) => {
+    const temp = [data[indexB], data[indexA]];
+    data[indexA] = temp[0];
+    data[indexB] = temp[1];
+};
+
+function prepend(data, value) {
+    return [...(isArray(value) ? value : [value || undefined]), ...data];
+}
+
+function insert(data, index, value) {
+    return [
+        ...data.slice(0, index),
+        ...(isArray(value) ? value : [value || undefined]),
+        ...data.slice(index),
+    ];
+}
+
+var fillEmptyArray = (value) => isArray(value) ? Array(value.length).fill(undefined) : undefined;
+
+function mapValueToBoolean(value) {
+    if (isObject(value)) {
+        const object = {};
+        for (const key in value) {
+            object[key] = true;
+        }
+        return [object];
+    }
+    return [true];
+}
+const filterBooleanArray = (value) => isArray(value)
+    ? value.map(mapValueToBoolean).flat()
+    : mapValueToBoolean(value);
+
+const appendId = (value, keyName) => (Object.assign({ [keyName]: generateId() }, (isObject(value) ? value : { value })));
+const mapIds = (data, keyName) => (isArray(data) ? data : []).map((value) => appendId(value, keyName));
+const useFieldArray = ({ control, name, keyName = 'id', }) => {
+    const methods = useFormContext();
+    const focusIndexRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(-1);
+    const { isWatchAllRef, resetFieldArrayFunctionRef, fieldArrayNamesRef, reRender, fieldsRef, defaultValuesRef, removeFieldEventListener, errorsRef, dirtyFieldsRef, isDirtyRef, touchedFieldsRef, readFormStateRef, watchFieldsRef, validFieldsRef, fieldsWithValidationRef, fieldArrayDefaultValues, validateSchemaIsValid, renderWatchedInputs, getValues, } = control || methods.control;
+    let shouldRender;
+    const getDefaultValues = () => [
+        ...get(fieldArrayDefaultValues.current[getFieldArrayParentName(name)]
+            ? fieldArrayDefaultValues.current
+            : defaultValuesRef.current, name, []),
+    ];
+    const memoizedDefaultValues = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(getDefaultValues());
+    const [fields, setField] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mapIds(memoizedDefaultValues.current, keyName));
+    const [isDeleted, setIsDeleted] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+    const allFields = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(fields);
+    const isNameKey = isKey(name);
+    const getCurrentFieldsValues = () => get(getValues() || {}, name, allFields.current).map((item, index) => (Object.assign(Object.assign({}, allFields.current[index]), item)));
+    allFields.current = fields;
+    if (isNameKey) {
+        fieldArrayDefaultValues.current[name] = memoizedDefaultValues.current;
+    }
+    const appendValueWithKey = (values) => values.map((value) => appendId(value, keyName));
+    const setFieldAndValidState = (fieldsValues) => {
+        setField(fieldsValues);
+        if (readFormStateRef.current.isValid && validateSchemaIsValid) {
+            validateSchemaIsValid({
+                [name]: fieldsValues,
+            });
+        }
+    };
+    const shouldRenderFieldArray = (shouldRender) => {
+        if (readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) {
+            shouldRender = true;
+        }
+        renderWatchedInputs(name);
+        shouldRender && !isWatchAllRef.current && reRender();
+    };
+    const resetFields = (flagOrFields) => {
+        if (readFormStateRef.current.isDirty ||
+            readFormStateRef.current.dirtyFields) {
+            isDirtyRef.current =
+                isUndefined(flagOrFields) ||
+                    getIsFieldsDifferent(flagOrFields, get(defaultValuesRef.current, name, []));
+        }
+        for (const key in fieldsRef.current) {
+            if (isMatchFieldArrayName(key, name) && fieldsRef.current[key]) {
+                removeFieldEventListener(fieldsRef.current[key], true);
+            }
+        }
+    };
+    const append = (value, shouldFocus = true) => {
+        shouldRender = false;
+        setFieldAndValidState([
+            ...allFields.current,
+            ...(isArray(value)
+                ? appendValueWithKey(value)
+                : [appendId(value, keyName)]),
+        ]);
+        if (readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) {
+            dirtyFieldsRef.current[name] = [
+                ...(dirtyFieldsRef.current[name] || fillEmptyArray(fields.slice(0, 1))),
+                ...filterBooleanArray(value),
+            ];
+            isDirtyRef.current = true;
+            shouldRender = true;
+        }
+        focusIndexRef.current = shouldFocus ? allFields.current.length : -1;
+        shouldRenderFieldArray(shouldRender);
+    };
+    const prepend$1 = (value, shouldFocus = true) => {
+        const emptyArray = fillEmptyArray(value);
+        shouldRender = false;
+        setFieldAndValidState(prepend(getCurrentFieldsValues(), isArray(value) ? appendValueWithKey(value) : [appendId(value, keyName)]));
+        resetFields();
+        if (isArray(get(errorsRef.current, name))) {
+            errorsRef.current[name] = prepend(get(errorsRef.current, name), emptyArray);
+        }
+        if (readFormStateRef.current.touched && touchedFieldsRef.current[name]) {
+            touchedFieldsRef.current[name] = prepend(touchedFieldsRef.current[name], emptyArray);
+            shouldRender = true;
+        }
+        if (readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) {
+            dirtyFieldsRef.current[name] = prepend(dirtyFieldsRef.current[name] || [], filterBooleanArray(value));
+            shouldRender = true;
+        }
+        shouldRenderFieldArray(shouldRender);
+        focusIndexRef.current = shouldFocus ? 0 : -1;
+    };
+    const remove = (index) => {
+        shouldRender = false;
+        const fieldValues = getCurrentFieldsValues();
+        setFieldAndValidState(removeArrayAt(fieldValues, index));
+        resetFields(removeArrayAt(fieldValues, index));
+        setIsDeleted(true);
+        if (isArray(get(errorsRef.current, name))) {
+            set(errorsRef.current, name, removeArrayAt(get(errorsRef.current, name), index));
+            if (!unique(get(errorsRef.current, name, [])).length) {
+                unset(errorsRef.current, name);
+            }
+        }
+        if (readFormStateRef.current.touched && touchedFieldsRef.current[name]) {
+            touchedFieldsRef.current[name] = removeArrayAt(touchedFieldsRef.current[name], index);
+            shouldRender = true;
+        }
+        if ((readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) &&
+            dirtyFieldsRef.current[name]) {
+            dirtyFieldsRef.current[name] = removeArrayAt(dirtyFieldsRef.current[name], index);
+            if (!dirtyFieldsRef.current[name].length) {
+                delete dirtyFieldsRef.current[name];
+            }
+            shouldRender = true;
+        }
+        if (readFormStateRef.current.isValid && !validateSchemaIsValid) {
+            let fieldIndex = -1;
+            let isFound = false;
+            const isIndexUndefined = isUndefined(index);
+            while (fieldIndex++ < fields.length) {
+                const isLast = fieldIndex === fields.length - 1;
+                const isCurrentIndex = (isArray(index) ? index : [index]).indexOf(fieldIndex) >= 0;
+                if (isCurrentIndex || isIndexUndefined) {
+                    isFound = true;
+                }
+                if (!isFound) {
+                    continue;
+                }
+                for (const key in fields[fieldIndex]) {
+                    const currentFieldName = `${name}[${fieldIndex}].${key}`;
+                    if (isCurrentIndex || isLast || isIndexUndefined) {
+                        validFieldsRef.current.delete(currentFieldName);
+                        fieldsWithValidationRef.current.delete(currentFieldName);
+                    }
+                    else {
+                        const previousFieldName = `${name}[${fieldIndex - 1}].${key}`;
+                        if (validFieldsRef.current.has(currentFieldName)) {
+                            validFieldsRef.current.add(previousFieldName);
+                        }
+                        if (fieldsWithValidationRef.current.has(currentFieldName)) {
+                            fieldsWithValidationRef.current.add(previousFieldName);
+                        }
+                    }
+                }
+            }
+        }
+        shouldRenderFieldArray(shouldRender);
+    };
+    const insert$1 = (index, value, shouldFocus = true) => {
+        shouldRender = false;
+        const emptyArray = fillEmptyArray(value);
+        const fieldValues = getCurrentFieldsValues();
+        setFieldAndValidState(insert(fieldValues, index, isArray(value) ? appendValueWithKey(value) : [appendId(value, keyName)]));
+        resetFields(insert(fieldValues, index));
+        if (isArray(get(errorsRef.current, name))) {
+            errorsRef.current[name] = insert(get(errorsRef.current, name), index, emptyArray);
+        }
+        if (readFormStateRef.current.touched && touchedFieldsRef.current[name]) {
+            touchedFieldsRef.current[name] = insert(touchedFieldsRef.current[name], index, emptyArray);
+            shouldRender = true;
+        }
+        if ((readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) &&
+            dirtyFieldsRef.current[name]) {
+            dirtyFieldsRef.current[name] = insert(dirtyFieldsRef.current[name], index, filterBooleanArray(value));
+            shouldRender = true;
+        }
+        shouldRenderFieldArray(shouldRender);
+        focusIndexRef.current = shouldFocus ? index : -1;
+    };
+    const swap = (indexA, indexB) => {
+        shouldRender = false;
+        const fieldValues = getCurrentFieldsValues();
+        swapArrayAt(fieldValues, indexA, indexB);
+        resetFields(fieldValues);
+        setFieldAndValidState([...fieldValues]);
+        if (isArray(get(errorsRef.current, name))) {
+            swapArrayAt(get(errorsRef.current, name), indexA, indexB);
+        }
+        if (readFormStateRef.current.touched && touchedFieldsRef.current[name]) {
+            swapArrayAt(touchedFieldsRef.current[name], indexA, indexB);
+            shouldRender = true;
+        }
+        if ((readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) &&
+            dirtyFieldsRef.current[name]) {
+            swapArrayAt(dirtyFieldsRef.current[name], indexA, indexB);
+            shouldRender = true;
+        }
+        shouldRenderFieldArray(shouldRender);
+    };
+    const move = (from, to) => {
+        shouldRender = false;
+        const fieldValues = getCurrentFieldsValues();
+        moveArrayAt(fieldValues, from, to);
+        resetFields(fieldValues);
+        setFieldAndValidState([...fieldValues]);
+        if (isArray(get(errorsRef.current, name))) {
+            moveArrayAt(get(errorsRef.current, name), from, to);
+        }
+        if (readFormStateRef.current.touched && touchedFieldsRef.current[name]) {
+            moveArrayAt(touchedFieldsRef.current[name], from, to);
+            shouldRender = true;
+        }
+        if ((readFormStateRef.current.dirtyFields ||
+            readFormStateRef.current.isDirty) &&
+            dirtyFieldsRef.current[name]) {
+            moveArrayAt(dirtyFieldsRef.current[name], from, to);
+            shouldRender = true;
+        }
+        shouldRenderFieldArray(shouldRender);
+    };
+    const reset = () => {
+        resetFields();
+        memoizedDefaultValues.current = getDefaultValues();
+        setField(mapIds(memoizedDefaultValues.current, keyName));
+    };
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        if (isNameKey &&
+            isDeleted &&
+            fieldArrayDefaultValues.current[name] &&
+            fields.length < fieldArrayDefaultValues.current[name].length) {
+            fieldArrayDefaultValues.current[name].pop();
+        }
+        if (isWatchAllRef.current) {
+            reRender();
+        }
+        else if (watchFieldsRef) {
+            let shouldRenderUseWatch = true;
+            for (const watchField of watchFieldsRef.current) {
+                if (watchField.startsWith(name)) {
+                    reRender();
+                    shouldRenderUseWatch = false;
+                    break;
+                }
+            }
+            shouldRenderUseWatch && renderWatchedInputs(name);
+        }
+        if (focusIndexRef.current > -1) {
+            for (const key in fieldsRef.current) {
+                const field = fieldsRef.current[key];
+                if (key.startsWith(`${name}[${focusIndexRef.current}]`) &&
+                    field.ref.focus) {
+                    field.ref.focus();
+                    break;
+                }
+            }
+        }
+        focusIndexRef.current = -1;
+    }, [
+        fields,
+        name,
+        fieldArrayDefaultValues,
+        isDeleted,
+        isNameKey,
+        reRender,
+        fieldsRef,
+        watchFieldsRef,
+        isWatchAllRef,
+    ]);
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        const resetFunctions = resetFieldArrayFunctionRef.current;
+        const fieldArrayNames = fieldArrayNamesRef.current;
+        fieldArrayNames.add(name);
+        resetFunctions[name] = reset;
+        return () => {
+            resetFields();
+            delete resetFunctions[name];
+            fieldArrayNames.delete(name);
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    return {
+        swap: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(swap, [name]),
+        move: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(move, [name]),
+        prepend: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(prepend$1, [name]),
+        append: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(append, [name]),
+        remove: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(remove, [fields, name]),
+        insert: Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(insert$1, [name]),
+        fields,
+    };
+};
+
+function useWatch({ control, name, defaultValue, }) {
+    const methods = useFormContext();
+    const { watchFieldsHookRef, watchFieldsHookRenderRef, watchInternal, defaultValuesRef, } = control || methods.control;
+    const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(isUndefined(defaultValue)
+        ? isString(name)
+            ? get(defaultValuesRef.current, name)
+            : isArray(name)
+                ? name.reduce((previous, inputName) => (Object.assign(Object.assign({}, previous), { [inputName]: get(defaultValuesRef.current, inputName) })), {})
+                : defaultValuesRef.current
+        : defaultValue);
+    const idRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+    const defaultValueRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(defaultValue);
+    const nameRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(name);
+    const updateWatchValue = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => setValue(watchInternal(nameRef.current, defaultValueRef.current, idRef.current)), [setValue, watchInternal, defaultValueRef, nameRef, idRef]);
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        const id = (idRef.current = generateId());
+        const watchFieldsHookRender = watchFieldsHookRenderRef.current;
+        const watchFieldsHook = watchFieldsHookRef.current;
+        watchFieldsHook[id] = new Set();
+        watchFieldsHookRender[id] = updateWatchValue;
+        watchInternal(nameRef.current, defaultValueRef.current, id);
+        return () => {
+            delete watchFieldsHook[id];
+            delete watchFieldsHookRender[id];
+        };
+    }, [
+        nameRef,
+        updateWatchValue,
+        watchFieldsHookRenderRef,
+        watchFieldsHookRef,
+        watchInternal,
+        defaultValueRef,
+    ]);
+    return (isUndefined(value) ? defaultValue : value);
+}
+
+var getInputValue = (event) => isPrimitive(event) ||
+    !isObject(event.target) ||
+    (isObject(event.target) && !event.type)
+    ? event
+    : isUndefined(event.target.value)
+        ? event.target.checked
+        : event.target.value;
+
+const Controller = (_a) => {
+    var { name, rules, as, render, defaultValue, control, onFocus } = _a, rest = __rest(_a, ["name", "rules", "as", "render", "defaultValue", "control", "onFocus"]);
+    const methods = useFormContext();
+    const { defaultValuesRef, setValue, register, unregister, trigger, mode: { isOnChange, isOnBlur }, reValidateMode: { isReValidateOnBlur, isReValidateOnChange }, isSubmittedRef, touchedFieldsRef, readFormStateRef, reRender, fieldsRef, fieldArrayNamesRef, unmountFieldsStateRef, formState, } = control || methods.control;
+    const isNotFieldArray = !isNameInFieldArray(fieldArrayNamesRef.current, name);
+    const getInitialValue = () => !isUndefined(get(unmountFieldsStateRef.current, name)) && isNotFieldArray
+        ? unmountFieldsStateRef.current[name]
+        : isUndefined(defaultValue)
+            ? get(defaultValuesRef.current, name)
+            : defaultValue;
+    const [value, setInputStateValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(getInitialValue());
+    const valueRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(value);
+    const onFocusRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(onFocus);
+    const isSubmitted = isSubmittedRef.current;
+    const shouldValidate = () => !skipValidation({
+        isOnBlur,
+        isOnChange,
+        isReValidateOnBlur,
+        isReValidateOnChange,
+        isSubmitted,
+    });
+    const commonTask = ([event]) => {
+        const data = getInputValue(event);
+        setInputStateValue(data);
+        valueRef.current = data;
+        return data;
+    };
+    const registerField = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
+        if (fieldsRef.current[name]) {
+            fieldsRef.current[name] = Object.assign({ ref: fieldsRef.current[name].ref }, rules);
+        }
+        else {
+            register(Object.defineProperty({ name, focus: onFocusRef.current }, VALUE, {
+                set(data) {
+                    setInputStateValue(data);
+                    valueRef.current = data;
+                },
+                get() {
+                    return valueRef.current;
+                },
+            }), rules);
+        }
+    }, [fieldsRef, rules, name, onFocusRef, register]);
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => () => {
+        !isNameInFieldArray(fieldArrayNamesRef.current, name) && unregister(name);
+    }, [unregister, name, fieldArrayNamesRef]);
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        registerField();
+    }, [registerField]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        if (!fieldsRef.current[name]) {
+            registerField();
+            if (isNotFieldArray) {
+                setInputStateValue(getInitialValue());
+            }
+        }
+    });
+    const onBlur = () => {
+        if (readFormStateRef.current.touched &&
+            !get(touchedFieldsRef.current, name)) {
+            set(touchedFieldsRef.current, name, true);
+            reRender();
+        }
+        if (isOnBlur || (formState.isSubmitted && isReValidateOnBlur)) {
+            trigger(name);
+        }
+    };
+    const onChange = (...event) => setValue(name, commonTask(event), {
+        shouldValidate: shouldValidate(),
+        shouldDirty: true,
+    });
+    const props = Object.assign(Object.assign({}, rest), { onChange,
+        onBlur,
+        name,
+        value });
+    return as
+        ? Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(as)
+            ? Object(react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"])(as, props)
+            : Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(as, props)
+        : render
+            ? render({
+                onChange,
+                onBlur,
+                value,
+            })
+            : null;
+};
+
+
+//# sourceMappingURL=index.esm.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -69868,6 +71645,204 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/setimmediate/setImmediate.js":
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
+    "use strict";
+
+    if (global.setImmediate) {
+        return;
+    }
+
+    var nextHandle = 1; // Spec says greater than zero
+    var tasksByHandle = {};
+    var currentlyRunningATask = false;
+    var doc = global.document;
+    var registerImmediate;
+
+    function setImmediate(callback) {
+      // Callback can either be a function or a string
+      if (typeof callback !== "function") {
+        callback = new Function("" + callback);
+      }
+      // Copy function arguments
+      var args = new Array(arguments.length - 1);
+      for (var i = 0; i < args.length; i++) {
+          args[i] = arguments[i + 1];
+      }
+      // Store and register the task
+      var task = { callback: callback, args: args };
+      tasksByHandle[nextHandle] = task;
+      registerImmediate(nextHandle);
+      return nextHandle++;
+    }
+
+    function clearImmediate(handle) {
+        delete tasksByHandle[handle];
+    }
+
+    function run(task) {
+        var callback = task.callback;
+        var args = task.args;
+        switch (args.length) {
+        case 0:
+            callback();
+            break;
+        case 1:
+            callback(args[0]);
+            break;
+        case 2:
+            callback(args[0], args[1]);
+            break;
+        case 3:
+            callback(args[0], args[1], args[2]);
+            break;
+        default:
+            callback.apply(undefined, args);
+            break;
+        }
+    }
+
+    function runIfPresent(handle) {
+        // From the spec: "Wait until any invocations of this algorithm started before this one have completed."
+        // So if we're currently running a task, we'll need to delay this invocation.
+        if (currentlyRunningATask) {
+            // Delay by doing a setTimeout. setImmediate was tried instead, but in Firefox 7 it generated a
+            // "too much recursion" error.
+            setTimeout(runIfPresent, 0, handle);
+        } else {
+            var task = tasksByHandle[handle];
+            if (task) {
+                currentlyRunningATask = true;
+                try {
+                    run(task);
+                } finally {
+                    clearImmediate(handle);
+                    currentlyRunningATask = false;
+                }
+            }
+        }
+    }
+
+    function installNextTickImplementation() {
+        registerImmediate = function(handle) {
+            process.nextTick(function () { runIfPresent(handle); });
+        };
+    }
+
+    function canUsePostMessage() {
+        // The test against `importScripts` prevents this implementation from being installed inside a web worker,
+        // where `global.postMessage` means something completely different and can't be used for this purpose.
+        if (global.postMessage && !global.importScripts) {
+            var postMessageIsAsynchronous = true;
+            var oldOnMessage = global.onmessage;
+            global.onmessage = function() {
+                postMessageIsAsynchronous = false;
+            };
+            global.postMessage("", "*");
+            global.onmessage = oldOnMessage;
+            return postMessageIsAsynchronous;
+        }
+    }
+
+    function installPostMessageImplementation() {
+        // Installs an event handler on `global` for the `message` event: see
+        // * https://developer.mozilla.org/en/DOM/window.postMessage
+        // * http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#crossDocumentMessages
+
+        var messagePrefix = "setImmediate$" + Math.random() + "$";
+        var onGlobalMessage = function(event) {
+            if (event.source === global &&
+                typeof event.data === "string" &&
+                event.data.indexOf(messagePrefix) === 0) {
+                runIfPresent(+event.data.slice(messagePrefix.length));
+            }
+        };
+
+        if (global.addEventListener) {
+            global.addEventListener("message", onGlobalMessage, false);
+        } else {
+            global.attachEvent("onmessage", onGlobalMessage);
+        }
+
+        registerImmediate = function(handle) {
+            global.postMessage(messagePrefix + handle, "*");
+        };
+    }
+
+    function installMessageChannelImplementation() {
+        var channel = new MessageChannel();
+        channel.port1.onmessage = function(event) {
+            var handle = event.data;
+            runIfPresent(handle);
+        };
+
+        registerImmediate = function(handle) {
+            channel.port2.postMessage(handle);
+        };
+    }
+
+    function installReadyStateChangeImplementation() {
+        var html = doc.documentElement;
+        registerImmediate = function(handle) {
+            // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
+            // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
+            var script = doc.createElement("script");
+            script.onreadystatechange = function () {
+                runIfPresent(handle);
+                script.onreadystatechange = null;
+                html.removeChild(script);
+                script = null;
+            };
+            html.appendChild(script);
+        };
+    }
+
+    function installSetTimeoutImplementation() {
+        registerImmediate = function(handle) {
+            setTimeout(runIfPresent, 0, handle);
+        };
+    }
+
+    // If supported, we should attach to the prototype of global, since that is where setTimeout et al. live.
+    var attachTo = Object.getPrototypeOf && Object.getPrototypeOf(global);
+    attachTo = attachTo && attachTo.setTimeout ? attachTo : global;
+
+    // Don't get fooled by e.g. browserify environments.
+    if ({}.toString.call(global.process) === "[object process]") {
+        // For Node.js before 0.9
+        installNextTickImplementation();
+
+    } else if (canUsePostMessage()) {
+        // For non-IE10 modern browsers
+        installPostMessageImplementation();
+
+    } else if (global.MessageChannel) {
+        // For web workers, where supported
+        installMessageChannelImplementation();
+
+    } else if (doc && "onreadystatechange" in doc.createElement("script")) {
+        // For IE 6–8
+        installReadyStateChangeImplementation();
+
+    } else {
+        // For older browsers
+        installSetTimeoutImplementation();
+    }
+
+    attachTo.setImmediate = setImmediate;
+    attachTo.clearImmediate = clearImmediate;
+}(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -70374,6 +72349,93 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+
+/***/ "./node_modules/sweetalert/dist/sweetalert.min.js":
+/*!********************************************************!*\
+  !*** ./node_modules/sweetalert/dist/sweetalert.min.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {!function(t,e){ true?module.exports=e():undefined}(this,function(){return function(t){function e(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return t[o].call(r.exports,r,r.exports,e),r.l=!0,r.exports}var n={};return e.m=t,e.c=n,e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=8)}([function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o="swal-button";e.CLASS_NAMES={MODAL:"swal-modal",OVERLAY:"swal-overlay",SHOW_MODAL:"swal-overlay--show-modal",MODAL_TITLE:"swal-title",MODAL_TEXT:"swal-text",ICON:"swal-icon",ICON_CUSTOM:"swal-icon--custom",CONTENT:"swal-content",FOOTER:"swal-footer",BUTTON_CONTAINER:"swal-button-container",BUTTON:o,CONFIRM_BUTTON:o+"--confirm",CANCEL_BUTTON:o+"--cancel",DANGER_BUTTON:o+"--danger",BUTTON_LOADING:o+"--loading",BUTTON_LOADER:o+"__loader"},e.default=e.CLASS_NAMES},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.getNode=function(t){var e="."+t;return document.querySelector(e)},e.stringToNode=function(t){var e=document.createElement("div");return e.innerHTML=t.trim(),e.firstChild},e.insertAfter=function(t,e){var n=e.nextSibling;e.parentNode.insertBefore(t,n)},e.removeNode=function(t){t.parentElement.removeChild(t)},e.throwErr=function(t){throw t=t.replace(/ +(?= )/g,""),"SweetAlert: "+(t=t.trim())},e.isPlainObject=function(t){if("[object Object]"!==Object.prototype.toString.call(t))return!1;var e=Object.getPrototypeOf(t);return null===e||e===Object.prototype},e.ordinalSuffixOf=function(t){var e=t%10,n=t%100;return 1===e&&11!==n?t+"st":2===e&&12!==n?t+"nd":3===e&&13!==n?t+"rd":t+"th"}},function(t,e,n){"use strict";function o(t){for(var n in t)e.hasOwnProperty(n)||(e[n]=t[n])}Object.defineProperty(e,"__esModule",{value:!0}),o(n(25));var r=n(26);e.overlayMarkup=r.default,o(n(27)),o(n(28)),o(n(29));var i=n(0),a=i.default.MODAL_TITLE,s=i.default.MODAL_TEXT,c=i.default.ICON,l=i.default.FOOTER;e.iconMarkup='\n  <div class="'+c+'"></div>',e.titleMarkup='\n  <div class="'+a+'"></div>\n',e.textMarkup='\n  <div class="'+s+'"></div>',e.footerMarkup='\n  <div class="'+l+'"></div>\n'},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1);e.CONFIRM_KEY="confirm",e.CANCEL_KEY="cancel";var r={visible:!0,text:null,value:null,className:"",closeModal:!0},i=Object.assign({},r,{visible:!1,text:"Cancel",value:null}),a=Object.assign({},r,{text:"OK",value:!0});e.defaultButtonList={cancel:i,confirm:a};var s=function(t){switch(t){case e.CONFIRM_KEY:return a;case e.CANCEL_KEY:return i;default:var n=t.charAt(0).toUpperCase()+t.slice(1);return Object.assign({},r,{text:n,value:t})}},c=function(t,e){var n=s(t);return!0===e?Object.assign({},n,{visible:!0}):"string"==typeof e?Object.assign({},n,{visible:!0,text:e}):o.isPlainObject(e)?Object.assign({visible:!0},n,e):Object.assign({},n,{visible:!1})},l=function(t){for(var e={},n=0,o=Object.keys(t);n<o.length;n++){var r=o[n],a=t[r],s=c(r,a);e[r]=s}return e.cancel||(e.cancel=i),e},u=function(t){var n={};switch(t.length){case 1:n[e.CANCEL_KEY]=Object.assign({},i,{visible:!1});break;case 2:n[e.CANCEL_KEY]=c(e.CANCEL_KEY,t[0]),n[e.CONFIRM_KEY]=c(e.CONFIRM_KEY,t[1]);break;default:o.throwErr("Invalid number of 'buttons' in array ("+t.length+").\n      If you want more than 2 buttons, you need to use an object!")}return n};e.getButtonListOpts=function(t){var n=e.defaultButtonList;return"string"==typeof t?n[e.CONFIRM_KEY]=c(e.CONFIRM_KEY,t):Array.isArray(t)?n=u(t):o.isPlainObject(t)?n=l(t):!0===t?n=u([!0,!0]):!1===t?n=u([!1,!1]):void 0===t&&(n=e.defaultButtonList),n}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(2),i=n(0),a=i.default.MODAL,s=i.default.OVERLAY,c=n(30),l=n(31),u=n(32),f=n(33);e.injectElIntoModal=function(t){var e=o.getNode(a),n=o.stringToNode(t);return e.appendChild(n),n};var d=function(t){t.className=a,t.textContent=""},p=function(t,e){d(t);var n=e.className;n&&t.classList.add(n)};e.initModalContent=function(t){var e=o.getNode(a);p(e,t),c.default(t.icon),l.initTitle(t.title),l.initText(t.text),f.default(t.content),u.default(t.buttons,t.dangerMode)};var m=function(){var t=o.getNode(s),e=o.stringToNode(r.modalMarkup);t.appendChild(e)};e.default=m},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(3),r={isOpen:!1,promise:null,actions:{},timer:null},i=Object.assign({},r);e.resetState=function(){i=Object.assign({},r)},e.setActionValue=function(t){if("string"==typeof t)return a(o.CONFIRM_KEY,t);for(var e in t)a(e,t[e])};var a=function(t,e){i.actions[t]||(i.actions[t]={}),Object.assign(i.actions[t],{value:e})};e.setActionOptionsFor=function(t,e){var n=(void 0===e?{}:e).closeModal,o=void 0===n||n;Object.assign(i.actions[t],{closeModal:o})},e.default=i},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(3),i=n(0),a=i.default.OVERLAY,s=i.default.SHOW_MODAL,c=i.default.BUTTON,l=i.default.BUTTON_LOADING,u=n(5);e.openModal=function(){o.getNode(a).classList.add(s),u.default.isOpen=!0};var f=function(){o.getNode(a).classList.remove(s),u.default.isOpen=!1};e.onAction=function(t){void 0===t&&(t=r.CANCEL_KEY);var e=u.default.actions[t],n=e.value;if(!1===e.closeModal){var i=c+"--"+t;o.getNode(i).classList.add(l)}else f();u.default.promise.resolve(n)},e.getState=function(){var t=Object.assign({},u.default);return delete t.promise,delete t.timer,t},e.stopLoading=function(){for(var t=document.querySelectorAll("."+c),e=0;e<t.length;e++){t[e].classList.remove(l)}}},function(t,e){var n;n=function(){return this}();try{n=n||Function("return this")()||(0,eval)("this")}catch(t){"object"==typeof window&&(n=window)}t.exports=n},function(t,e,n){(function(e){t.exports=e.sweetAlert=n(9)}).call(e,n(7))},function(t,e,n){(function(e){t.exports=e.swal=n(10)}).call(e,n(7))},function(t,e,n){"undefined"!=typeof window&&n(11),n(16);var o=n(23).default;t.exports=o},function(t,e,n){var o=n(12);"string"==typeof o&&(o=[[t.i,o,""]]);var r={insertAt:"top"};r.transform=void 0;n(14)(o,r);o.locals&&(t.exports=o.locals)},function(t,e,n){e=t.exports=n(13)(void 0),e.push([t.i,'.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}',""])},function(t,e){function n(t,e){var n=t[1]||"",r=t[3];if(!r)return n;if(e&&"function"==typeof btoa){var i=o(r);return[n].concat(r.sources.map(function(t){return"/*# sourceURL="+r.sourceRoot+t+" */"})).concat([i]).join("\n")}return[n].join("\n")}function o(t){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(t))))+" */"}t.exports=function(t){var e=[];return e.toString=function(){return this.map(function(e){var o=n(e,t);return e[2]?"@media "+e[2]+"{"+o+"}":o}).join("")},e.i=function(t,n){"string"==typeof t&&(t=[[null,t,""]]);for(var o={},r=0;r<this.length;r++){var i=this[r][0];"number"==typeof i&&(o[i]=!0)}for(r=0;r<t.length;r++){var a=t[r];"number"==typeof a[0]&&o[a[0]]||(n&&!a[2]?a[2]=n:n&&(a[2]="("+a[2]+") and ("+n+")"),e.push(a))}},e}},function(t,e,n){function o(t,e){for(var n=0;n<t.length;n++){var o=t[n],r=m[o.id];if(r){r.refs++;for(var i=0;i<r.parts.length;i++)r.parts[i](o.parts[i]);for(;i<o.parts.length;i++)r.parts.push(u(o.parts[i],e))}else{for(var a=[],i=0;i<o.parts.length;i++)a.push(u(o.parts[i],e));m[o.id]={id:o.id,refs:1,parts:a}}}}function r(t,e){for(var n=[],o={},r=0;r<t.length;r++){var i=t[r],a=e.base?i[0]+e.base:i[0],s=i[1],c=i[2],l=i[3],u={css:s,media:c,sourceMap:l};o[a]?o[a].parts.push(u):n.push(o[a]={id:a,parts:[u]})}return n}function i(t,e){var n=v(t.insertInto);if(!n)throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var o=w[w.length-1];if("top"===t.insertAt)o?o.nextSibling?n.insertBefore(e,o.nextSibling):n.appendChild(e):n.insertBefore(e,n.firstChild),w.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(e)}}function a(t){if(null===t.parentNode)return!1;t.parentNode.removeChild(t);var e=w.indexOf(t);e>=0&&w.splice(e,1)}function s(t){var e=document.createElement("style");return t.attrs.type="text/css",l(e,t.attrs),i(t,e),e}function c(t){var e=document.createElement("link");return t.attrs.type="text/css",t.attrs.rel="stylesheet",l(e,t.attrs),i(t,e),e}function l(t,e){Object.keys(e).forEach(function(n){t.setAttribute(n,e[n])})}function u(t,e){var n,o,r,i;if(e.transform&&t.css){if(!(i=e.transform(t.css)))return function(){};t.css=i}if(e.singleton){var l=h++;n=g||(g=s(e)),o=f.bind(null,n,l,!1),r=f.bind(null,n,l,!0)}else t.sourceMap&&"function"==typeof URL&&"function"==typeof URL.createObjectURL&&"function"==typeof URL.revokeObjectURL&&"function"==typeof Blob&&"function"==typeof btoa?(n=c(e),o=p.bind(null,n,e),r=function(){a(n),n.href&&URL.revokeObjectURL(n.href)}):(n=s(e),o=d.bind(null,n),r=function(){a(n)});return o(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;o(t=e)}else r()}}function f(t,e,n,o){var r=n?"":o.css;if(t.styleSheet)t.styleSheet.cssText=x(e,r);else{var i=document.createTextNode(r),a=t.childNodes;a[e]&&t.removeChild(a[e]),a.length?t.insertBefore(i,a[e]):t.appendChild(i)}}function d(t,e){var n=e.css,o=e.media;if(o&&t.setAttribute("media",o),t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}function p(t,e,n){var o=n.css,r=n.sourceMap,i=void 0===e.convertToAbsoluteUrls&&r;(e.convertToAbsoluteUrls||i)&&(o=y(o)),r&&(o+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(r))))+" */");var a=new Blob([o],{type:"text/css"}),s=t.href;t.href=URL.createObjectURL(a),s&&URL.revokeObjectURL(s)}var m={},b=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}}(function(){return window&&document&&document.all&&!window.atob}),v=function(t){var e={};return function(n){return void 0===e[n]&&(e[n]=t.call(this,n)),e[n]}}(function(t){return document.querySelector(t)}),g=null,h=0,w=[],y=n(15);t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");e=e||{},e.attrs="object"==typeof e.attrs?e.attrs:{},e.singleton||(e.singleton=b()),e.insertInto||(e.insertInto="head"),e.insertAt||(e.insertAt="bottom");var n=r(t,e);return o(n,e),function(t){for(var i=[],a=0;a<n.length;a++){var s=n[a],c=m[s.id];c.refs--,i.push(c)}if(t){o(r(t,e),e)}for(var a=0;a<i.length;a++){var c=i[a];if(0===c.refs){for(var l=0;l<c.parts.length;l++)c.parts[l]();delete m[c.id]}}}};var x=function(){var t=[];return function(e,n){return t[e]=n,t.filter(Boolean).join("\n")}}()},function(t,e){t.exports=function(t){var e="undefined"!=typeof window&&window.location;if(!e)throw new Error("fixUrls requires window.location");if(!t||"string"!=typeof t)return t;var n=e.protocol+"//"+e.host,o=n+e.pathname.replace(/\/[^\/]*$/,"/");return t.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi,function(t,e){var r=e.trim().replace(/^"(.*)"$/,function(t,e){return e}).replace(/^'(.*)'$/,function(t,e){return e});if(/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(r))return t;var i;return i=0===r.indexOf("//")?r:0===r.indexOf("/")?n+r:o+r.replace(/^\.\//,""),"url("+JSON.stringify(i)+")"})}},function(t,e,n){var o=n(17);"undefined"==typeof window||window.Promise||(window.Promise=o),n(21),String.prototype.includes||(String.prototype.includes=function(t,e){"use strict";return"number"!=typeof e&&(e=0),!(e+t.length>this.length)&&-1!==this.indexOf(t,e)}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(t,e){if(null==this)throw new TypeError('"this" is null or not defined');var n=Object(this),o=n.length>>>0;if(0===o)return!1;for(var r=0|e,i=Math.max(r>=0?r:o-Math.abs(r),0);i<o;){if(function(t,e){return t===e||"number"==typeof t&&"number"==typeof e&&isNaN(t)&&isNaN(e)}(n[i],t))return!0;i++}return!1}}),"undefined"!=typeof window&&function(t){t.forEach(function(t){t.hasOwnProperty("remove")||Object.defineProperty(t,"remove",{configurable:!0,enumerable:!0,writable:!0,value:function(){this.parentNode.removeChild(this)}})})}([Element.prototype,CharacterData.prototype,DocumentType.prototype])},function(t,e,n){(function(e){!function(n){function o(){}function r(t,e){return function(){t.apply(e,arguments)}}function i(t){if("object"!=typeof this)throw new TypeError("Promises must be constructed via new");if("function"!=typeof t)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=void 0,this._deferreds=[],f(t,this)}function a(t,e){for(;3===t._state;)t=t._value;if(0===t._state)return void t._deferreds.push(e);t._handled=!0,i._immediateFn(function(){var n=1===t._state?e.onFulfilled:e.onRejected;if(null===n)return void(1===t._state?s:c)(e.promise,t._value);var o;try{o=n(t._value)}catch(t){return void c(e.promise,t)}s(e.promise,o)})}function s(t,e){try{if(e===t)throw new TypeError("A promise cannot be resolved with itself.");if(e&&("object"==typeof e||"function"==typeof e)){var n=e.then;if(e instanceof i)return t._state=3,t._value=e,void l(t);if("function"==typeof n)return void f(r(n,e),t)}t._state=1,t._value=e,l(t)}catch(e){c(t,e)}}function c(t,e){t._state=2,t._value=e,l(t)}function l(t){2===t._state&&0===t._deferreds.length&&i._immediateFn(function(){t._handled||i._unhandledRejectionFn(t._value)});for(var e=0,n=t._deferreds.length;e<n;e++)a(t,t._deferreds[e]);t._deferreds=null}function u(t,e,n){this.onFulfilled="function"==typeof t?t:null,this.onRejected="function"==typeof e?e:null,this.promise=n}function f(t,e){var n=!1;try{t(function(t){n||(n=!0,s(e,t))},function(t){n||(n=!0,c(e,t))})}catch(t){if(n)return;n=!0,c(e,t)}}var d=setTimeout;i.prototype.catch=function(t){return this.then(null,t)},i.prototype.then=function(t,e){var n=new this.constructor(o);return a(this,new u(t,e,n)),n},i.all=function(t){var e=Array.prototype.slice.call(t);return new i(function(t,n){function o(i,a){try{if(a&&("object"==typeof a||"function"==typeof a)){var s=a.then;if("function"==typeof s)return void s.call(a,function(t){o(i,t)},n)}e[i]=a,0==--r&&t(e)}catch(t){n(t)}}if(0===e.length)return t([]);for(var r=e.length,i=0;i<e.length;i++)o(i,e[i])})},i.resolve=function(t){return t&&"object"==typeof t&&t.constructor===i?t:new i(function(e){e(t)})},i.reject=function(t){return new i(function(e,n){n(t)})},i.race=function(t){return new i(function(e,n){for(var o=0,r=t.length;o<r;o++)t[o].then(e,n)})},i._immediateFn="function"==typeof e&&function(t){e(t)}||function(t){d(t,0)},i._unhandledRejectionFn=function(t){"undefined"!=typeof console&&console&&console.warn("Possible Unhandled Promise Rejection:",t)},i._setImmediateFn=function(t){i._immediateFn=t},i._setUnhandledRejectionFn=function(t){i._unhandledRejectionFn=t},void 0!==t&&t.exports?t.exports=i:n.Promise||(n.Promise=i)}(this)}).call(e,n(18).setImmediate)},function(t,e,n){function o(t,e){this._id=t,this._clearFn=e}var r=Function.prototype.apply;e.setTimeout=function(){return new o(r.call(setTimeout,window,arguments),clearTimeout)},e.setInterval=function(){return new o(r.call(setInterval,window,arguments),clearInterval)},e.clearTimeout=e.clearInterval=function(t){t&&t.close()},o.prototype.unref=o.prototype.ref=function(){},o.prototype.close=function(){this._clearFn.call(window,this._id)},e.enroll=function(t,e){clearTimeout(t._idleTimeoutId),t._idleTimeout=e},e.unenroll=function(t){clearTimeout(t._idleTimeoutId),t._idleTimeout=-1},e._unrefActive=e.active=function(t){clearTimeout(t._idleTimeoutId);var e=t._idleTimeout;e>=0&&(t._idleTimeoutId=setTimeout(function(){t._onTimeout&&t._onTimeout()},e))},n(19),e.setImmediate=setImmediate,e.clearImmediate=clearImmediate},function(t,e,n){(function(t,e){!function(t,n){"use strict";function o(t){"function"!=typeof t&&(t=new Function(""+t));for(var e=new Array(arguments.length-1),n=0;n<e.length;n++)e[n]=arguments[n+1];var o={callback:t,args:e};return l[c]=o,s(c),c++}function r(t){delete l[t]}function i(t){var e=t.callback,o=t.args;switch(o.length){case 0:e();break;case 1:e(o[0]);break;case 2:e(o[0],o[1]);break;case 3:e(o[0],o[1],o[2]);break;default:e.apply(n,o)}}function a(t){if(u)setTimeout(a,0,t);else{var e=l[t];if(e){u=!0;try{i(e)}finally{r(t),u=!1}}}}if(!t.setImmediate){var s,c=1,l={},u=!1,f=t.document,d=Object.getPrototypeOf&&Object.getPrototypeOf(t);d=d&&d.setTimeout?d:t,"[object process]"==={}.toString.call(t.process)?function(){s=function(t){e.nextTick(function(){a(t)})}}():function(){if(t.postMessage&&!t.importScripts){var e=!0,n=t.onmessage;return t.onmessage=function(){e=!1},t.postMessage("","*"),t.onmessage=n,e}}()?function(){var e="setImmediate$"+Math.random()+"$",n=function(n){n.source===t&&"string"==typeof n.data&&0===n.data.indexOf(e)&&a(+n.data.slice(e.length))};t.addEventListener?t.addEventListener("message",n,!1):t.attachEvent("onmessage",n),s=function(n){t.postMessage(e+n,"*")}}():t.MessageChannel?function(){var t=new MessageChannel;t.port1.onmessage=function(t){a(t.data)},s=function(e){t.port2.postMessage(e)}}():f&&"onreadystatechange"in f.createElement("script")?function(){var t=f.documentElement;s=function(e){var n=f.createElement("script");n.onreadystatechange=function(){a(e),n.onreadystatechange=null,t.removeChild(n),n=null},t.appendChild(n)}}():function(){s=function(t){setTimeout(a,0,t)}}(),d.setImmediate=o,d.clearImmediate=r}}("undefined"==typeof self?void 0===t?this:t:self)}).call(e,n(7),n(20))},function(t,e){function n(){throw new Error("setTimeout has not been defined")}function o(){throw new Error("clearTimeout has not been defined")}function r(t){if(u===setTimeout)return setTimeout(t,0);if((u===n||!u)&&setTimeout)return u=setTimeout,setTimeout(t,0);try{return u(t,0)}catch(e){try{return u.call(null,t,0)}catch(e){return u.call(this,t,0)}}}function i(t){if(f===clearTimeout)return clearTimeout(t);if((f===o||!f)&&clearTimeout)return f=clearTimeout,clearTimeout(t);try{return f(t)}catch(e){try{return f.call(null,t)}catch(e){return f.call(this,t)}}}function a(){b&&p&&(b=!1,p.length?m=p.concat(m):v=-1,m.length&&s())}function s(){if(!b){var t=r(a);b=!0;for(var e=m.length;e;){for(p=m,m=[];++v<e;)p&&p[v].run();v=-1,e=m.length}p=null,b=!1,i(t)}}function c(t,e){this.fun=t,this.array=e}function l(){}var u,f,d=t.exports={};!function(){try{u="function"==typeof setTimeout?setTimeout:n}catch(t){u=n}try{f="function"==typeof clearTimeout?clearTimeout:o}catch(t){f=o}}();var p,m=[],b=!1,v=-1;d.nextTick=function(t){var e=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)e[n-1]=arguments[n];m.push(new c(t,e)),1!==m.length||b||r(s)},c.prototype.run=function(){this.fun.apply(null,this.array)},d.title="browser",d.browser=!0,d.env={},d.argv=[],d.version="",d.versions={},d.on=l,d.addListener=l,d.once=l,d.off=l,d.removeListener=l,d.removeAllListeners=l,d.emit=l,d.prependListener=l,d.prependOnceListener=l,d.listeners=function(t){return[]},d.binding=function(t){throw new Error("process.binding is not supported")},d.cwd=function(){return"/"},d.chdir=function(t){throw new Error("process.chdir is not supported")},d.umask=function(){return 0}},function(t,e,n){"use strict";n(22).polyfill()},function(t,e,n){"use strict";function o(t,e){if(void 0===t||null===t)throw new TypeError("Cannot convert first argument to object");for(var n=Object(t),o=1;o<arguments.length;o++){var r=arguments[o];if(void 0!==r&&null!==r)for(var i=Object.keys(Object(r)),a=0,s=i.length;a<s;a++){var c=i[a],l=Object.getOwnPropertyDescriptor(r,c);void 0!==l&&l.enumerable&&(n[c]=r[c])}}return n}function r(){Object.assign||Object.defineProperty(Object,"assign",{enumerable:!1,configurable:!0,writable:!0,value:o})}t.exports={assign:o,polyfill:r}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(24),r=n(6),i=n(5),a=n(36),s=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];if("undefined"!=typeof window){var n=a.getOpts.apply(void 0,t);return new Promise(function(t,e){i.default.promise={resolve:t,reject:e},o.default(n),setTimeout(function(){r.openModal()})})}};s.close=r.onAction,s.getState=r.getState,s.setActionValue=i.setActionValue,s.stopLoading=r.stopLoading,s.setDefaults=a.setDefaults,e.default=s},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(0),i=r.default.MODAL,a=n(4),s=n(34),c=n(35),l=n(1);e.init=function(t){o.getNode(i)||(document.body||l.throwErr("You can only use SweetAlert AFTER the DOM has loaded!"),s.default(),a.default()),a.initModalContent(t),c.default(t)},e.default=e.init},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),r=o.default.MODAL;e.modalMarkup='\n  <div class="'+r+'" role="dialog" aria-modal="true"></div>',e.default=e.modalMarkup},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),r=o.default.OVERLAY,i='<div \n    class="'+r+'"\n    tabIndex="-1">\n  </div>';e.default=i},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),r=o.default.ICON;e.errorIconMarkup=function(){var t=r+"--error",e=t+"__line";return'\n    <div class="'+t+'__x-mark">\n      <span class="'+e+" "+e+'--left"></span>\n      <span class="'+e+" "+e+'--right"></span>\n    </div>\n  '},e.warningIconMarkup=function(){var t=r+"--warning";return'\n    <span class="'+t+'__body">\n      <span class="'+t+'__dot"></span>\n    </span>\n  '},e.successIconMarkup=function(){var t=r+"--success";return'\n    <span class="'+t+"__line "+t+'__line--long"></span>\n    <span class="'+t+"__line "+t+'__line--tip"></span>\n\n    <div class="'+t+'__ring"></div>\n    <div class="'+t+'__hide-corners"></div>\n  '}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),r=o.default.CONTENT;e.contentMarkup='\n  <div class="'+r+'">\n\n  </div>\n'},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(0),r=o.default.BUTTON_CONTAINER,i=o.default.BUTTON,a=o.default.BUTTON_LOADER;e.buttonMarkup='\n  <div class="'+r+'">\n\n    <button\n      class="'+i+'"\n    ></button>\n\n    <div class="'+a+'">\n      <div></div>\n      <div></div>\n      <div></div>\n    </div>\n\n  </div>\n'},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(4),r=n(2),i=n(0),a=i.default.ICON,s=i.default.ICON_CUSTOM,c=["error","warning","success","info"],l={error:r.errorIconMarkup(),warning:r.warningIconMarkup(),success:r.successIconMarkup()},u=function(t,e){var n=a+"--"+t;e.classList.add(n);var o=l[t];o&&(e.innerHTML=o)},f=function(t,e){e.classList.add(s);var n=document.createElement("img");n.src=t,e.appendChild(n)},d=function(t){if(t){var e=o.injectElIntoModal(r.iconMarkup);c.includes(t)?u(t,e):f(t,e)}};e.default=d},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(2),r=n(4),i=function(t){navigator.userAgent.includes("AppleWebKit")&&(t.style.display="none",t.offsetHeight,t.style.display="")};e.initTitle=function(t){if(t){var e=r.injectElIntoModal(o.titleMarkup);e.textContent=t,i(e)}},e.initText=function(t){if(t){var e=document.createDocumentFragment();t.split("\n").forEach(function(t,n,o){e.appendChild(document.createTextNode(t)),n<o.length-1&&e.appendChild(document.createElement("br"))});var n=r.injectElIntoModal(o.textMarkup);n.appendChild(e),i(n)}}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(4),i=n(0),a=i.default.BUTTON,s=i.default.DANGER_BUTTON,c=n(3),l=n(2),u=n(6),f=n(5),d=function(t,e,n){var r=e.text,i=e.value,d=e.className,p=e.closeModal,m=o.stringToNode(l.buttonMarkup),b=m.querySelector("."+a),v=a+"--"+t;if(b.classList.add(v),d){(Array.isArray(d)?d:d.split(" ")).filter(function(t){return t.length>0}).forEach(function(t){b.classList.add(t)})}n&&t===c.CONFIRM_KEY&&b.classList.add(s),b.textContent=r;var g={};return g[t]=i,f.setActionValue(g),f.setActionOptionsFor(t,{closeModal:p}),b.addEventListener("click",function(){return u.onAction(t)}),m},p=function(t,e){var n=r.injectElIntoModal(l.footerMarkup);for(var o in t){var i=t[o],a=d(o,i,e);i.visible&&n.appendChild(a)}0===n.children.length&&n.remove()};e.default=p},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(3),r=n(4),i=n(2),a=n(5),s=n(6),c=n(0),l=c.default.CONTENT,u=function(t){t.addEventListener("input",function(t){var e=t.target,n=e.value;a.setActionValue(n)}),t.addEventListener("keyup",function(t){if("Enter"===t.key)return s.onAction(o.CONFIRM_KEY)}),setTimeout(function(){t.focus(),a.setActionValue("")},0)},f=function(t,e,n){var o=document.createElement(e),r=l+"__"+e;o.classList.add(r);for(var i in n){var a=n[i];o[i]=a}"input"===e&&u(o),t.appendChild(o)},d=function(t){if(t){var e=r.injectElIntoModal(i.contentMarkup),n=t.element,o=t.attributes;"string"==typeof n?f(e,n,o):e.appendChild(n)}};e.default=d},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(2),i=function(){var t=o.stringToNode(r.overlayMarkup);document.body.appendChild(t)};e.default=i},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(5),r=n(6),i=n(1),a=n(3),s=n(0),c=s.default.MODAL,l=s.default.BUTTON,u=s.default.OVERLAY,f=function(t){t.preventDefault(),v()},d=function(t){t.preventDefault(),g()},p=function(t){if(o.default.isOpen)switch(t.key){case"Escape":return r.onAction(a.CANCEL_KEY)}},m=function(t){if(o.default.isOpen)switch(t.key){case"Tab":return f(t)}},b=function(t){if(o.default.isOpen)return"Tab"===t.key&&t.shiftKey?d(t):void 0},v=function(){var t=i.getNode(l);t&&(t.tabIndex=0,t.focus())},g=function(){var t=i.getNode(c),e=t.querySelectorAll("."+l),n=e.length-1,o=e[n];o&&o.focus()},h=function(t){t[t.length-1].addEventListener("keydown",m)},w=function(t){t[0].addEventListener("keydown",b)},y=function(){var t=i.getNode(c),e=t.querySelectorAll("."+l);e.length&&(h(e),w(e))},x=function(t){if(i.getNode(u)===t.target)return r.onAction(a.CANCEL_KEY)},_=function(t){var e=i.getNode(u);e.removeEventListener("click",x),t&&e.addEventListener("click",x)},k=function(t){o.default.timer&&clearTimeout(o.default.timer),t&&(o.default.timer=window.setTimeout(function(){return r.onAction(a.CANCEL_KEY)},t))},O=function(t){t.closeOnEsc?document.addEventListener("keyup",p):document.removeEventListener("keyup",p),t.dangerMode?v():g(),y(),_(t.closeOnClickOutside),k(t.timer)};e.default=O},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r=n(3),i=n(37),a=n(38),s={title:null,text:null,icon:null,buttons:r.defaultButtonList,content:null,className:null,closeOnClickOutside:!0,closeOnEsc:!0,dangerMode:!1,timer:null},c=Object.assign({},s);e.setDefaults=function(t){c=Object.assign({},s,t)};var l=function(t){var e=t&&t.button,n=t&&t.buttons;return void 0!==e&&void 0!==n&&o.throwErr("Cannot set both 'button' and 'buttons' options!"),void 0!==e?{confirm:e}:n},u=function(t){return o.ordinalSuffixOf(t+1)},f=function(t,e){o.throwErr(u(e)+" argument ('"+t+"') is invalid")},d=function(t,e){var n=t+1,r=e[n];o.isPlainObject(r)||void 0===r||o.throwErr("Expected "+u(n)+" argument ('"+r+"') to be a plain object")},p=function(t,e){var n=t+1,r=e[n];void 0!==r&&o.throwErr("Unexpected "+u(n)+" argument ("+r+")")},m=function(t,e,n,r){var i=typeof e,a="string"===i,s=e instanceof Element;if(a){if(0===n)return{text:e};if(1===n)return{text:e,title:r[0]};if(2===n)return d(n,r),{icon:e};f(e,n)}else{if(s&&0===n)return d(n,r),{content:e};if(o.isPlainObject(e))return p(n,r),e;f(e,n)}};e.getOpts=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];var n={};t.forEach(function(e,o){var r=m(0,e,o,t);Object.assign(n,r)});var o=l(n);n.buttons=r.getButtonListOpts(o),delete n.button,n.content=i.getContentOpts(n.content);var u=Object.assign({},s,c,n);return Object.keys(u).forEach(function(t){a.DEPRECATED_OPTS[t]&&a.logDeprecation(t)}),u}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),r={element:"input",attributes:{placeholder:""}};e.getContentOpts=function(t){var e={};return o.isPlainObject(t)?Object.assign(e,t):t instanceof Element?{element:t}:"input"===t?r:null}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.logDeprecation=function(t){var n=e.DEPRECATED_OPTS[t],o=n.onlyRename,r=n.replacement,i=n.subOption,a=n.link,s=o?"renamed":"deprecated",c='SweetAlert warning: "'+t+'" option has been '+s+".";if(r){c+=" Please use"+(i?' "'+i+'" in ':" ")+'"'+r+'" instead.'}var l="https://sweetalert.js.org";c+=a?" More details: "+l+a:" More details: "+l+"/guides/#upgrading-from-1x",console.warn(c)},e.DEPRECATED_OPTS={type:{replacement:"icon",link:"/docs/#icon"},imageUrl:{replacement:"icon",link:"/docs/#icon"},customClass:{replacement:"className",onlyRename:!0,link:"/docs/#classname"},imageSize:{},showCancelButton:{replacement:"buttons",link:"/docs/#buttons"},showConfirmButton:{replacement:"button",link:"/docs/#button"},confirmButtonText:{replacement:"button",link:"/docs/#button"},confirmButtonColor:{},cancelButtonText:{replacement:"buttons",link:"/docs/#buttons"},closeOnConfirm:{replacement:"button",subOption:"closeModal",link:"/docs/#button"},closeOnCancel:{replacement:"buttons",subOption:"closeModal",link:"/docs/#buttons"},showLoaderOnConfirm:{replacement:"buttons"},animation:{},inputType:{replacement:"content",link:"/docs/#content"},inputValue:{replacement:"content",link:"/docs/#content"},inputPlaceholder:{replacement:"content",link:"/docs/#content"},html:{replacement:"content",link:"/docs/#content"},allowEscapeKey:{replacement:"closeOnEsc",onlyRename:!0,link:"/docs/#closeonesc"},allowClickOutside:{replacement:"closeOnClickOutside",onlyRename:!0,link:"/docs/#closeonclickoutside"}}}])});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../timers-browserify/main.js */ "./node_modules/timers-browserify/main.js").setImmediate, __webpack_require__(/*! ./../../timers-browserify/main.js */ "./node_modules/timers-browserify/main.js").clearImmediate))
+
+/***/ }),
+
+/***/ "./node_modules/timers-browserify/main.js":
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
+            (typeof self !== "undefined" && self) ||
+            window;
+var apply = Function.prototype.apply;
+
+// DOM APIs, for completeness
+
+exports.setTimeout = function() {
+  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
+};
+exports.setInterval = function() {
+  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
+};
+exports.clearTimeout =
+exports.clearInterval = function(timeout) {
+  if (timeout) {
+    timeout.close();
+  }
+};
+
+function Timeout(id, clearFn) {
+  this._id = id;
+  this._clearFn = clearFn;
+}
+Timeout.prototype.unref = Timeout.prototype.ref = function() {};
+Timeout.prototype.close = function() {
+  this._clearFn.call(scope, this._id);
+};
+
+// Does not start the time, just sets up the members needed.
+exports.enroll = function(item, msecs) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = msecs;
+};
+
+exports.unenroll = function(item) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = -1;
+};
+
+exports._unrefActive = exports.active = function(item) {
+  clearTimeout(item._idleTimeoutId);
+
+  var msecs = item._idleTimeout;
+  if (msecs >= 0) {
+    item._idleTimeoutId = setTimeout(function onTimeout() {
+      if (item._onTimeout)
+        item._onTimeout();
+    }, msecs);
+  }
+};
+
+// setimmediate attaches itself to the global object
+__webpack_require__(/*! setimmediate */ "./node_modules/setimmediate/setImmediate.js");
+// On some exotic environments, it's not clear which object `setimmediate` was
+// able to install onto.  Search each possibility in the same order as the
+// `setimmediate` library.
+exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
+                       (typeof global !== "undefined" && global.setImmediate) ||
+                       (this && this.setImmediate);
+exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
+                         (typeof global !== "undefined" && global.clearImmediate) ||
+                         (this && this.clearImmediate);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -71188,6 +73250,17 @@ module.exports = "/images/searchicon.png?46f1c2c57c5addfebde3b703a7c9b985";
 
 /***/ }),
 
+/***/ "./resources/js/components/assets/Main/images/home/shipping.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/assets/Main/images/home/shipping.jpg ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/shipping.jpg?19dc9b61dd09305346fc41aadedd05ca";
+
+/***/ }),
+
 /***/ "./resources/js/components/components/Admin/Footer/index.js":
 /*!******************************************************************!*\
   !*** ./resources/js/components/components/Admin/Footer/index.js ***!
@@ -71239,7 +73312,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Sidebar = function Sidebar(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
+    className: "navbar-nav bg-gradient-success sidebar sidebar-dark accordion",
     id: "accordionSidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "sidebar-brand d-flex align-items-center justify-content-center",
@@ -71278,7 +73351,31 @@ var Sidebar = function Sidebar(props) {
   }, "List Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "collapse-item",
     to: "/admin/category/add"
-  }, "Add Category")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+  }, "Add Category")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav-link collapsed",
+    href: "#",
+    "data-toggle": "collapse",
+    "data-target": "#products",
+    "aria-expanded": "true",
+    "aria-controls": "collapseTwo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-fw fa-cog"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "products",
+    className: "collapse",
+    "aria-labelledby": "headingTwo",
+    "data-parent": "#accordionSidebar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-white py-2 collapse-inner rounded"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "collapse-item",
+    to: "/admin/products"
+  }, "List Product"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "collapse-item",
+    to: "/admin/products/add"
+  }, "Add Product")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     className: "sidebar-divider d-none d-md-block"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-center d-none d-md-inline"
@@ -71422,6 +73519,117 @@ Header.propTypes = {};
 
 /***/ }),
 
+/***/ "./resources/js/components/components/Main/Footer/index.js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/components/Main/Footer/index.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Footer = function Footer() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+    id: "footer",
+    style: {
+      marginTop: '50px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills nav-stacked"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Online Help")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Contact Us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Order Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Change Location")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "FAQ\u2019s"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Quock Shop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills nav-stacked"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "T-Shirt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Mens")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Womens")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Gift Cards")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Shoes"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Policies"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills nav-stacked"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Terms of Use")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Privecy Policy")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Refund Policy")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Billing System")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Ticket System"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About Shopper"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills nav-stacked"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Company Information")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Careers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Store Location")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Affillate Program")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, "Copyright"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-3 col-sm-offset-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-widget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "About Shopper"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "#",
+    className: "searchform"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    placeholder: "Your email address"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    className: "btn btn-default"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-arrow-circle-o-right"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Get the most recent updates from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "our site and be updated your self...")))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
 /***/ "./resources/js/components/components/Main/Header/index.js":
 /*!*****************************************************************!*\
   !*** ./resources/js/components/components/Main/Header/index.js ***!
@@ -71435,6 +73643,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_Main_images_home_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/Main/images/home/logo.png */ "./resources/js/components/assets/Main/images/home/logo.png");
 /* harmony import */ var _assets_Main_images_home_logo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_Main_images_home_logo_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -71509,16 +73719,12 @@ var Header = function Header(props) {
     className: "mainmenu pull-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "nav navbar-nav collapse navbar-collapse"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "index.html",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/",
     className: "active"
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, "Shop")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "404.html"
-  }, "Blog")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "contact-us.html"
-  }, "Contact"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/shop"
+  }, "Shop"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-sm-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "search_box pull-right"
@@ -71529,6 +73735,122 @@ var Header = function Header(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/components/components/Main/LeftBar/index.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/components/Main/LeftBar/index.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_Main_images_home_shipping_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/Main/images/home/shipping.jpg */ "./resources/js/components/assets/Main/images/home/shipping.jpg");
+/* harmony import */ var _assets_Main_images_home_shipping_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_Main_images_home_shipping_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var LeftBar = function LeftBar() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      category = _useState2[0],
+      setCategory = _useState2[1];
+
+  var callDataCategory = function callDataCategory() {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/category').then(function (response) {
+      setCategory(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    callDataCategory();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "left-sidebar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "panel-group category-products",
+    id: "accordian"
+  }, category.map(function (_ref, index) {
+    var id = _ref.id,
+        name = _ref.name;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "panel panel-default",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "panel-heading"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+      className: "panel-title"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/category/".concat(id)
+    }, name))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "brands_products"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Brands"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "brands-name"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav nav-pills nav-stacked"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(50)"), "Acne")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(56)"), "Gr\xFCne Erde")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(27)"), "Albiro")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(32)"), "Ronhill")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(5)"), "Oddmolly")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(9)"), "Boudestijn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "pull-right"
+  }, "(4)"), "R\xF6sch creative culture"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "shipping text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_Main_images_home_shipping_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: ""
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LeftBar);
 
 /***/ }),
 
@@ -71570,42 +73892,13 @@ var Slider = function Slider(props) {
     id: "slider-carousel",
     className: "carousel slide",
     "data-ride": "carousel"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "carousel-indicators"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#slider-carousel",
-    "data-slide-to": 0,
-    className: "active"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#slider-carousel",
-    "data-slide-to": 1
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#slider-carousel",
-    "data-slide-to": 2
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "carousel-inner"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "item active"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-sm-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "E"), "-SHOPPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Free E-Commerce Template"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "button",
-    className: "btn btn-default get"
-  }, "Get it now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_Main_images_home_girl1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
-    className: "girl img-responsive",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_Main_images_home_pricing_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    className: "pricing",
-    alt: ""
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "E"), "-SHOPPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "100% Responsive Design"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "button",
     className: "btn btn-default get"
   }, "Get it now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71618,36 +73911,7 @@ var Slider = function Slider(props) {
     src: _assets_Main_images_home_pricing_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     className: "pricing",
     alt: ""
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "E"), "-SHOPPER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Free Ecommerce Template"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "button",
-    className: "btn btn-default get"
-  }, "Get it now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_Main_images_home_girl3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    className: "girl img-responsive",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_Main_images_home_pricing_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    className: "pricing",
-    alt: ""
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#slider-carousel",
-    className: "left control-carousel hidden-xs",
-    "data-slide": "prev"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-angle-left"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#slider-carousel",
-    className: "right control-carousel hidden-xs",
-    "data-slide": "next"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fa fa-angle-right"
-  })))))));
+  })))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Slider);
@@ -71719,6 +73983,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_Main_css_responsive_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_Main_css_responsive_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_Main_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Main/Header */ "./resources/js/components/components/Main/Header/index.js");
 /* harmony import */ var _components_Main_Slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Main/Slider */ "./resources/js/components/components/Main/Slider/index.js");
+/* harmony import */ var _components_Main_LeftBar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Main/LeftBar */ "./resources/js/components/components/Main/LeftBar/index.js");
+/* harmony import */ var _components_Main_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Main/Footer */ "./resources/js/components/components/Main/Footer/index.js");
+
+
 
 
 
@@ -71731,7 +73999,13 @@ __webpack_require__.r(__webpack_exports__);
   var children = _ref.children;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_Slider__WEBPACK_IMPORTED_MODULE_7__["default"], null));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_Slider__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_LeftBar__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-9 padding-right"
+  }, children))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], null));
 });
 
 /***/ }),
@@ -71770,6 +74044,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -71781,6 +74059,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -71803,7 +74082,25 @@ var ListCate = function ListCate() {
     callDataCategory();
   }, []);
 
-  var deleteCategory = function deleteCategory(id) {};
+  var deleteProduct = function deleteProduct(id) {
+    sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
+      title: "Bạn có chắc chắn muốn xóa danh mục này?",
+      icon: "warning",
+      buttons: true
+    }, "buttons", ["Hủy", "Xóa"])).then(function (willDelete) {
+      if (willDelete) {
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/category/delete/".concat(id)).then(function (respone) {
+          sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Xóa danh mục thành công!", {
+            icon: "success",
+            timer: 2000
+          });
+          setCategory(respone.data);
+        })["catch"](function (error) {
+          return console.log(error);
+        });
+      }
+    });
+  };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "h3 mb-2 text-gray-800"
@@ -71829,7 +74126,10 @@ var ListCate = function ListCate() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, created_at), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      className: "btn btn-danger"
+      className: "btn btn-danger",
+      onClick: function onClick() {
+        return deleteProduct(id);
+      }
     }, "Delete")));
   })))))));
 };
@@ -71859,6 +74159,723 @@ var Dashboard = function Dashboard() {
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/views/Admin/Products/AddProducts/index.js":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/pages/views/Admin/Products/AddProducts/index.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var AddProduct = function AddProduct() {
+  var _errors$name, _errors$name2, _errors$price, _errors$price2;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      category = _useState2[0],
+      setCategory = _useState2[1];
+
+  var callDataCategory = function callDataCategory() {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/category').then(function (response) {
+      setCategory(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    callDataCategory();
+  }, []);
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
+
+  var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
+      handleSubmit = _useForm.handleSubmit,
+      register = _useForm.register,
+      errors = _useForm.errors;
+
+  var onHandleSubmit = function onHandleSubmit(data) {
+    console.log(data);
+    sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
+      title: "Bạn có chắc chắn muốn thêm sản phẩm này?",
+      icon: "info",
+      buttons: true
+    }, "buttons", ["Hủy", "Thêm"])).then(function (willAdd) {
+      if (willAdd) {
+        axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/products', data).then(function (respone) {
+          sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Thêm sản phẩm thành công!", {
+            icon: "success",
+            timer: 2000
+          });
+          history.push('/admin/products');
+        });
+      }
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "h3 mb-2 text-gray-800"
+  }, "Th\xEAm s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card shadow mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "",
+    onSubmit: handleSubmit(onHandleSubmit)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "name"
+  }, "T\xEAn s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    name: "name",
+    ref: register({
+      required: true,
+      minLength: 5
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "cate_id"
+  }, "Danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+    className: "form-control",
+    id: "cate_id",
+    name: "cate_id",
+    ref: register
+  }, category.map(function (_ref, index) {
+    var id = _ref.id,
+        name = _ref.name;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+      key: index,
+      value: id
+    }, name);
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "price"
+  }, "Gi\xE1 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "number",
+    className: "form-control",
+    name: "price",
+    ref: register({
+      required: true,
+      min: 1
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "image"
+  }, "\u1EA2nh s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    name: "image",
+    ref: register({
+      required: true
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, errors.image && "Ảnh sản phẩm không được để trống!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "detail"
+  }, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "form-control",
+    name: "detail",
+    ref: register({
+      required: true
+    }),
+    rows: "3"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, errors.detail && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-primary",
+    type: "submit"
+  }, "Th\xEAm")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AddProduct);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Admin/Products/DetailProduct/index.js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/pages/views/Admin/Products/DetailProduct/index.js ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var DetailProduct = function DetailProduct() {
+  function Detail() {
+    var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+        id = _useParams.id;
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState2 = _slicedToArray(_useState, 2),
+        product = _useState2[0],
+        setProduct = _useState2[1];
+
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState4 = _slicedToArray(_useState3, 2),
+        category = _useState4[0],
+        setCategory = _useState4[1];
+
+    var callDataProducts = function callDataProducts() {
+      axios.get("/api/products/".concat(id)).then(function (respone) {
+        setProduct(respone.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var callDataCategory = function callDataCategory() {
+      axios.get('/api/category').then(function (response) {
+        setCategory(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var getCategory = function getCategory(cate_id) {
+      for (var i = 0; i < category.length; i++) {
+        if (category[i].id === cate_id) {
+          return category[i].name;
+        }
+      }
+    };
+
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+      callDataProducts(), callDataCategory();
+    }, []);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "h3 mb-2 text-gray-800"
+    }, "Chi ti\u1EBFt s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card shadow mb-4"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-4"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: product.image,
+      alt: "",
+      width: "100%"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-1"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-6"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+      className: "text-primary"
+    }, "T\xEAn s\u1EA3n ph\u1EA9m: ", product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Danh m\u1EE5c: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.detail))))));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Detail, null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (DetailProduct);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Admin/Products/EditProduct/index.js":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/pages/views/Admin/Products/EditProduct/index.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_3__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var EditProduct = function EditProduct() {
+  function EditForm() {
+    var _errors$name, _errors$name2, _errors$price, _errors$price2;
+
+    var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
+        handleSubmit = _useForm.handleSubmit,
+        register = _useForm.register,
+        errors = _useForm.errors;
+
+    var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+
+    var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+        id = _useParams.id;
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState2 = _slicedToArray(_useState, 2),
+        category = _useState2[0],
+        setCategory = _useState2[1];
+
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState4 = _slicedToArray(_useState3, 2),
+        product = _useState4[0],
+        setProduct = _useState4[1];
+
+    var callDataCategory = function callDataCategory() {
+      axios.get('/api/category').then(function (response) {
+        setCategory(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var callDataProducts = function callDataProducts() {
+      axios.get("/api/products/".concat(id)).then(function (respone) {
+        setProduct(respone.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var onHandleSubmit = function onHandleSubmit(data) {
+      console.log(data);
+      sweetalert__WEBPACK_IMPORTED_MODULE_3___default()(_defineProperty({
+        title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
+        icon: "info",
+        buttons: true
+      }, "buttons", ["Hủy", "Cập nhật"])).then(function (willAdd) {
+        if (willAdd) {
+          axios.post("/api/products/".concat(id), data).then(function (respone) {
+            sweetalert__WEBPACK_IMPORTED_MODULE_3___default()("Cập nhật sản phẩm thành công!", {
+              icon: "success",
+              timer: 2000
+            });
+            history.push('/admin/products');
+          });
+        }
+      });
+    };
+
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+      callDataProducts(), callDataCategory();
+    }, []);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "h3 mb-2 text-gray-800"
+    }, "S\u1EEDa s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card shadow mb-4"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      action: "",
+      onSubmit: handleSubmit(onHandleSubmit)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-5"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "name"
+    }, "T\xEAn s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      className: "form-control",
+      name: "name",
+      defaultValue: product.name,
+      ref: register({
+        required: true,
+        minLength: 5
+      })
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "cate_id"
+    }, "Danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+      className: "form-control",
+      id: "cate_id",
+      name: "cate_id",
+      ref: register
+    }, category.map(function (_ref, index) {
+      var id = _ref.id,
+          name = _ref.name;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        key: index,
+        value: id
+      }, name);
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "price"
+    }, "Gi\xE1 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "number",
+      className: "form-control",
+      name: "price",
+      defaultValue: product.price,
+      ref: register({
+        required: true,
+        min: 1
+      })
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-1"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-6"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "image"
+    }, "\u1EA2nh s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      className: "form-control",
+      name: "image",
+      defaultValue: product.image,
+      ref: register({
+        required: true
+      })
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, errors.image && "Ảnh sản phẩm không được để trống!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "detail"
+    }, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+      className: "form-control",
+      name: "detail",
+      ref: register({
+        required: true
+      }),
+      defaultValue: product.detail,
+      rows: "3"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, errors.detail && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "btn btn-primary",
+      type: "submit"
+    }, "C\u1EADp nh\u1EADt")))));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EditForm, null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EditProduct);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Admin/Products/ListProducts/index.js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/pages/views/Admin/Products/ListProducts/index.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var ListProduct = function ListProduct() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      products = _useState2[0],
+      setProduct = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      category = _useState4[0],
+      setCategory = _useState4[1];
+
+  var callDataProducts = function callDataProducts() {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/products').then(function (respone) {
+      setProduct(respone.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  var callDataCategory = function callDataCategory() {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/category').then(function (response) {
+      setCategory(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  var deleteProduct = function deleteProduct(id) {
+    sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
+      title: "Bạn có chắc chắn muốn xóa sản phẩm này?",
+      icon: "warning",
+      buttons: true
+    }, "buttons", ["Hủy", "Xóa"])).then(function (willDelete) {
+      if (willDelete) {
+        axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/products/delete/".concat(id)).then(function (respone) {
+          sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Xóa sản phẩm thành công!", {
+            icon: "success",
+            timer: 2000
+          });
+          setProduct(respone.data);
+        })["catch"](function (error) {
+          return console.log(error);
+        });
+      }
+    });
+  };
+
+  var getCategory = function getCategory(cate_id) {
+    for (var i = 0; i < category.length; i++) {
+      if (category[i].id === cate_id) {
+        return category[i].name;
+      }
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    callDataProducts(), callDataCategory();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "h3 mb-2 text-gray-800"
+  }, "Danh s\xE1ch s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card shadow mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-header py-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "m-0 font-weight-bold text-primary"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "table-responsive"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    className: "table table-bordered",
+    id: "dataTable",
+    width: "100%",
+    cellSpacing: 0
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Image"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, products.map(function (_ref, index) {
+    var id = _ref.id,
+        name = _ref.name,
+        cate_id = _ref.cate_id,
+        image = _ref.image,
+        price = _ref.price;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+      to: "/admin/products/".concat(id)
+    }, name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, getCategory(cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: image,
+      alt: "",
+      width: 100
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+      className: "btn btn-primary mr-1",
+      to: "/admin/products/edit/".concat(id)
+    }, "Edit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "btn btn-danger",
+      onClick: function onClick() {
+        return deleteProduct(id);
+      }
+    }, "Delete")));
+  })))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ListProduct);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Main/Category/index.js":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/pages/views/Main/Category/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var Category = function Category() {
+  function Cate() {
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState2 = _slicedToArray(_useState, 2),
+        products = _useState2[0],
+        setProduct = _useState2[1];
+
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+        _useState4 = _slicedToArray(_useState3, 2),
+        cate = _useState4[0],
+        setCate = _useState4[1];
+
+    var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+        id = _useParams.id;
+
+    var callDataProduct = function callDataProduct() {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/category/".concat(id)).then(function (response) {
+        setProduct(response.data.pro);
+        setCate(response.data.cate);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+      callDataProduct();
+    }, []);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "features_items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      className: "title text-center"
+    }, "C\xE1c s\u1EA3n ph\u1EA9m ", cate), products.map(function (_ref, index) {
+      var id = _ref.id,
+          name = _ref.name,
+          image = _ref.image,
+          price = _ref.price;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-3",
+        key: index
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "product-image-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "single-products"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "productinfo text-center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/product/".concat(id)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: image,
+        alt: ""
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/product/".concat(id)
+      }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default add-to-cart"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-shopping-cart"
+      }), "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))));
+    })));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Cate, null);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Category);
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/views/Main/Home/index.js":
 /*!****************************************************************!*\
   !*** ./resources/js/components/pages/views/Main/Home/index.js ***!
@@ -71870,13 +74887,281 @@ var Dashboard = function Dashboard() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Home");
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      products = _useState2[0],
+      setProduct = _useState2[1];
+
+  var callDataProduct = function callDataProduct() {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/new-products').then(function (respone) {
+      setProduct(respone.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    callDataProduct();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "features_items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "title text-center"
+  }, "S\u1EA3n ph\u1EA9m m\u1EDBi"), products.map(function (_ref, index) {
+    var id = _ref.id,
+        name = _ref.name,
+        image = _ref.image,
+        price = _ref.price;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-sm-3",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "product-image-wrapper"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "single-products"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "productinfo text-center"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/product/".concat(id)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: image,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/product/".concat(id)
+    }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#",
+      className: "btn btn-default add-to-cart"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-shopping-cart"
+    }), "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Main/Product/index.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/pages/views/Main/Product/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var Product = function Product() {
+  function Pro() {
+    var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+        id = _useParams.id;
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState2 = _slicedToArray(_useState, 2),
+        product = _useState2[0],
+        setProduct = _useState2[1];
+
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState4 = _slicedToArray(_useState3, 2),
+        category = _useState4[0],
+        setCategory = _useState4[1];
+
+    var callDataProducts = function callDataProducts() {
+      axios.get("/api/products/".concat(id)).then(function (respone) {
+        setProduct(respone.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var callDataCategory = function callDataCategory() {
+      axios.get('/api/category').then(function (response) {
+        setCategory(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    };
+
+    var getCategory = function getCategory(cate_id) {
+      for (var i = 0; i < category.length; i++) {
+        if (category[i].id === cate_id) {
+          return category[i].name;
+        }
+      }
+    };
+
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+      callDataProducts(), callDataCategory();
+    }, []);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      className: "title text-center"
+    }, "Th\xF4ng tin s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "product-detail"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-sm-4"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "view-product"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: product.image,
+      alt: ""
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-sm-7"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "product-information"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Lo\u1EA1i s\u1EA3n ph\u1EA9m: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#",
+      className: "btn btn-default cart-detail"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      "class": "fa fa-shopping-cart"
+    }), "Th\xEAm v\xE0o gi\u1ECF"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      "class": "category-tab shop-details-tab"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      "class": "col-sm-12"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      "class": "nav nav-tabs"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      "class": "active"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#details",
+      "data-toggle": "tab"
+    }, "Th\xF4ng tin s\u1EA3n ph\u1EA9m")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      "class": "tab-content"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      "class": "tab-pane fade active in",
+      id: "details"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.detail))))));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Pro, null);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Product);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Main/Shop/index.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/pages/views/Main/Shop/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+var Shop = function Shop() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      products = _useState2[0],
+      setProduct = _useState2[1];
+
+  var callDataProduct = function callDataProduct() {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/products').then(function (response) {
+      setProduct(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    callDataProduct();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "features_items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "title text-center"
+  }, "C\u1EEDa h\xE0ng"), products.map(function (_ref, index) {
+    var id = _ref.id,
+        name = _ref.name,
+        image = _ref.image,
+        price = _ref.price;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-sm-3",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "product-image-wrapper"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "single-products"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "productinfo text-center"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/product/".concat(id)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: image,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/product/".concat(id)
+    }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#",
+      className: "btn btn-default add-to-cart"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      className: "fa fa-shopping-cart"
+    }), "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))));
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Shop);
 
 /***/ }),
 
@@ -71898,6 +75183,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_views_Admin_Category_ListCate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/views/Admin/Category/ListCate */ "./resources/js/components/pages/views/Admin/Category/ListCate/index.js");
 /* harmony import */ var _pages_views_Admin_Category_AddCate__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/views/Admin/Category/AddCate */ "./resources/js/components/pages/views/Admin/Category/AddCate/index.js");
 /* harmony import */ var _pages_views_Main_Home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/views/Main/Home */ "./resources/js/components/pages/views/Main/Home/index.js");
+/* harmony import */ var _pages_views_Admin_Products_ListProducts__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../pages/views/Admin/Products/ListProducts */ "./resources/js/components/pages/views/Admin/Products/ListProducts/index.js");
+/* harmony import */ var _pages_views_Admin_Products_AddProducts__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../pages/views/Admin/Products/AddProducts */ "./resources/js/components/pages/views/Admin/Products/AddProducts/index.js");
+/* harmony import */ var _pages_views_Admin_Products_EditProduct__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../pages/views/Admin/Products/EditProduct */ "./resources/js/components/pages/views/Admin/Products/EditProduct/index.js");
+/* harmony import */ var _pages_views_Admin_Products_DetailProduct__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../pages/views/Admin/Products/DetailProduct */ "./resources/js/components/pages/views/Admin/Products/DetailProduct/index.js");
+/* harmony import */ var _pages_views_Main_Shop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../pages/views/Main/Shop */ "./resources/js/components/pages/views/Main/Shop/index.js");
+/* harmony import */ var _pages_views_Main_Category__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/views/Main/Category */ "./resources/js/components/pages/views/Main/Category/index.js");
+/* harmony import */ var _pages_views_Main_Product__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/views/Main/Product */ "./resources/js/components/pages/views/Main/Product/index.js");
 
  //Layout
 
@@ -71910,9 +75202,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
 var Routers = function Routers() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/admin/:path?/:path?",
+    path: "/admin/:path?/:path?/:path?",
     exact: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_layouts_LayoutAdmin__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/admin",
@@ -71920,11 +75219,33 @@ var Routers = function Routers() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/admin/category/add"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Category_AddCate__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/admin/category"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Category_ListCate__WEBPACK_IMPORTED_MODULE_5__["default"], null))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_layouts_LayoutMain__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/category",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Category_ListCate__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/products/add",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Products_AddProducts__WEBPACK_IMPORTED_MODULE_9__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/products/:id",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Products_DetailProduct__WEBPACK_IMPORTED_MODULE_11__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/products/edit/:id",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Products_EditProduct__WEBPACK_IMPORTED_MODULE_10__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/products",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Products_ListProducts__WEBPACK_IMPORTED_MODULE_8__["default"], null))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/:path?/:path?",
+    exact: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_layouts_LayoutMain__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/",
     exact: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Main_Home__WEBPACK_IMPORTED_MODULE_7__["default"], null)))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Main_Home__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/shop"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Main_Shop__WEBPACK_IMPORTED_MODULE_12__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/category/:id"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Main_Category__WEBPACK_IMPORTED_MODULE_13__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/product/:id"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Main_Product__WEBPACK_IMPORTED_MODULE_14__["default"], null)))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Routers);

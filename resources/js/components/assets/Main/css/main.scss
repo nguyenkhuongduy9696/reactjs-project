@@ -1172,7 +1172,7 @@
   
   .view-product img {
     border: 1px solid #F7F7F0;
-    height: 380px;
+    margin-top: 50px;
     width: 100%;
   }
   
@@ -1229,13 +1229,20 @@
   }
   
   .product-information h2 {
-    color: #363432;
+    color: #FE980F;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 27px;
     margin-top: 0;
+    margin-bottom: 20px;
   }
   
   .product-information p {
+    color: #696763;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+  }
+  .product-information h3 {
+    font-size: 20px;
     color: #696763;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5px;
@@ -1291,6 +1298,16 @@
     margin-left: 20px;
   }
   
+  .cart-detail {
+    background: #FE980F;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
   
   .shop-details-tab {
     border: 1px solid #F7F7F0;

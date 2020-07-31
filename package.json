@@ -26,6 +26,8 @@
     },
     "dependencies": {
         "antd": "^4.4.3",
-        "react-router-dom": "^5.2.0"
+        "react-hook-form": "^6.1.1",
+        "react-router-dom": "^5.2.0",
+        "sweetalert": "^2.1.2"
     }
 }
