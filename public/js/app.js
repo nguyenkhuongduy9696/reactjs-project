@@ -74021,13 +74021,226 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
 
 
 var AddCate = function AddCate() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Th\xEAm danh m\u1EE5c");
+  var _errors$name;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState2 = _slicedToArray(_useState, 2),
+      category = _useState2[0],
+      setCategory = _useState2[1];
+
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
+
+  var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_1__["useForm"])(),
+      handleSubmit = _useForm.handleSubmit,
+      register = _useForm.register,
+      errors = _useForm.errors;
+
+  var onHandleSubmit = function onHandleSubmit(data) {
+    console.log(data);
+    sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
+      title: "Bạn có chắc chắn muốn thêm danh mục này?",
+      icon: "info",
+      buttons: true
+    }, "buttons", ["Hủy", "Thêm"])).then(function (willAdd) {
+      if (willAdd) {
+        axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/category', data).then(function (respone) {
+          sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Thêm danh mục thành công!", {
+            icon: "success",
+            timer: 2000
+          });
+          history.push('/admin/category');
+        });
+      }
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "h3 mb-2 text-gray-800"
+  }, "Th\xEAm danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card shadow mb-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "",
+    onSubmit: handleSubmit(onHandleSubmit)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "name"
+  }, "T\xEAn danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "form-control",
+    name: "name",
+    ref: register({
+      required: true
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên danh mục không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-primary",
+    type: "submit"
+  }, "Th\xEAm")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AddCate);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/views/Admin/Category/EditCategory/index.js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/pages/views/Admin/Category/EditCategory/index.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var EditCategory = function EditCategory() {
+  function EditForm() {
+    var _errors$name;
+
+    var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
+        handleSubmit = _useForm.handleSubmit,
+        register = _useForm.register,
+        errors = _useForm.errors;
+
+    var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+
+    var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
+        id = _useParams.id;
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState2 = _slicedToArray(_useState, 2),
+        category = _useState2[0],
+        setCategory = _useState2[1];
+
+    var callDataCategory = function callDataCategory() {
+      axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("/api/category/".concat(id)).then(function (response) {
+        setCategory(response.data.cate);
+      }).then(function (error) {
+        return console.log(error);
+      });
+    };
+
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+      callDataCategory();
+    }, []);
+
+    var onHandleSubmit = function onHandleSubmit(data) {
+      console.log(data);
+      sweetalert__WEBPACK_IMPORTED_MODULE_3___default()(_defineProperty({
+        title: "Bạn có chắc chắn muốn cập nhật danh mục này?",
+        icon: "info",
+        buttons: true
+      }, "buttons", ["Hủy", "Cập nhật"])).then(function (willAdd) {
+        if (willAdd) {
+          axios.post("/api/category/".concat(id), data).then(function (respone) {
+            sweetalert__WEBPACK_IMPORTED_MODULE_3___default()("Cập nhật danh mục thành công!", {
+              icon: "success",
+              timer: 2000
+            });
+            history.push('/admin/category');
+          });
+        }
+      });
+    };
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "h3 mb-2 text-gray-800"
+    }, "C\u1EADp nh\u1EADt danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card shadow mb-4"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "card-body"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      action: "",
+      onSubmit: handleSubmit(onHandleSubmit)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-5"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "name"
+    }, "T\xEAn danh m\u1EE5c"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      className: "form-control",
+      name: "name",
+      defaultValue: category.name,
+      ref: register({
+        required: true
+      })
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên danh mục không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "btn btn-primary",
+      type: "submit"
+    }, "C\u1EADp nh\u1EADt")))));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(EditForm, null);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EditCategory);
 
 /***/ }),
 
@@ -74046,6 +74259,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -74059,6 +74273,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -74119,13 +74334,15 @@ var ListCate = function ListCate() {
     id: "dataTable",
     width: "100%",
     cellSpacing: 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Date Created"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, category.map(function (_ref, index) {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, category.map(function (_ref, index) {
     var id = _ref.id,
-        name = _ref.name,
-        created_at = _ref.created_at;
+        name = _ref.name;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, created_at), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+      className: "btn btn-primary mr-1",
+      to: "/admin/category/edit/".concat(id)
+    }, "Edit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       className: "btn btn-danger",
       onClick: function onClick() {
         return deleteProduct(id);
@@ -74197,7 +74414,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var AddProduct = function AddProduct() {
-  var _errors$name, _errors$name2, _errors$price, _errors$price2;
+  var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$detail, _errors$detail2;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -74264,11 +74481,12 @@ var AddProduct = function AddProduct() {
     name: "name",
     ref: register({
       required: true,
-      minLength: 5
+      minLength: 5,
+      pattern: /^[\S][\S]/
     })
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-danger"
-  }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!", ((_errors$name3 = errors.name) === null || _errors$name3 === void 0 ? void 0 : _errors$name3.type) === "pattern" && "Tên sản phẩm không thể chỉ là khoảng trắng!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "cate_id"
@@ -74298,7 +74516,21 @@ var AddProduct = function AddProduct() {
     })
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-danger"
-  }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "price"
+  }, "S\u1ED1 l\u01B0\u1EE3ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "number",
+    className: "form-control",
+    name: "quantity",
+    ref: register({
+      required: true,
+      min: 1
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-1"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6"
@@ -74323,12 +74555,13 @@ var AddProduct = function AddProduct() {
     className: "form-control",
     name: "detail",
     ref: register({
-      required: true
+      required: true,
+      pattern: /[\S]/
     }),
     rows: "3"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-danger"
-  }, errors.detail && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, ((_errors$detail = errors.detail) === null || _errors$detail === void 0 ? void 0 : _errors$detail.type) === "required" && "Mô tả sản phẩm không được để trống!", ((_errors$detail2 = errors.detail) === null || _errors$detail2 === void 0 ? void 0 : _errors$detail2.type) === "pattern" && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-primary",
     type: "submit"
   }, "Th\xEAm")))));
@@ -74747,12 +74980,13 @@ var ListProduct = function ListProduct() {
     id: "dataTable",
     width: "100%",
     cellSpacing: 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Image"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, products.map(function (_ref, index) {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Image"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Quantity"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, products.map(function (_ref, index) {
     var id = _ref.id,
         name = _ref.name,
         cate_id = _ref.cate_id,
         image = _ref.image,
-        price = _ref.price;
+        price = _ref.price,
+        quantity = _ref.quantity;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
@@ -74761,7 +74995,7 @@ var ListProduct = function ListProduct() {
       src: image,
       alt: "",
       width: 100
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
       className: "btn btn-primary mr-1",
       to: "/admin/products/edit/".concat(id)
     }, "Edit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -74826,7 +75060,7 @@ var Category = function Category() {
     var callDataProduct = function callDataProduct() {
       axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/category/".concat(id)).then(function (response) {
         setProduct(response.data.pro);
-        setCate(response.data.cate);
+        setCate(response.data.cate.name);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -75190,6 +75424,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_views_Main_Shop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../pages/views/Main/Shop */ "./resources/js/components/pages/views/Main/Shop/index.js");
 /* harmony import */ var _pages_views_Main_Category__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/views/Main/Category */ "./resources/js/components/pages/views/Main/Category/index.js");
 /* harmony import */ var _pages_views_Main_Product__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/views/Main/Product */ "./resources/js/components/pages/views/Main/Product/index.js");
+/* harmony import */ var _pages_views_Admin_Category_EditCategory__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../pages/views/Admin/Category/EditCategory */ "./resources/js/components/pages/views/Admin/Category/EditCategory/index.js");
 
  //Layout
 
@@ -75209,6 +75444,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var Routers = function Routers() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/admin/:path?/:path?/:path?",
@@ -75217,6 +75453,8 @@ var Routers = function Routers() {
     path: "/admin",
     exact: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/admin/category/edit/:id"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Category_EditCategory__WEBPACK_IMPORTED_MODULE_15__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/admin/category/add"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_views_Admin_Category_AddCate__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/admin/category",

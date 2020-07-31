@@ -13,6 +13,12 @@ class CategoryController extends Controller
         $category = Category::orderBy('created_at', 'desc')->get();
         return response()->json($category, 200);
     }
+    public function add(Request $request)
+    {
+        $data = $request->all();
+        $category = Category::create($data);
+        return response()->json($category, 200);
+    }
     public function delete(Category $category)
     {
         $category->delete();
@@ -22,9 +28,15 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         $arr = [];
-        $arr['cate'] = $category->name;
+        $arr['cate'] = $category;
         $products = Product::where('cate_id', $category->id)->orderBy('created_at', 'desc')->get();
         $arr['pro'] = $products;
         return response()->json($arr, 200);
+    }
+    public function edit(Request $request, Category $category)
+    {
+        $data = $request->all();
+        $category->update($data);
+        return response()->json($category, 200);
     }
 }

@@ -51,11 +51,12 @@ const AddProduct = () => {
                                     <input type="text"
                                         className="form-control"
                                         name="name"
-                                        ref={register({ required: true, minLength: 5 })}
+                                        ref={register({ required: true, minLength: 5, pattern: /^[\S][\S]/ })}
                                     />
                                     <small className="text-danger">
                                         {errors.name?.type === "required" && "Tên sản phẩm không được để trống!"}
                                         {errors.name?.type === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!"}
+                                        {errors.name?.type === "pattern" && "Tên sản phẩm không thể chỉ là khoảng trắng!"}
                                     </small>
 
                                 </div>
@@ -81,6 +82,19 @@ const AddProduct = () => {
                                     </small>
 
                                 </div>
+                                <div className="form-group">
+                                    <label htmlFor="price">Số lượng</label>
+                                    <input type="number"
+                                        className="form-control"
+                                        name="quantity"
+                                        ref={register({ required: true, min: 1 })}
+                                    />
+                                    <small className="text-danger">
+                                        {errors.quantity?.type === "required" && "Số lượng sản phẩm không được để trống!"}
+                                        {errors.quantity?.type === "min" && "Số lượng sản phẩm ít nhất bằng 1!"}
+                                    </small>
+
+                                </div>
                             </div>
                             <div className="col-1"></div>
                             <div className="col-6">
@@ -98,10 +112,13 @@ const AddProduct = () => {
                                     <label htmlFor="detail">Mô tả sản phẩm</label>
                                     <textarea className="form-control"
                                         name="detail"
-                                        ref={register({ required: true })}
+                                        ref={register({ required: true, pattern: /[\S]/ })}
                                         rows="3">
                                     </textarea>
-                                    <small className="text-danger">{errors.detail && "Mô tả sản phẩm không được để trống!"}</small>
+                                    <small className="text-danger">
+                                        {errors.detail?.type === "required" && "Mô tả sản phẩm không được để trống!"}
+                                        {errors.detail?.type === "pattern" && "Mô tả sản phẩm không được để trống!"}
+                                    </small>
 
                                 </div>
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
+import { Link } from 'react-router-dom'
 const ListCate = () => {
     const [category, setCategory] = useState([]);
     const callDataCategory = () => {
@@ -48,17 +49,16 @@ const ListCate = () => {
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
-                                    <th>Date Created</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {category.map(({ id, name, created_at }, index) => (
+                                {category.map(({ id, name }, index) => (
                                     <tr key={index}>
                                         <td>{id}</td>
                                         <td>{name}</td>
-                                        <td>{created_at}</td>
                                         <td>
+                                            <Link className="btn btn-primary mr-1" to={`/admin/category/edit/${id}`} >Edit</Link>
                                             <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>
                                         </td>
                                     </tr>

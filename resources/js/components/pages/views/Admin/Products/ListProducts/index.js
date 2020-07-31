@@ -66,11 +66,12 @@ const ListProduct = () => {
                                     <th>Category</th>
                                     <th>Image</th>
                                     <th>Price</th>
+                                    <th>Quantity</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {products.map(({ id, name, cate_id, image, price }, index) => (
+                                {products.map(({ id, name, cate_id, image, price, quantity }, index) => (
                                     <tr key={index}>
                                         <td>{id}</td>
                                         <td><Link to={`/admin/products/${id}`}>{name}</Link></td>
@@ -79,6 +80,7 @@ const ListProduct = () => {
                                         </td>
                                         <td><img src={image} alt="" width={100} /></td>
                                         <td>{price}</td>
+                                        <td>{quantity}</td>
                                         <td>
                                             <Link className="btn btn-primary mr-1" to={`/admin/products/edit/${id}`} >Edit</Link>
                                             <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>

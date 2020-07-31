@@ -11,7 +11,7 @@ const Category = () => {
             Axios.get(`/api/category/${id}`)
                 .then(response => {
                     setProduct(response.data.pro);
-                    setCate(response.data.cate)
+                    setCate(response.data.cate.name)
                 })
                 .catch(error => console.log(error))
         }

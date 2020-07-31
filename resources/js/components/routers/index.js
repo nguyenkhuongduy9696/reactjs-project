@@ -16,6 +16,7 @@ import DetailProduct from '../pages/views/Admin/Products/DetailProduct';
 import Shop from '../pages/views/Main/Shop';
 import Category from '../pages/views/Main/Category';
 import Product from '../pages/views/Main/Product';
+import EditCategory from '../pages/views/Admin/Category/EditCategory';
 const Routers = () => {
     return (
         <Router>
@@ -25,6 +26,9 @@ const Routers = () => {
                         <Switch>
                             <Route path='/admin' exact>
                                 <Dashboard />
+                            </Route>
+                            <Route path='/admin/category/edit/:id'>
+                                <EditCategory />
                             </Route>
                             <Route path='/admin/category/add'>
                                 <AddCate />
