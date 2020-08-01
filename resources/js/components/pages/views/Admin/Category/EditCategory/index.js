@@ -54,10 +54,11 @@ const EditCategory = () => {
                                             className="form-control"
                                             name="name"
                                             defaultValue={category.name}
-                                            ref={register({ required: true })}
+                                            ref={register({ required: true, pattern: /^[\S][\S]/ })}
                                         />
                                         <small className="text-danger">
                                             {errors.name?.type === "required" && "Tên danh mục không được để trống!"}
+                                            {errors.name?.type === "pattern" && "Tên danh mục không được để trống!"}
                                         </small>
 
                                     </div>

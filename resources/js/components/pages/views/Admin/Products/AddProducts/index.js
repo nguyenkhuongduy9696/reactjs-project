@@ -3,8 +3,15 @@ import { useForm } from 'react-hook-form'
 import swal from 'sweetalert'
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import nopreview from '../../../../../assets/Admin/images/nopreview.png'
+import { storage } from '../../../../../firebase/firebase';
 const AddProduct = () => {
     const [category, setCategory] = useState([]);
+    const [img, setImg] = useState(nopreview);
+    const [imageAsFile, setImageAsFile] = useState('');
+    const [progress, setProgress] = useState(0);
+    const history = useHistory();
+    const { handleSubmit, register, errors } = useForm();
     const callDataCategory = () => {
         axios.get('/api/category')
             .then(response => {
@@ -12,32 +19,64 @@ const AddProduct = () => {
             })
             .catch(error => console.log(error));
     };
-    useEffect(() => {
-        callDataCategory()
-    }, [])
-    const history = useHistory();
-    const { handleSubmit, register, errors } = useForm();
+    const handleChange = (e) => {
+        if (e.target.files[0]) {
+            setImg(URL.createObjectURL(e.target.files[0]))
+            const image = e.target.files[0]
+            setImageAsFile(() => (image))
+        } else {
+            setImg(nopreview)
+        }
+    }
     const onHandleSubmit = (data) => {
-        console.log(data);
         swal({
             title: "Bạn có chắc chắn muốn thêm sản phẩm này?",
             icon: "info",
             buttons: true,
             buttons: ["Hủy", "Thêm"]
-        })
-            .then((willAdd) => {
-                if (willAdd) {
-                    axios.post('/api/products', data)
-                        .then(respone => {
-                            swal("Thêm sản phẩm thành công!", {
-                                icon: "success",
-                                timer: 2000
-                            });
-                            history.push('/admin/products');
-                        })
-                }
-            });
+        }).then((willAdd) => {
+            if (willAdd) {
+                const uploadTask = storage.ref(`/images/${imageAsFile.name}`).put(imageAsFile);
+                uploadTask.on('state_changed',
+                    snapshot => {
+                        const progress = Math.round(
+                            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                        );
+                        setProgress(progress);
+                    },
+                    error => {
+                        console.log(error)
+                    },
+                    () => {
+                        storage
+                            .ref('images')
+                            .child(imageAsFile.name)
+                            .getDownloadURL()
+                            .then(url => {
+                                let pro = {
+                                    name: data.name,
+                                    cate_id: data.cate_id,
+                                    price: data.price,
+                                    quantity: data.quantity,
+                                    image: url,
+                                    detail: data.detail
+                                }
+                                axios.post('/api/products', pro)
+                                    .then(respone => {
+                                        swal("Thêm sản phẩm thành công!", {
+                                            icon: "success",
+                                            timer: 2000
+                                        });
+                                        history.push('/admin/products');
+                                    })
+                            })
+                    })
+            }
+        });
     }
+    useEffect(() => {
+        callDataCategory()
+    }, [])
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Thêm sản phẩm</h1>
@@ -98,12 +137,25 @@ const AddProduct = () => {
                             </div>
                             <div className="col-1"></div>
                             <div className="col-6">
+                                <div className="row justify-content-md-center">
+                                    <div className="col col-lg-5">
+                                        <img src={img} alt="" width="150px" />
+                                    </div>
+                                </div>
+                                <div className="row justify-content">
+                                    <label htmlFor="">UploadProgress: </label>&nbsp;
+                                    <progress
+                                        style={{ height: "30px", width: "300px" }}
+                                        value={progress}
+                                        max="100" />
+                                </div>
                                 <div className="form-group">
                                     <label htmlFor="image">Ảnh sản phẩm</label>
-                                    <input type="text"
+                                    <input type="file"
                                         className="form-control"
                                         name="image"
                                         ref={register({ required: true })}
+                                        onChange={(e) => handleChange(e)}
                                     />
                                     <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
 
@@ -113,7 +165,7 @@ const AddProduct = () => {
                                     <textarea className="form-control"
                                         name="detail"
                                         ref={register({ required: true, pattern: /[\S]/ })}
-                                        rows="3">
+                                        rows="4">
                                     </textarea>
                                     <small className="text-danger">
                                         {errors.detail?.type === "required" && "Mô tả sản phẩm không được để trống!"}
