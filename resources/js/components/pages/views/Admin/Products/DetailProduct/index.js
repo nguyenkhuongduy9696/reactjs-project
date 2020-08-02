@@ -43,6 +43,7 @@ const DetailProduct = () => {
                                 <h3 className="text-primary">Tên sản phẩm: {product.name}</h3>
                                 <h4>Danh mục: {getCategory(product.cate_id)}</h4>
                                 <h4>Giá: {product.price}$</h4>
+                                <h4>Tồn kho: {product.quantity}</h4>
                                 <h4>Mô tả sản phẩm</h4>
                                 <p>{product.detail}</p>
                             </div>

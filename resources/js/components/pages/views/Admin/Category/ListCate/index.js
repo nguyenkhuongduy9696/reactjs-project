@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom'
+import usePaginate from '../../../../../paginate'
 const ListCate = () => {
     const [category, setCategory] = useState([]);
     const callDataCategory = () => {
@@ -11,6 +12,7 @@ const ListCate = () => {
             })
             .catch(error => console.log(error));
     }
+    const page = usePaginate(category, 4)
     useEffect(() => {
         callDataCategory();
     }, []);
@@ -34,7 +36,6 @@ const ListCate = () => {
                 }
             });
     }
-
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Danh sách danh mục</h1>
@@ -53,7 +54,7 @@ const ListCate = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {category.map(({ id, name }, index) => (
+                                {page.currentData().map(({ id, name }, index) => (
                                     <tr key={index}>
                                         <td>{id}</td>
                                         <td>{name}</td>
@@ -68,6 +69,14 @@ const ListCate = () => {
                     </div>
                 </div>
             </div>
+            <nav aria-label="Page navigation example">
+                <ul className="pagination">
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>Previous</a></li>
+                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>Next</a></li>
+                </ul>
+            </nav>
+
         </div>
     );
 }

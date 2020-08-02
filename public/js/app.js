@@ -81172,6 +81172,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _paginate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../paginate */ "./resources/js/components/paginate/index.js");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -81185,6 +81186,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -81205,6 +81207,7 @@ var ListCate = function ListCate() {
     });
   };
 
+  var page = Object(_paginate__WEBPACK_IMPORTED_MODULE_4__["default"])(category, 4);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     callDataCategory();
   }, []);
@@ -81246,7 +81249,7 @@ var ListCate = function ListCate() {
     id: "dataTable",
     width: "100%",
     cellSpacing: 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, category.map(function (_ref, index) {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Action"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, page.currentData().map(function (_ref, index) {
     var id = _ref.id,
         name = _ref.name;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
@@ -81260,7 +81263,32 @@ var ListCate = function ListCate() {
         return deleteProduct(id);
       }
     }, "Delete")));
-  })))))));
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    "aria-label": "Page navigation example"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "pagination"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "page-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    href: "",
+    onClick: function onClick(e) {
+      return page.prev(e);
+    }
+  }, "Previous")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "page-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "page-link text-success",
+    href: "#"
+  }, page.currentPage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "page-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    href: "",
+    onClick: function onClick(e) {
+      return page.next(e);
+    }
+  }, "Next")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ListCate);
@@ -81643,7 +81671,7 @@ var DetailProduct = function DetailProduct() {
       className: "col-6"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "text-primary"
-    }, "T\xEAn s\u1EA3n ph\u1EA9m: ", product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Danh m\u1EE5c: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.detail))))));
+    }, "T\xEAn s\u1EA3n ph\u1EA9m: ", product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Danh m\u1EE5c: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\u1ED3n kho: ", product.quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.detail))))));
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Detail, null));
@@ -81666,8 +81694,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.js");
-/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
-/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
+/* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../firebase/firebase */ "./resources/js/components/firebase/firebase.js");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -81687,32 +81718,49 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var EditProduct = function EditProduct() {
   function EditForm() {
-    var _errors$name, _errors$name2, _errors$price, _errors$price2;
+    var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$detail, _errors$detail2;
 
     var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
         handleSubmit = _useForm.handleSubmit,
         register = _useForm.register,
         errors = _useForm.errors;
 
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+        _useState2 = _slicedToArray(_useState, 2),
+        img = _useState2[0],
+        setImg = _useState2[1];
+
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+        _useState4 = _slicedToArray(_useState3, 2),
+        imageAsFile = _useState4[0],
+        setImageAsFile = _useState4[1];
+
+    var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+        _useState6 = _slicedToArray(_useState5, 2),
+        progress = _useState6[0],
+        setProgress = _useState6[1];
+
     var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
     var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
         id = _useParams.id;
 
-    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-        _useState2 = _slicedToArray(_useState, 2),
-        category = _useState2[0],
-        setCategory = _useState2[1];
+    var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState8 = _slicedToArray(_useState7, 2),
+        category = _useState8[0],
+        setCategory = _useState8[1];
 
-    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
-        _useState4 = _slicedToArray(_useState3, 2),
-        product = _useState4[0],
-        setProduct = _useState4[1];
+    var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState10 = _slicedToArray(_useState9, 2),
+        product = _useState10[0],
+        setProduct = _useState10[1];
 
     var callDataCategory = function callDataCategory() {
-      axios.get('/api/category').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/category').then(function (response) {
         setCategory(response.data);
       })["catch"](function (error) {
         return console.log(error);
@@ -81720,28 +81768,72 @@ var EditProduct = function EditProduct() {
     };
 
     var callDataProducts = function callDataProducts() {
-      axios.get("/api/products/".concat(id)).then(function (respone) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get("/api/products/".concat(id)).then(function (respone) {
         setProduct(respone.data);
+        setImg(respone.data.image);
       })["catch"](function (error) {
         return console.log(error);
       });
     };
 
+    var handleChange = function handleChange(e) {
+      if (e.target.files[0]) {
+        setImg(URL.createObjectURL(e.target.files[0]));
+        var image = e.target.files[0];
+        setImageAsFile(function () {
+          return image;
+        });
+      } else {
+        setImageAsFile('');
+        setImg(product.image);
+      }
+    };
+
+    console.log(imageAsFile);
+
     var onHandleSubmit = function onHandleSubmit(data) {
       console.log(data);
-      sweetalert__WEBPACK_IMPORTED_MODULE_3___default()(_defineProperty({
+      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()(_defineProperty({
         title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
         icon: "info",
         buttons: true
       }, "buttons", ["Hủy", "Cập nhật"])).then(function (willAdd) {
         if (willAdd) {
-          axios.post("/api/products/".concat(id), data).then(function (respone) {
-            sweetalert__WEBPACK_IMPORTED_MODULE_3___default()("Cập nhật sản phẩm thành công!", {
-              icon: "success",
-              timer: 2000
+          if (imageAsFile === '') {
+            axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), data).then(function (respone) {
+              sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
+                icon: "success",
+                timer: 2000
+              });
+              history.push('/admin/products');
             });
-            history.push('/admin/products');
-          });
+          } else {
+            var uploadTask = _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref("/images/".concat(imageAsFile.name)).put(imageAsFile);
+            uploadTask.on('state_changed', function (snapshot) {
+              var progress = Math.round(snapshot.bytesTransferred / snapshot.totalBytes * 100);
+              setProgress(progress);
+            }, function (error) {
+              console.log(error);
+            }, function () {
+              _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref('images').child(imageAsFile.name).getDownloadURL().then(function (url) {
+                var pro = {
+                  name: data.name,
+                  cate_id: data.cate_id,
+                  price: data.price,
+                  quantity: data.quantity,
+                  image: url,
+                  detail: data.detail
+                };
+                axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), pro).then(function (respone) {
+                  sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
+                    icon: "success",
+                    timer: 2000
+                  });
+                  history.push('/admin/products');
+                });
+              });
+            });
+          }
         }
       });
     };
@@ -81773,11 +81865,12 @@ var EditProduct = function EditProduct() {
       defaultValue: product.name,
       ref: register({
         required: true,
-        minLength: 5
+        minLength: 5,
+        pattern: /^[\S][\S]/
       })
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
-    }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, ((_errors$name = errors.name) === null || _errors$name === void 0 ? void 0 : _errors$name.type) === "required" && "Tên sản phẩm không được để trống!", ((_errors$name2 = errors.name) === null || _errors$name2 === void 0 ? void 0 : _errors$name2.type) === "minLength" && "Tên sản phẩm ít nhất 5 ký tự!", ((_errors$name3 = errors.name) === null || _errors$name3 === void 0 ? void 0 : _errors$name3.type) === "pattern" && "Tên sản phẩm không thể chỉ là khoảng trắng!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "form-group"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       htmlFor: "cate_id"
@@ -81808,22 +81901,55 @@ var EditProduct = function EditProduct() {
       })
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
-    }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, ((_errors$price = errors.price) === null || _errors$price === void 0 ? void 0 : _errors$price.type) === "required" && "Giá sản phẩm không được để trống!", ((_errors$price2 = errors.price) === null || _errors$price2 === void 0 ? void 0 : _errors$price2.type) === "min" && "Giá sản phẩm ít nhất bằng 1!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "price"
+    }, "S\u1ED1 l\u01B0\u1EE3ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "number",
+      className: "form-control",
+      name: "quantity",
+      defaultValue: product.quantity,
+      ref: register({
+        required: true,
+        min: 1
+      })
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "col-1"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "col-6"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row justify-content-md-center"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col col-lg-5"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: img,
+      alt: "",
+      width: "150px"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row justify-content"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: ""
+    }, "UploadProgress: "), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("progress", {
+      style: {
+        height: "30px",
+        width: "300px"
+      },
+      value: progress,
+      max: "100"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "form-group"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       htmlFor: "image"
     }, "\u1EA2nh s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "text",
+      type: "file",
       className: "form-control",
       name: "image",
-      defaultValue: product.image,
-      ref: register({
-        required: true
-      })
+      onChange: function onChange(e) {
+        return handleChange(e);
+      }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
     }, errors.image && "Ảnh sản phẩm không được để trống!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -81834,13 +81960,14 @@ var EditProduct = function EditProduct() {
       className: "form-control",
       name: "detail",
       ref: register({
-        required: true
+        required: true,
+        pattern: /[\S]/
       }),
       defaultValue: product.detail,
-      rows: "3"
+      rows: "5"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
-    }, errors.detail && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }, ((_errors$detail = errors.detail) === null || _errors$detail === void 0 ? void 0 : _errors$detail.type) === "required" && "Mô tả sản phẩm không được để trống!", ((_errors$detail2 = errors.detail) === null || _errors$detail2 === void 0 ? void 0 : _errors$detail2.type) === "pattern" && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       className: "btn btn-primary",
       type: "submit"
     }, "C\u1EADp nh\u1EADt")))));
@@ -81977,7 +82104,7 @@ var ListProduct = function ListProduct() {
     }, name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, getCategory(cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       src: image,
       alt: "",
-      width: 100
+      width: 70
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
       className: "btn btn-primary mr-1",
       to: "/admin/products/edit/".concat(id)
@@ -82379,6 +82506,80 @@ var Shop = function Shop() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Shop);
+
+/***/ }),
+
+/***/ "./resources/js/components/paginate/index.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/paginate/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var usePagination = function usePagination(data, itemsPerPage) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1),
+      _useState2 = _slicedToArray(_useState, 2),
+      currentPage = _useState2[0],
+      setCurrentPage = _useState2[1];
+
+  var maxPage = Math.ceil(data.length / itemsPerPage);
+
+  function currentData() {
+    var begin = (currentPage - 1) * itemsPerPage;
+    var end = begin + itemsPerPage;
+    return data.slice(begin, end);
+  }
+
+  function next(e) {
+    e.preventDefault();
+    setCurrentPage(function (currentPage) {
+      return Math.min(currentPage + 1, maxPage);
+    });
+  }
+
+  function prev(e) {
+    e.preventDefault();
+    setCurrentPage(function (currentPage) {
+      return Math.max(currentPage - 1, 1);
+    });
+  }
+
+  function jump(page) {
+    var pageNumber = Math.max(1, page);
+    setCurrentPage(function (currentPage) {
+      return Math.min(pageNumber, maxPage);
+    });
+  }
+
+  return {
+    next: next,
+    prev: prev,
+    jump: jump,
+    currentData: currentData,
+    currentPage: currentPage,
+    maxPage: maxPage
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (usePagination);
 
 /***/ }),
 

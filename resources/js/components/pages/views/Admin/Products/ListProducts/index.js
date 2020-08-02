@@ -78,7 +78,7 @@ const ListProduct = () => {
                                         <td>
                                             {getCategory(cate_id)}
                                         </td>
-                                        <td><img src={image} alt="" width={100} /></td>
+                                        <td><img src={image} alt="" width={70} /></td>
                                         <td>{price}</td>
                                         <td>{quantity}</td>
                                         <td>
