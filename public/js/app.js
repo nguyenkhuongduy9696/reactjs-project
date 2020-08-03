@@ -81669,6 +81669,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_Admin_images_nopreview_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../assets/Admin/images/nopreview.png */ "./resources/js/components/assets/Admin/images/nopreview.png");
 /* harmony import */ var _assets_Admin_images_nopreview_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_Admin_images_nopreview_png__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _firebase_firebase__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../firebase/firebase */ "./resources/js/components/firebase/firebase.js");
+/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ckeditor/ckeditor5-react */ "./node_modules/@ckeditor/ckeditor5-react/dist/ckeditor.js");
+/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_8__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -81691,28 +81695,40 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var AddProduct = function AddProduct() {
-  var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$detail, _errors$detail2;
+  var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$short_desc, _errors$short_desc2, _errors$short_desc3;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
       category = _useState2[0],
       setCategory = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_assets_Admin_images_nopreview_png__WEBPACK_IMPORTED_MODULE_5___default.a),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
       _useState4 = _slicedToArray(_useState3, 2),
-      img = _useState4[0],
-      setImg = _useState4[1];
+      errorDetail = _useState4[0],
+      setErrorDetail = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(' '),
       _useState6 = _slicedToArray(_useState5, 2),
-      imageAsFile = _useState6[0],
-      setImageAsFile = _useState6[1];
+      detail = _useState6[0],
+      setDetail = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_assets_Admin_images_nopreview_png__WEBPACK_IMPORTED_MODULE_5___default.a),
       _useState8 = _slicedToArray(_useState7, 2),
-      progress = _useState8[0],
-      setProgress = _useState8[1];
+      img = _useState8[0],
+      setImg = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      _useState10 = _slicedToArray(_useState9, 2),
+      imageAsFile = _useState10[0],
+      setImageAsFile = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState12 = _slicedToArray(_useState11, 2),
+      progress = _useState12[0],
+      setProgress = _useState12[1];
 
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
 
@@ -81742,39 +81758,48 @@ var AddProduct = function AddProduct() {
   };
 
   var onHandleSubmit = function onHandleSubmit(data) {
-    sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
-      title: "Bạn có chắc chắn muốn thêm sản phẩm này?",
-      icon: "info",
-      buttons: true
-    }, "buttons", ["Hủy", "Thêm"])).then(function (willAdd) {
-      if (willAdd) {
-        var uploadTask = _firebase_firebase__WEBPACK_IMPORTED_MODULE_6__["storage"].ref("/images/".concat(imageAsFile.name)).put(imageAsFile);
-        uploadTask.on('state_changed', function (snapshot) {
-          var progress = Math.round(snapshot.bytesTransferred / snapshot.totalBytes * 100);
-          setProgress(progress);
-        }, function (error) {
-          console.log(error);
-        }, function () {
-          _firebase_firebase__WEBPACK_IMPORTED_MODULE_6__["storage"].ref('images').child(imageAsFile.name).getDownloadURL().then(function (url) {
-            var pro = {
-              name: data.name,
-              cate_id: data.cate_id,
-              price: data.price,
-              quantity: data.quantity,
-              image: url,
-              detail: data.detail
-            };
-            axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/products', pro).then(function (respone) {
-              sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Thêm sản phẩm thành công!", {
-                icon: "success",
-                timer: 2000
+    var pattern = /^[\S][\S]/;
+    console.log(data, detail);
+
+    if (pattern.test(detail) === false) {
+      setErrorDetail('Mô tả không được để trống!');
+    } else {
+      setErrorDetail('');
+      sweetalert__WEBPACK_IMPORTED_MODULE_2___default()(_defineProperty({
+        title: "Bạn có chắc chắn muốn thêm sản phẩm này?",
+        icon: "info",
+        buttons: true
+      }, "buttons", ["Hủy", "Thêm"])).then(function (willAdd) {
+        if (willAdd) {
+          var uploadTask = _firebase_firebase__WEBPACK_IMPORTED_MODULE_6__["storage"].ref("/images/".concat(imageAsFile.name)).put(imageAsFile);
+          uploadTask.on('state_changed', function (snapshot) {
+            var progress = Math.round(snapshot.bytesTransferred / snapshot.totalBytes * 100);
+            setProgress(progress);
+          }, function (error) {
+            console.log(error);
+          }, function () {
+            _firebase_firebase__WEBPACK_IMPORTED_MODULE_6__["storage"].ref('images').child(imageAsFile.name).getDownloadURL().then(function (url) {
+              var pro = {
+                name: data.name,
+                cate_id: data.cate_id,
+                price: data.price,
+                quantity: data.quantity,
+                image: url,
+                short_desc: data.short_desc,
+                detail: detail
+              };
+              axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/products', pro).then(function (respone) {
+                sweetalert__WEBPACK_IMPORTED_MODULE_2___default()("Thêm sản phẩm thành công!", {
+                  icon: "success",
+                  timer: 2000
+                });
+                history.push('/admin/products');
               });
-              history.push('/admin/products');
             });
           });
-        });
-      }
-    });
+        }
+      });
+    }
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -81822,6 +81847,7 @@ var AddProduct = function AddProduct() {
         name = _ref.name;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
       key: index,
+      selected: id === 13,
       value: id
     }, name);
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -81852,10 +81878,23 @@ var AddProduct = function AddProduct() {
     })
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-danger"
-  }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-1"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-6"
+  }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "detail"
+  }, "M\xF4 t\u1EA3 ng\u1EAFn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "form-control",
+    name: "short_desc",
+    ref: register({
+      required: true,
+      pattern: /[\S]/,
+      maxLength: 155
+    }),
+    rows: "7"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "text-danger"
+  }, ((_errors$short_desc = errors.short_desc) === null || _errors$short_desc === void 0 ? void 0 : _errors$short_desc.type) === "required" && "Mô tả ngắn không được để trống!", ((_errors$short_desc2 = errors.short_desc) === null || _errors$short_desc2 === void 0 ? void 0 : _errors$short_desc2.type) === "pattern" && "Mô tả ngắn không được để trống!", ((_errors$short_desc3 = errors.short_desc) === null || _errors$short_desc3 === void 0 ? void 0 : _errors$short_desc3.type) === "maxLength" && "Mô tả ngắn không quá 155 ký tự!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-7"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row justify-content-md-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -81865,10 +81904,10 @@ var AddProduct = function AddProduct() {
     alt: "",
     width: "150px"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row justify-content"
+    className: "form-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: ""
-  }, "UploadProgress: "), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("progress", {
+  }, "UploadProgress: "), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("progress", {
     style: {
       height: "30px",
       width: "300px"
@@ -81895,17 +81934,15 @@ var AddProduct = function AddProduct() {
     className: "form-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "detail"
-  }, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-    className: "form-control",
-    name: "detail",
-    ref: register({
-      required: true,
-      pattern: /[\S]/
-    }),
-    rows: "4"
+  }, "Chi ti\u1EBFt s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_8___default.a,
+    onChange: function onChange(event, editor) {
+      var data = editor.getData();
+      setDetail(data);
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-danger"
-  }, ((_errors$detail = errors.detail) === null || _errors$detail === void 0 ? void 0 : _errors$detail.type) === "required" && "Mô tả sản phẩm không được để trống!", ((_errors$detail2 = errors.detail) === null || _errors$detail2 === void 0 ? void 0 : _errors$detail2.type) === "pattern" && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, errorDetail)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-primary",
     type: "submit"
   }, "Th\xEAm")))));
@@ -82004,7 +82041,11 @@ var DetailProduct = function DetailProduct() {
       className: "col-6"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "text-primary"
-    }, "T\xEAn s\u1EA3n ph\u1EA9m: ", product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Danh m\u1EE5c: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\u1ED3n kho: ", product.quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.detail))))));
+    }, "T\xEAn s\u1EA3n ph\u1EA9m: ", product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Danh m\u1EE5c: ", getCategory(product.cate_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Gi\xE1: ", product.price, "$"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "T\u1ED3n kho: ", product.quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "M\xF4 t\u1EA3 ng\u1EAFn c\u1EE7a s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, product.short_desc), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Chi ti\u1EBFt s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      dangerouslySetInnerHTML: {
+        __html: product.detail
+      }
+    })))))));
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Detail, null));
@@ -82032,6 +82073,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! sweetalert */ "./node_modules/sweetalert/dist/sweetalert.min.js");
 /* harmony import */ var sweetalert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(sweetalert__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../firebase/firebase */ "./resources/js/components/firebase/firebase.js");
+/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ckeditor/ckeditor5-react */ "./node_modules/@ckeditor/ckeditor5-react/dist/ckeditor.js");
+/* harmony import */ var _ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_7__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -82053,44 +82098,56 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var EditProduct = function EditProduct() {
   function EditForm() {
-    var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$detail, _errors$detail2;
+    var _errors$name, _errors$name2, _errors$name3, _errors$price, _errors$price2, _errors$quantity, _errors$quantity2, _errors$short_desc, _errors$short_desc2, _errors$short_desc3;
 
     var _useForm = Object(react_hook_form__WEBPACK_IMPORTED_MODULE_2__["useForm"])(),
         handleSubmit = _useForm.handleSubmit,
         register = _useForm.register,
         errors = _useForm.errors;
 
-    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
         _useState2 = _slicedToArray(_useState, 2),
-        img = _useState2[0],
-        setImg = _useState2[1];
+        errorDetail = _useState2[0],
+        setErrorDetail = _useState2[1];
 
-    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+    var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(' '),
         _useState4 = _slicedToArray(_useState3, 2),
-        imageAsFile = _useState4[0],
-        setImageAsFile = _useState4[1];
+        detail = _useState4[0],
+        setDetail = _useState4[1];
 
-    var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+    var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
         _useState6 = _slicedToArray(_useState5, 2),
-        progress = _useState6[0],
-        setProgress = _useState6[1];
+        img = _useState6[0],
+        setImg = _useState6[1];
+
+    var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+        _useState8 = _slicedToArray(_useState7, 2),
+        imageAsFile = _useState8[0],
+        setImageAsFile = _useState8[1];
+
+    var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+        _useState10 = _slicedToArray(_useState9, 2),
+        progress = _useState10[0],
+        setProgress = _useState10[1];
 
     var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
     var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
         id = _useParams.id;
 
-    var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
-        _useState8 = _slicedToArray(_useState7, 2),
-        category = _useState8[0],
-        setCategory = _useState8[1];
+    var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+        _useState12 = _slicedToArray(_useState11, 2),
+        category = _useState12[0],
+        setCategory = _useState12[1];
 
-    var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
-        _useState10 = _slicedToArray(_useState9, 2),
-        product = _useState10[0],
-        setProduct = _useState10[1];
+    var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({}),
+        _useState14 = _slicedToArray(_useState13, 2),
+        product = _useState14[0],
+        setProduct = _useState14[1];
 
     var callDataCategory = function callDataCategory() {
       axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/category').then(function (response) {
@@ -82126,49 +82183,65 @@ var EditProduct = function EditProduct() {
 
     var onHandleSubmit = function onHandleSubmit(data) {
       console.log(data);
-      sweetalert__WEBPACK_IMPORTED_MODULE_4___default()(_defineProperty({
-        title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
-        icon: "info",
-        buttons: true
-      }, "buttons", ["Hủy", "Cập nhật"])).then(function (willAdd) {
-        if (willAdd) {
-          if (imageAsFile === '') {
-            axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), data).then(function (respone) {
-              sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
-                icon: "success",
-                timer: 2000
+      var pattern = /^[\S][\S]/;
+
+      if (pattern.test(detail) === false) {
+        setErrorDetail('Mô tả không được để trống!');
+      } else {
+        setErrorDetail('');
+        sweetalert__WEBPACK_IMPORTED_MODULE_4___default()(_defineProperty({
+          title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
+          icon: "info",
+          buttons: true
+        }, "buttons", ["Hủy", "Cập nhật"])).then(function (willAdd) {
+          if (willAdd) {
+            if (imageAsFile === '') {
+              var pro = {
+                name: data.name,
+                cate_id: data.cate_id,
+                price: data.price,
+                quantity: data.quantity,
+                short_desc: data.short_desc,
+                detail: detail
+              };
+              axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), pro).then(function (respone) {
+                sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
+                  icon: "success",
+                  timer: 2000
+                });
+                history.push('/admin/products');
               });
-              history.push('/admin/products');
-            });
-          } else {
-            var uploadTask = _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref("/images/".concat(imageAsFile.name)).put(imageAsFile);
-            uploadTask.on('state_changed', function (snapshot) {
-              var progress = Math.round(snapshot.bytesTransferred / snapshot.totalBytes * 100);
-              setProgress(progress);
-            }, function (error) {
-              console.log(error);
-            }, function () {
-              _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref('images').child(imageAsFile.name).getDownloadURL().then(function (url) {
-                var pro = {
-                  name: data.name,
-                  cate_id: data.cate_id,
-                  price: data.price,
-                  quantity: data.quantity,
-                  image: url,
-                  detail: data.detail
-                };
-                axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), pro).then(function (respone) {
-                  sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
-                    icon: "success",
-                    timer: 2000
+            } else {
+              var uploadTask = _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref("/images/".concat(imageAsFile.name)).put(imageAsFile);
+              uploadTask.on('state_changed', function (snapshot) {
+                var progress = Math.round(snapshot.bytesTransferred / snapshot.totalBytes * 100);
+                setProgress(progress);
+              }, function (error) {
+                console.log(error);
+              }, function () {
+                _firebase_firebase__WEBPACK_IMPORTED_MODULE_5__["storage"].ref('images').child(imageAsFile.name).getDownloadURL().then(function (url) {
+                  var pro = {
+                    name: data.name,
+                    cate_id: data.cate_id,
+                    price: data.price,
+                    quantity: data.quantity,
+                    image: url,
+                    short_desc: data.short_desc,
+                    detail: data.detail
+                  };
+                  axios__WEBPACK_IMPORTED_MODULE_3___default.a.post("/api/products/".concat(id), pro).then(function (respone) {
+                    sweetalert__WEBPACK_IMPORTED_MODULE_4___default()("Cập nhật sản phẩm thành công!", {
+                      icon: "success",
+                      timer: 2000
+                    });
+                    history.push('/admin/products');
                   });
-                  history.push('/admin/products');
                 });
               });
-            });
+            }
           }
-        }
-      });
+        });
+      }
     };
 
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -82217,6 +82290,7 @@ var EditProduct = function EditProduct() {
           name = _ref.name;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         key: index,
+        selected: id === product.cate_id,
         value: id
       }, name);
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -82249,10 +82323,24 @@ var EditProduct = function EditProduct() {
       })
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
-    }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-1"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-6"
+    }, ((_errors$quantity = errors.quantity) === null || _errors$quantity === void 0 ? void 0 : _errors$quantity.type) === "required" && "Số lượng sản phẩm không được để trống!", ((_errors$quantity2 = errors.quantity) === null || _errors$quantity2 === void 0 ? void 0 : _errors$quantity2.type) === "min" && "Số lượng sản phẩm ít nhất bằng 1!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "form-group"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      htmlFor: "detail"
+    }, "M\xF4 t\u1EA3 ng\u1EAFn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+      className: "form-control",
+      defaultValue: product.short_desc,
+      name: "short_desc",
+      ref: register({
+        required: true,
+        pattern: /[\S]/,
+        maxLength: 155
+      }),
+      rows: "7"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      className: "text-danger"
+    }, ((_errors$short_desc = errors.short_desc) === null || _errors$short_desc === void 0 ? void 0 : _errors$short_desc.type) === "required" && "Mô tả ngắn không được để trống!", ((_errors$short_desc2 = errors.short_desc) === null || _errors$short_desc2 === void 0 ? void 0 : _errors$short_desc2.type) === "pattern" && "Mô tả ngắn không được để trống!", ((_errors$short_desc3 = errors.short_desc) === null || _errors$short_desc3 === void 0 ? void 0 : _errors$short_desc3.type) === "maxLength" && "Mô tả ngắn không quá 155 ký tự!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-7"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "row justify-content-md-center"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -82262,10 +82350,10 @@ var EditProduct = function EditProduct() {
       alt: "",
       width: "150px"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "row justify-content"
+      className: "form-group"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       htmlFor: ""
-    }, "UploadProgress: "), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("progress", {
+    }, "UploadProgress: "), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("progress", {
       style: {
         height: "30px",
         width: "300px"
@@ -82289,18 +82377,16 @@ var EditProduct = function EditProduct() {
       className: "form-group"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
       htmlFor: "detail"
-    }, "M\xF4 t\u1EA3 s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-      className: "form-control",
-      name: "detail",
-      ref: register({
-        required: true,
-        pattern: /[\S]/
-      }),
-      defaultValue: product.detail,
-      rows: "5"
+    }, "Chi ti\u1EBFt s\u1EA3n ph\u1EA9m"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ckeditor_ckeditor5_react__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_7___default.a,
+      data: product.detail,
+      onChange: function onChange(event, editor) {
+        var data = editor.getData();
+        setDetail(data);
+      }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
       className: "text-danger"
-    }, ((_errors$detail = errors.detail) === null || _errors$detail === void 0 ? void 0 : _errors$detail.type) === "required" && "Mô tả sản phẩm không được để trống!", ((_errors$detail2 = errors.detail) === null || _errors$detail2 === void 0 ? void 0 : _errors$detail2.type) === "pattern" && "Mô tả sản phẩm không được để trống!")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    }, errorDetail)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       className: "btn btn-primary",
       type: "submit"
     }, "C\u1EADp nh\u1EADt")))));

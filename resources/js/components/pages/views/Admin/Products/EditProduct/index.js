@@ -4,9 +4,13 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios';
 import swal from 'sweetalert'
 import { storage } from '../../../../../firebase/firebase';
+import CKEditor from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const EditProduct = () => {
     function EditForm() {
         const { handleSubmit, register, errors } = useForm();
+        const [errorDetail, setErrorDetail] = useState('');
+        const [detail, setDetail] = useState(' ');
         const [img, setImg] = useState();
         const [imageAsFile, setImageAsFile] = useState('');
         const [progress, setProgress] = useState(0);
@@ -41,62 +45,77 @@ const EditProduct = () => {
         console.log(imageAsFile)
         const onHandleSubmit = (data) => {
             console.log(data);
-            swal({
-                title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
-                icon: "info",
-                buttons: true,
-                buttons: ["Hủy", "Cập nhật"]
-            })
-                .then((willAdd) => {
-                    if (willAdd) {
-                        if (imageAsFile === '') {
-                            axios.post(`/api/products/${id}`, data)
-                                .then(respone => {
-                                    swal("Cập nhật sản phẩm thành công!", {
-                                        icon: "success",
-                                        timer: 2000
-                                    });
-                                    history.push('/admin/products');
-                                })
-                        } else {
-                            const uploadTask = storage.ref(`/images/${imageAsFile.name}`).put(imageAsFile);
-                            uploadTask.on('state_changed',
-                                snapshot => {
-                                    const progress = Math.round(
-                                        (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-                                    );
-                                    setProgress(progress);
-                                },
-                                error => {
-                                    console.log(error)
-                                },
-                                () => {
-                                    storage
-                                        .ref('images')
-                                        .child(imageAsFile.name)
-                                        .getDownloadURL()
-                                        .then(url => {
-                                            let pro = {
-                                                name: data.name,
-                                                cate_id: data.cate_id,
-                                                price: data.price,
-                                                quantity: data.quantity,
-                                                image: url,
-                                                detail: data.detail
-                                            }
-                                            axios.post(`/api/products/${id}`, pro)
-                                                .then(respone => {
-                                                    swal("Cập nhật sản phẩm thành công!", {
-                                                        icon: "success",
-                                                        timer: 2000
-                                                    });
-                                                    history.push('/admin/products');
-                                                })
-                                        })
-                                })
+            const pattern = /^[\S][\S]/;
+            if (pattern.test(detail) === false) {
+                setErrorDetail('Mô tả không được để trống!')
+            } else {
+                setErrorDetail('');
+                swal({
+                    title: "Bạn có chắc chắn muốn cập nhật sản phẩm này?",
+                    icon: "info",
+                    buttons: true,
+                    buttons: ["Hủy", "Cập nhật"]
+                })
+                    .then((willAdd) => {
+                        if (willAdd) {
+                            if (imageAsFile === '') {
+                                let pro = {
+                                    name: data.name,
+                                    cate_id: data.cate_id,
+                                    price: data.price,
+                                    quantity: data.quantity,
+                                    short_desc: data.short_desc,
+                                    detail: detail
+                                }
+                                axios.post(`/api/products/${id}`, pro)
+                                    .then(respone => {
+                                        swal("Cập nhật sản phẩm thành công!", {
+                                            icon: "success",
+                                            timer: 2000
+                                        });
+                                        history.push('/admin/products');
+                                    })
+                            } else {
+                                const uploadTask = storage.ref(`/images/${imageAsFile.name}`).put(imageAsFile);
+                                uploadTask.on('state_changed',
+                                    snapshot => {
+                                        const progress = Math.round(
+                                            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                                        );
+                                        setProgress(progress);
+                                    },
+                                    error => {
+                                        console.log(error)
+                                    },
+                                    () => {
+                                        storage
+                                            .ref('images')
+                                            .child(imageAsFile.name)
+                                            .getDownloadURL()
+                                            .then(url => {
+                                                let pro = {
+                                                    name: data.name,
+                                                    cate_id: data.cate_id,
+                                                    price: data.price,
+                                                    quantity: data.quantity,
+                                                    image: url,
+                                                    short_desc: data.short_desc,
+                                                    detail: data.detail
+                                                }
+                                                axios.post(`/api/products/${id}`, pro)
+                                                    .then(respone => {
+                                                        swal("Cập nhật sản phẩm thành công!", {
+                                                            icon: "success",
+                                                            timer: 2000
+                                                        });
+                                                        history.push('/admin/products');
+                                                    })
+                                            })
+                                    })
+                            }
                         }
-                    }
-                });
+                    });
+            }
         }
         useEffect(() => {
             callDataProducts(), callDataCategory()
@@ -128,7 +147,7 @@ const EditProduct = () => {
                                         <label htmlFor="cate_id">Danh mục</label>
                                         <select className="form-control" id="cate_id" name="cate_id" ref={register}>
                                             {category.map(({ id, name }, index) => (
-                                                <option key={index} value={id}>{name}</option>
+                                                <option key={index} selected={id === product.cate_id} value={id}>{name}</option>
                                             ))}
                                         </select>
 
@@ -158,19 +177,31 @@ const EditProduct = () => {
                                             {errors.quantity?.type === "required" && "Số lượng sản phẩm không được để trống!"}
                                             {errors.quantity?.type === "min" && "Số lượng sản phẩm ít nhất bằng 1!"}
                                         </small>
-
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="detail">Mô tả ngắn</label>
+                                        <textarea className="form-control"
+                                            defaultValue={product.short_desc}
+                                            name="short_desc"
+                                            ref={register({ required: true, pattern: /[\S]/, maxLength: 155 })}
+                                            rows="7">
+                                        </textarea>
+                                        <small className="text-danger">
+                                            {errors.short_desc?.type === "required" && "Mô tả ngắn không được để trống!"}
+                                            {errors.short_desc?.type === "pattern" && "Mô tả ngắn không được để trống!"}
+                                            {errors.short_desc?.type === "maxLength" && "Mô tả ngắn không quá 155 ký tự!"}
+                                        </small>
                                     </div>
                                 </div>
-                                <div className="col-1"></div>
-                                <div className="col-6">
+                                <div className="col-7">
                                     <div className="row justify-content-md-center">
                                         <div className="col col-lg-5">
                                             <img src={img} alt="" width="150px" />
                                         </div>
                                     </div>
-                                    <div className="row justify-content">
-                                        <label htmlFor="">UploadProgress: </label>&nbsp;
-                                    <progress
+                                    <div className="form-group">
+                                        <label htmlFor="">UploadProgress: </label>&nbsp;<br />
+                                        <progress
                                             style={{ height: "30px", width: "300px" }}
                                             value={progress}
                                             max="100" />
@@ -187,17 +218,16 @@ const EditProduct = () => {
 
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="detail">Mô tả sản phẩm</label>
-                                        <textarea className="form-control"
-                                            name="detail"
-                                            ref={register({ required: true, pattern: /[\S]/ })}
-                                            defaultValue={product.detail}
-                                            rows="5">
-                                        </textarea>
-                                        <small className="text-danger">
-                                            {errors.detail?.type === "required" && "Mô tả sản phẩm không được để trống!"}
-                                            {errors.detail?.type === "pattern" && "Mô tả sản phẩm không được để trống!"}
-                                        </small>
+                                        <label htmlFor="detail">Chi tiết sản phẩm</label>
+                                        <CKEditor
+                                            editor={ClassicEditor}
+                                            data={product.detail}
+                                            onChange={(event, editor) => {
+                                                const data = editor.getData();
+                                                setDetail(data);
+                                            }}
+                                        />
+                                        <small className="text-danger">{errorDetail}</small>
                                     </div>
                                 </div>
                             </div>
