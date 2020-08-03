@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom';
+import usePaginate from '../../../../../paginate'
 const ListProduct = () => {
     const [products, setProduct] = useState([]);
     const [category, setCategory] = useState([]);
@@ -18,6 +19,8 @@ const ListProduct = () => {
             })
             .catch(error => console.log(error));
     };
+    const page = usePaginate(products, 4);
+
     const deleteProduct = (id) => {
         swal({
             title: "Bạn có chắc chắn muốn xóa sản phẩm này?",
@@ -71,7 +74,7 @@ const ListProduct = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {products.map(({ id, name, cate_id, image, price, quantity }, index) => (
+                                {page.currentData().map(({ id, name, cate_id, image, price, quantity }, index) => (
                                     <tr key={index}>
                                         <td>{id}</td>
                                         <td><Link to={`/admin/products/${id}`}>{name}</Link></td>
@@ -92,6 +95,15 @@ const ListProduct = () => {
                     </div>
                 </div>
             </div>
+            <nav aria-label="Page navigation example">
+                <ul className="pagination">
+                    <li className="page-item"><a className="page-link" href="#" onClick={() => page.jump(1)}>First</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>Previous</a></li>
+                    <li className="page-item"><p className="page-link text-success" href="#">Current Page: {page.currentPage}</p></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>Next</a></li>
+                    <li className="page-item"><a className="page-link" href="#" onClick={() => page.jump(page.maxPage)}>Last</a></li>
+                </ul>
+            </nav>
         </div>
     );
 }
