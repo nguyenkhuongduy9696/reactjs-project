@@ -18,6 +18,12 @@ const EditProduct = () => {
         let { id } = useParams();
         const [category, setCategory] = useState([]);
         const [product, setProduct] = useState({});
+        const editorConfig = {
+            cloudServices: {
+                tokenUrl: 'https://73717.cke-cs.com/token/dev/a34370765a54fdad1639651ca88df80cebc9c72a39cffdaeb4447b1d923a',
+                uploadUrl: 'https://73717.cke-cs.com/easyimage/upload/'
+            }
+        }
         const callDataCategory = () => {
             axios.get('/api/category')
                 .then(response => {
@@ -30,6 +36,7 @@ const EditProduct = () => {
                 .then(respone => {
                     setProduct(respone.data)
                     setImg(respone.data.image)
+                    setDetail(respone.data.detail)
                 }).catch(error => console.log(error))
         }
         const handleChange = (e) => {
@@ -179,18 +186,14 @@ const EditProduct = () => {
                                         </small>
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="detail">Mô tả ngắn</label>
-                                        <textarea className="form-control"
-                                            defaultValue={product.short_desc}
-                                            name="short_desc"
-                                            ref={register({ required: true, pattern: /[\S]/, maxLength: 155 })}
-                                            rows="7">
-                                        </textarea>
-                                        <small className="text-danger">
-                                            {errors.short_desc?.type === "required" && "Mô tả ngắn không được để trống!"}
-                                            {errors.short_desc?.type === "pattern" && "Mô tả ngắn không được để trống!"}
-                                            {errors.short_desc?.type === "maxLength" && "Mô tả ngắn không quá 155 ký tự!"}
-                                        </small>
+                                        <label htmlFor="image">Ảnh sản phẩm</label>
+                                        <input type="file"
+                                            className="form-control"
+                                            name="image"
+
+                                            onChange={(e) => handleChange(e)}
+                                        />
+                                        <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
                                     </div>
                                 </div>
                                 <div className="col-7">
@@ -207,28 +210,36 @@ const EditProduct = () => {
                                             max="100" />
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="image">Ảnh sản phẩm</label>
-                                        <input type="file"
-                                            className="form-control"
-                                            name="image"
-
-                                            onChange={(e) => handleChange(e)}
-                                        />
-                                        <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
-
+                                        <label htmlFor="detail">Mô tả ngắn</label>
+                                        <textarea className="form-control"
+                                            defaultValue={product.short_desc}
+                                            name="short_desc"
+                                            ref={register({ required: true, pattern: /[\S]/, maxLength: 155 })}
+                                            rows="6">
+                                        </textarea>
+                                        <small className="text-danger">
+                                            {errors.short_desc?.type === "required" && "Mô tả ngắn không được để trống!"}
+                                            {errors.short_desc?.type === "pattern" && "Mô tả ngắn không được để trống!"}
+                                            {errors.short_desc?.type === "maxLength" && "Mô tả ngắn không quá 155 ký tự!"}
+                                        </small>
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="detail">Chi tiết sản phẩm</label>
-                                        <CKEditor
-                                            editor={ClassicEditor}
-                                            data={product.detail}
-                                            onChange={(event, editor) => {
-                                                const data = editor.getData();
-                                                setDetail(data);
-                                            }}
-                                        />
-                                        <small className="text-danger">{errorDetail}</small>
-                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="form-group">
+                                    <label htmlFor="detail">Chi tiết sản phẩm</label>
+                                    <CKEditor
+                                        editor={ClassicEditor}
+                                        config={editorConfig}
+                                        onInit={editor => {
+                                            editor.setData(product.detail)
+                                        }}
+                                        onChange={(event, editor) => {
+                                            const data = editor.getData();
+                                            setDetail(data);
+                                        }}
+                                    />
+                                    <small className="text-danger">{errorDetail}</small>
                                 </div>
                             </div>
                             <button className="btn btn-primary" type="submit">Cập nhật</button>

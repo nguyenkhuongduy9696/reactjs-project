@@ -16,6 +16,12 @@ const AddCate = () => {
     const history = useHistory();
     const [progress, setProgress] = useState(0);
     const { handleSubmit, register, errors } = useForm();
+    const editorConfig = {
+        cloudServices: {
+            tokenUrl: 'https://73717.cke-cs.com/token/dev/a34370765a54fdad1639651ca88df80cebc9c72a39cffdaeb4447b1d923a',
+            uploadUrl: 'https://73717.cke-cs.com/easyimage/upload/'
+        }
+    }
     const handleChange = (e) => {
         if (e.target.files[0]) {
             setImg(URL.createObjectURL(e.target.files[0]))
@@ -27,7 +33,7 @@ const AddCate = () => {
     }
     const onHandleSubmit = (data) => {
         const pattern = /^[\S][\S]/;
-        console.log(data, detail);
+        console.log(detail);
         if (pattern.test(detail) === false) {
             setErrorDetail('Mô tả không được để trống!')
         } else {
@@ -96,19 +102,18 @@ const AddCate = () => {
                                     </small>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="name">Mô tả danh mục</label>
-                                    <CKEditor
-                                        editor={ClassicEditor}
-                                        onChange={(event, editor) => {
-                                            const data = editor.getData();
-                                            setDetail(data);
-                                        }}
+                                    <label htmlFor="image">Ảnh sản phẩm</label>
+                                    <input type="file"
+                                        className="form-control"
+                                        name="image"
+                                        ref={register({ required: true })}
+                                        onChange={(e) => handleChange(e)}
                                     />
-                                    <small className="text-danger">{errorDetail}</small>
+                                    <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
                                 </div>
                             </div>
                             <div className="col-1"></div>
-                            <div className="col-4">
+                            <div className="col-5">
                                 <div className="row justify-content-md-center">
                                     <div className="col col-lg-5">
                                         <img src={img} alt="" width="150px" />
@@ -121,17 +126,20 @@ const AddCate = () => {
                                         value={progress}
                                         max="100" />
                                 </div>
-                                <div className="form-group">
-                                    <label htmlFor="image">Ảnh sản phẩm</label>
-                                    <input type="file"
-                                        className="form-control"
-                                        name="image"
-                                        ref={register({ required: true })}
-                                        onChange={(e) => handleChange(e)}
-                                    />
-                                    <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
-
-                                </div>
+                            </div>
+                        </div>
+                        <div className="row justify-content">
+                            <div className="form-group">
+                                <label htmlFor="name">Mô tả danh mục</label>
+                                <CKEditor
+                                    editor={ClassicEditor}
+                                    config={editorConfig}
+                                    onChange={(event, editor) => {
+                                        const data = editor.getData();
+                                        setDetail(data);
+                                    }}
+                                />
+                                <small className="text-danger">{errorDetail}</small>
                             </div>
                         </div>
                         <button className="btn btn-primary" type="submit">Thêm</button>

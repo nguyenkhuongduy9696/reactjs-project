@@ -22,8 +22,15 @@ const EditCategory = () => {
                 .then(response => {
                     setCategory(response.data.cate)
                     setImg(response.data.cate.image)
+                    setDetail(response.data.cate.detail)
                 })
                 .then(error => console.log(error))
+        }
+        const editorConfig = {
+            cloudServices: {
+                tokenUrl: 'https://73717.cke-cs.com/token/dev/a34370765a54fdad1639651ca88df80cebc9c72a39cffdaeb4447b1d923a',
+                uploadUrl: 'https://73717.cke-cs.com/easyimage/upload/'
+            }
         }
         const handleChange = (e) => {
             if (e.target.files[0]) {
@@ -72,7 +79,7 @@ const EditCategory = () => {
                                         setProgress(progress);
                                     },
                                     error => {
-                                        console.log(error)
+
                                     },
                                     () => {
                                         storage
@@ -125,20 +132,17 @@ const EditCategory = () => {
                                         </small>
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="name">Mô tả danh mục</label>
-                                        <CKEditor
-                                            editor={ClassicEditor}
-                                            data={category.detail}
-                                            onChange={(event, editor) => {
-                                                const data = editor.getData();
-                                                setDetail(data);
-                                            }}
+                                        <label htmlFor="image">Ảnh sản phẩm</label>
+                                        <input type="file"
+                                            className="form-control"
+                                            name="image"
+                                            onChange={(e) => handleChange(e)}
                                         />
-                                        <small className="text-danger">{errorDetail}</small>
+                                        <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
                                     </div>
                                 </div>
                                 <div className="col-1"></div>
-                                <div className="col-4">
+                                <div className="col-5">
                                     <div className="row justify-content-md-center">
                                         <div className="col col-lg-5">
                                             <img src={img} alt="" width="150px" />
@@ -151,16 +155,23 @@ const EditCategory = () => {
                                             value={progress}
                                             max="100" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="image">Ảnh sản phẩm</label>
-                                        <input type="file"
-                                            className="form-control"
-                                            name="image"
-                                            onChange={(e) => handleChange(e)}
-                                        />
-                                        <small className="text-danger">{errors.image && "Ảnh sản phẩm không được để trống!"}</small>
-
-                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="form-group">
+                                    <label htmlFor="name">Mô tả danh mục</label>
+                                    <CKEditor
+                                        editor={ClassicEditor}
+                                        config={editorConfig}
+                                        onInit={editor => {
+                                            editor.setData(category.detail)
+                                        }}
+                                        onChange={(event, editor) => {
+                                            const data = editor.getData();
+                                            setDetail(data);
+                                        }}
+                                    />
+                                    <small className="text-danger">{errorDetail}</small>
                                 </div>
                             </div>
                             <button className="btn btn-primary" type="submit">Cập nhật</button>
