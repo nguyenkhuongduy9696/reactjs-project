@@ -7,16 +7,20 @@ import LayoutMain from '../pages/layouts/LayoutMain'
 import Dashboard from '../pages/views/Admin/Dashboard'
 import ListCate from '../pages/views/Admin/Category/ListCate'
 import AddCate from '../pages/views/Admin/Category/AddCate'
-//Main
-import Home from '../pages/views/Main/Home'
+import EditCategory from '../pages/views/Admin/Category/EditCategory';
 import ListProduct from '../pages/views/Admin/Products/ListProducts';
 import AddProduct from '../pages/views/Admin/Products/AddProducts';
 import EditProduct from '../pages/views/Admin/Products/EditProduct';
 import DetailProduct from '../pages/views/Admin/Products/DetailProduct';
+import ListBlog from '../pages/views/Admin/Blog/ListBlog';
+import AddBlog from '../pages/views/Admin/Blog/AddBlog';
+//Main
+import Home from '../pages/views/Main/Home'
 import Shop from '../pages/views/Main/Shop';
 import Category from '../pages/views/Main/Category';
 import Product from '../pages/views/Main/Product';
-import EditCategory from '../pages/views/Admin/Category/EditCategory';
+
+
 const Routers = () => {
     return (
         <Router>
@@ -47,6 +51,12 @@ const Routers = () => {
                             </Route>
                             <Route path='/admin/products' exact>
                                 <ListProduct />
+                            </Route>
+                            <Route path='/admin/blogs/add' exact>
+                                <AddBlog />
+                            </Route>
+                            <Route path='/admin/blogs' exact>
+                                <ListBlog />
                             </Route>
                         </Switch>
                     </LayoutAdmin>

@@ -3,7 +3,6 @@ import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom'
 import usePaginate from '../../../../../paginate'
-import { forEach } from 'lodash'
 const ListCate = () => {
     const [category, setCategory] = useState([]);
     const [product, setProduct] = useState([]);

@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+Route::get('new-products', 'ProductController@new')->name('new-product');
 Route::prefix('category')->name('category.')->group(function () {
     Route::get('', 'CategoryController@index')->name('index');
     Route::post('', 'CategoryController@add')->name('add');
@@ -32,4 +32,7 @@ Route::prefix('products')->name('products.')->group(function () {
     Route::get('{product}', 'ProductController@show')->name('show');
     Route::post('{product}', 'ProductController@edit')->name('edit');
 });
-Route::get('new-products', 'ProductController@new')->name('new-product');
+Route::prefix('blogs')->name('blogs.')->group(function () {
+    Route::get('', 'BlogController@index')->name('index');
+    Route::post('', 'BlogController@add')->name('add');
+});

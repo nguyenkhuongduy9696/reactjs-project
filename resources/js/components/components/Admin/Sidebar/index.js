@@ -42,6 +42,18 @@ const Sidebar = props => {
                         </div>
                     </div>
                 </li>
+                <li className="nav-item">
+                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#blogs" aria-expanded="true" aria-controls="collapseTwo">
+                        <i className="fas fa-fw fa-cog" />
+                        <span>Blogs</span>
+                    </a>
+                    <div id="blogs" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div className="bg-white py-2 collapse-inner rounded">
+                            <Link className="collapse-item" to="/admin/blogs">List Blogs</Link>
+                            <Link className="collapse-item" to="/admin/blogs/add">Add Blog</Link>
+                        </div>
+                    </div>
+                </li>
                 {/* Divider */}
                 <hr className="sidebar-divider d-none d-md-block" />
                 {/* Sidebar Toggler (Sidebar) */}

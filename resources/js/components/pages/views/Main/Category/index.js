@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
 const Category = () => {
+    let location = useLocation();
     function Cate() {
         const [products, setProduct] = useState([]);
         const [cate, setCate] = useState();
@@ -17,7 +18,7 @@ const Category = () => {
         }
         useEffect(() => {
             callDataProduct()
-        }, [])
+        }, [location])
         return (
             <div>
                 <div className="features_items">
