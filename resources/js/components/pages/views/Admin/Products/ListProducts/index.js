@@ -82,7 +82,7 @@ const ListProduct = () => {
                                             {getCategory(cate_id)}
                                         </td>
                                         <td><img src={image} alt="" width={70} /></td>
-                                        <td>{price}</td>
+                                        <td>{price}$</td>
                                         <td>{quantity}</td>
                                         <td>
                                             <Link className="btn btn-primary mr-1" to={`/admin/products/edit/${id}`} >Edit</Link>

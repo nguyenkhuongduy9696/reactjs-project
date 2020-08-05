@@ -36,7 +36,7 @@ class ProductController extends Controller
     }
     public function new()
     {
-        $products = Product::orderBy('created_at', 'desc')->take(6)->get();
+        $products = Product::orderBy('created_at', 'desc')->take(8)->get();
         return response()->json($products, 200);
     }
 }

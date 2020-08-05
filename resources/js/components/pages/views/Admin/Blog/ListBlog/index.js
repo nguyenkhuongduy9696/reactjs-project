@@ -53,7 +53,7 @@ const ListBlog = () => {
     }, [])
     return (
         <div>
-            <h1 className="h3 mb-2 text-gray-800">Danh sách danh mục</h1>
+            <h1 className="h3 mb-2 text-gray-800">Danh sách bài viết</h1>
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
                     <h6 className="m-0 font-weight-bold text-primary"></h6>

@@ -14,12 +14,13 @@ import EditProduct from '../pages/views/Admin/Products/EditProduct';
 import DetailProduct from '../pages/views/Admin/Products/DetailProduct';
 import ListBlog from '../pages/views/Admin/Blog/ListBlog';
 import AddBlog from '../pages/views/Admin/Blog/AddBlog';
+import EditBlog from '../pages/views/Admin/Blog/EditBlog';
 //Main
 import Home from '../pages/views/Main/Home'
 import Shop from '../pages/views/Main/Shop';
 import Category from '../pages/views/Main/Category';
 import Product from '../pages/views/Main/Product';
-
+import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
 
 const Routers = () => {
     return (
@@ -51,6 +52,12 @@ const Routers = () => {
                             </Route>
                             <Route path='/admin/products' exact>
                                 <ListProduct />
+                            </Route>
+                            <Route path='/admin/blogs/:id' exact>
+                                <DetailBlog />
+                            </Route>
+                            <Route path='/admin/blogs/edit/:id' exact>
+                                <EditBlog />
                             </Route>
                             <Route path='/admin/blogs/add' exact>
                                 <AddBlog />

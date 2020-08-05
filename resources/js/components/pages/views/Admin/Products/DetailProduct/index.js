@@ -40,17 +40,25 @@ const DetailProduct = () => {
                             </div>
                             <div className="col-1"></div>
                             <div className="col-6">
-                                <h3 className="text-primary">Tên sản phẩm: {product.name}</h3><br />
-                                <h4>Danh mục: {getCategory(product.cate_id)}</h4><br />
-                                <h4>Giá: {product.price}$</h4><br />
-                                <h4>Tồn kho: {product.quantity}</h4><br />
-                                <h4>Mô tả ngắn của sản phẩm</h4>
+                                <h4 className="text-primary">Tên sản phẩm: {product.name}</h4><br />
+                                <p><span className="text-primary">Danh mục: </span> {getCategory(product.cate_id)}</p>
+                                <p><span className="text-primary">Giá: </span> {product.price}$</p>
+                                <p><span className="text-primary">Tồn kho: </span> {product.quantity}</p>
+                                <p><span className="text-primary">Mô tả ngắn của sản phẩm</span></p>
                                 <p>{product.short_desc}</p>
-                                <h4>Chi tiết sản phẩm</h4><br />
-                                <p><div dangerouslySetInnerHTML={{ __html: product.detail }}></div></p>
                             </div>
+                        </div><br />
+                        <div className="row">
+                            <h4 className="text-primary">Chi tiết sản phẩm</h4>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col-1"></div>
+                        <div className="col-10">
+                            <div className="figure-image text-justify" dangerouslySetInnerHTML={{ __html: product.detail }}></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         );

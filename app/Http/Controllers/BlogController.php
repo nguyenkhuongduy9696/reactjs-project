@@ -18,4 +18,20 @@ class BlogController extends Controller
         $blog = Blog::create($data);
         return response()->json($blog, 200);
     }
+    public function delete(Blog $blog)
+    {
+        $blog->delete();
+        $blogs = Blog::orderBy('created_at', 'desc')->get();
+        return response()->json($blogs, 200);
+    }
+    public function show(Blog $blog)
+    {
+        return response()->json($blog, 200);
+    }
+    public function edit(Request $request, Blog $blog)
+    {
+        $data = $request->all();
+        $blog->update($data);
+        return response()->json($blog, 200);
+    }
 }
