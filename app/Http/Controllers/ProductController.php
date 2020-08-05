@@ -9,13 +9,13 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::orderBy('created_at', 'desc')->get();
+        $products = Product::orderBy('updated_at', 'desc')->get();
         return response()->json($products, 200);
     }
     public function delete(Product $product)
     {
         $product->delete();
-        $products = Product::orderBy('created_at', 'desc')->get();
+        $products = Product::orderBy('updated_at', 'desc')->get();
         return response()->json($products, 200);
     }
     public function add(Request $request)
@@ -36,7 +36,12 @@ class ProductController extends Controller
     }
     public function new()
     {
-        $products = Product::orderBy('created_at', 'desc')->take(8)->get();
+        $products = Product::orderBy('updated_at', 'desc')->take(6)->get();
         return response()->json($products, 200);
+    }
+    public function relate(Product $product)
+    {
+        $pros = Product::where('cate_id', $product->cate_id)->where('id', '!=', $product->id)->take(3)->get();
+        return response()->json($pros, 200);
     }
 }

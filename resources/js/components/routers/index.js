@@ -53,14 +53,14 @@ const Routers = () => {
                             <Route path='/admin/products' exact>
                                 <ListProduct />
                             </Route>
+                            <Route path='/admin/blogs/add' exact>
+                                <AddBlog />
+                            </Route>
                             <Route path='/admin/blogs/:id' exact>
                                 <DetailBlog />
                             </Route>
                             <Route path='/admin/blogs/edit/:id' exact>
                                 <EditBlog />
-                            </Route>
-                            <Route path='/admin/blogs/add' exact>
-                                <AddBlog />
                             </Route>
                             <Route path='/admin/blogs' exact>
                                 <ListBlog />

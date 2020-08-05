@@ -18,6 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('new-products', 'ProductController@new')->name('new-product');
+Route::get('new-blog', 'BlogController@new')->name('new-blog');
+Route::get('relate-product/{product}', 'ProductController@relate')->name('relate-product');
 Route::prefix('category')->name('category.')->group(function () {
     Route::get('', 'CategoryController@index')->name('index');
     Route::post('', 'CategoryController@add')->name('add');

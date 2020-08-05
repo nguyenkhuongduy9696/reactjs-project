@@ -849,7 +849,9 @@
     overflow: hidden;
     margin-bottom:30px;
   }
-  
+  .product-item{
+    
+  }
   .single-products {
     position: relative;
   }
@@ -2022,10 +2024,15 @@
   .blog-post-area 
   .single-blog-post a img {
     border: 1px solid #F7F7F0;
-    width: 100%;
+    width: 50%;
     margin-bottom: 30px
   }
-  
+  .figure-image figure img{
+    width:250px;display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
   .blog-post-area  
   .single-blog-post p {
     color: #363432

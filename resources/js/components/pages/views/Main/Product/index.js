@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 
 const Product = () => {
     function Pro() {
         let { id } = useParams();
         const [product, setProduct] = useState({});
         const [category, setCategory] = useState([]);
+        const [relate, setRelate] = useState([]);
+        const location = useLocation();
         const callDataProducts = () => {
             axios.get(`/api/products/${id}`)
                 .then(respone => {
@@ -18,7 +20,13 @@ const Product = () => {
                     setCategory(response.data)
                 })
                 .catch(error => console.log(error));
-        };
+        }
+        const callRelate = () => {
+            axios.get(`/api/relate-product/${id}`)
+                .then(respone => {
+                    setRelate(respone.data)
+                }).catch(error => console.log(error))
+        }
         const getCategory = (cate_id) => {
             for (let i = 0; i < category.length; i++) {
                 if (category[i].id === cate_id) {
@@ -27,8 +35,8 @@ const Product = () => {
             }
         }
         useEffect(() => {
-            callDataProducts(), callDataCategory()
-        }, []);
+            callDataProducts(), callDataCategory(), callRelate()
+        }, [location]);
         return (
             <div>
                 <div className="row">
@@ -42,29 +50,47 @@ const Product = () => {
                         <div className="col-sm-7">
                             <div className="product-information">
                                 <h2>{product.name}</h2>
-                                <h3>Loại sản phẩm: {getCategory(product.cate_id)}</h3>
-                                <h3>Giá: {product.price}$</h3>
+                                <h4><span className="text-primary"> Loại sản phẩm: </span> {getCategory(product.cate_id)}</h4>
+                                <h4><span className="text-primary"> Giá sản phẩm: </span> {product.price}$</h4>
+                                <h4><span className="text-primary">Mô tả sản phẩm: </span></h4>
+                                <p>{product.short_desc}</p><br />
                                 <a href="#" className="btn btn-default cart-detail">
-                                    <i class="fa fa-shopping-cart"></i>Thêm vào giỏ
+                                    <i className="fa fa-shopping-cart"></i>Thêm vào giỏ
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div><br /><br />
                 <div className="row">
-                    <div class="category-tab shop-details-tab">
-                        <div class="col-sm-12">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#details" data-toggle="tab">Thông tin sản phẩm</a></li>
+                    <div className="category-tab shop-details-tab">
+                        <div className="col-sm-12">
+                            <ul className="nav nav-tabs">
+                                <li className="active"><a href="#details" data-toggle="collapse">Thông tin sản phẩm</a></li>
                             </ul>
                         </div>
-                        <div class="tab-content">
-                            <div class="tab-pane fade active in" id="details">
-                                <p>{product.detail}</p>
+                        <div className="tab-content">
+                            <div className="collapse" id="details">
+                                <div className="figure-image text-justify" dangerouslySetInnerHTML={{ __html: product.detail }}></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <h2 className="title text-center">Sản phẩm liên quan</h2>
+                {relate.map(({ id, name, image, price }, index) => (
+                    <div className="col-sm-4" key={index}>
+                        <div className="product-image-wrapper">
+                            <div className="single-products">
+                                <div className="productinfo text-center">
+                                    <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
+                                    <h2>{price}$</h2>
+                                    <Link to={`/product/${id}`}>{name}</Link>
+                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+
             </div>
         );
     }

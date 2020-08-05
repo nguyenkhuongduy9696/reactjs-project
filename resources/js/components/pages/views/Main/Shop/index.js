@@ -18,7 +18,7 @@ const Shop = () => {
             <div className="features_items">
                 <h2 className="title text-center">Cửa hàng</h2>
                 {products.map(({ id, name, image, price }, index) => (
-                    <div className="col-sm-3" key={index}>
+                    <div className="col-sm-4" key={index}>
                         <div className="product-image-wrapper">
                             <div className="single-products">
                                 <div className="productinfo text-center">

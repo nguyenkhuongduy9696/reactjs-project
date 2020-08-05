@@ -43,13 +43,21 @@ const DetailBlog = () => {
                                 <h4 className="text-primary">Tiêu đề bài viết: {blog.title}</h4><br />
                                 <p><span className="text-primary">Danh mục: </span> {getCategory(blog.cate_id)}</p>
                                 <p><span className="text-primary">Ngày đăng: </span> {blog.created_at}$</p>
+                                <p><span className="text-primary">Giới thiệu ngắn: </span></p>
+                                <p>{blog.short_desc}</p>
                             </div>
                         </div><br />
                         <div className="row">
                             <h4 className="text-primary">Nội dung bài viết</h4>
                         </div>
                     </div>
-                    <div className="text-center" dangerouslySetInnerHTML={{ __html: blog.content }}></div>
+                    <div className="row">
+                        <div className="col-1"></div>
+                        <div className="col-10">
+                            <div className="text-justify figure-image" dangerouslySetInnerHTML={{ __html: blog.content }}></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         );

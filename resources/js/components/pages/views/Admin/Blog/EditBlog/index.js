@@ -69,7 +69,8 @@ const EditBlog = () => {
                                 let item = {
                                     title: data.title,
                                     cate_id: data.cate_id,
-                                    content: content
+                                    content: content,
+                                    short_desc: data.short_desc
                                 }
                                 axios.post(`/api/blogs/${id}`, item)
                                     .then(respone => {
@@ -101,7 +102,8 @@ const EditBlog = () => {
                                                     title: data.title,
                                                     cate_id: data.cate_id,
                                                     content: content,
-                                                    image: url
+                                                    image: url,
+                                                    short_desc: data.short_desc
                                                 }
                                                 axios.post(`/api/blogs/${id}`, item)
                                                     .then(respone => {
@@ -173,6 +175,20 @@ const EditBlog = () => {
                                             style={{ height: "30px", width: "300px" }}
                                             value={progress}
                                             max="100" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="detail">Giới thiệu bài viết</label>
+                                        <textarea className="form-control"
+                                            name="short_desc"
+                                            defaultValue={blog.short_desc}
+                                            ref={register({ required: true, pattern: /[\S]/, maxLength: 400 })}
+                                            rows="6">
+                                        </textarea>
+                                        <small className="text-danger">
+                                            {errors.short_desc?.type === "required" && "Giới thiệu bài viết không được để trống!"}
+                                            {errors.short_desc?.type === "pattern" && "Giới thiệu bài viết không được để trống!"}
+                                            {errors.short_desc?.type === "maxLength" && "Giới thiệu bài viết không quá 400 ký tự!"}
+                                        </small>
                                     </div>
                                 </div>
                             </div>

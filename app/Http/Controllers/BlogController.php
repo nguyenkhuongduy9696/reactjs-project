@@ -9,7 +9,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::orderBy('created_at', 'desc')->get();
+        $blogs = Blog::orderBy('updated_at', 'desc')->get();
         return response()->json($blogs, 200);
     }
     public function add(Request $request)
@@ -21,7 +21,7 @@ class BlogController extends Controller
     public function delete(Blog $blog)
     {
         $blog->delete();
-        $blogs = Blog::orderBy('created_at', 'desc')->get();
+        $blogs = Blog::orderBy('updated_at', 'desc')->get();
         return response()->json($blogs, 200);
     }
     public function show(Blog $blog)
@@ -32,6 +32,11 @@ class BlogController extends Controller
     {
         $data = $request->all();
         $blog->update($data);
+        return response()->json($blog, 200);
+    }
+    public function new()
+    {
+        $blog = Blog::orderBy('created_at', 'desc')->take(1)->get();
         return response()->json($blog, 200);
     }
 }
