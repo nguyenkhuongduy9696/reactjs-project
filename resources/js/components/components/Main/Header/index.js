@@ -9,7 +9,7 @@ const Header = props => {
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="logo pull-left">
-                                <a href="index.html"><img src={logo} alt="" /></a>
+                                <Link to="/"><img src={logo} alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-sm-8">
@@ -42,6 +42,9 @@ const Header = props => {
                                 <ul className="nav navbar-nav collapse navbar-collapse">
                                     <li><Link to="/" className="active">Home</Link></li>
                                     <li><Link to="/shop">Shop</Link></li>
+                                    <li><Link to="/blogs">Blog</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/contact">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>

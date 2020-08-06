@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, useLocation } from 'react-router-dom';
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
+import usePaginate from '../../../../paginate'
 const Category = () => {
     let location = useLocation();
     function Cate() {
@@ -16,6 +17,7 @@ const Category = () => {
                 })
                 .catch(error => console.log(error))
         }
+        const page = usePaginate(products, 6)
         useEffect(() => {
             callDataProduct()
         }, [location])
@@ -23,7 +25,7 @@ const Category = () => {
             <div>
                 <div className="features_items">
                     <h2 className="title text-center">Các sản phẩm {cate}</h2>
-                    {products.map(({ id, name, image, price }, index) => (
+                    {page.currentData().map(({ id, name, image, price }, index) => (
                         <div className="col-sm-4" key={index}>
                             <div className="product-image-wrapper">
                                 <div className="single-products">
@@ -38,6 +40,13 @@ const Category = () => {
                         </div>
                     ))}
                 </div>
+                <ul className="pagination">
+                    <li><a href="" onClick={(e) => page.jump(1, e)}>First</a></li>
+                    <li><a href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
+                    <li className="active"><a href="#">{page.currentPage}</a></li>
+                    <li><a href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
+                    <li><a href="" onClick={(e) => page.jump(page.maxPage, e)}>Last</a></li>
+                </ul>
             </div>
         );
     }

@@ -3,6 +3,7 @@ import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom'
 import usePaginate from '../../../../../paginate'
+import Moment from 'react-moment';
 const ListBlog = () => {
     const [category, setCategory] = useState([]);
     const [blogs, setBlog] = useState([]);
@@ -28,6 +29,7 @@ const ListBlog = () => {
             }
         }
     }
+
     const deleteBlog = (id) => {
         swal({
             title: "Bạn có chắc chắn muốn xóa bài viết này?",
@@ -48,6 +50,10 @@ const ListBlog = () => {
                 }
             });
     }
+    // const formatDate = (x) => {
+    //     let date = new Date(x);
+
+    // }
     useEffect(() => {
         callDataCategory(), callDataBlog()
     }, [])
@@ -78,7 +84,7 @@ const ListBlog = () => {
                                         <td><Link to={`/admin/blogs/${id}`}>{title}</Link></td>
                                         <td>{getCategory(cate_id)}</td>
                                         <td><img src={image} alt="" width="70px" /></td>
-                                        <td>{created_at}</td>
+                                        <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
                                         <td>
                                             <Link className="btn btn-primary mr-1" to={`/admin/blogs/edit/${id}`} >Edit</Link>
                                             <button className="btn btn-danger" onClick={() => deleteBlog(id)} >Delete</button>

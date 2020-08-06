@@ -15,13 +15,17 @@ import DetailProduct from '../pages/views/Admin/Products/DetailProduct';
 import ListBlog from '../pages/views/Admin/Blog/ListBlog';
 import AddBlog from '../pages/views/Admin/Blog/AddBlog';
 import EditBlog from '../pages/views/Admin/Blog/EditBlog';
+import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
 //Main
 import Home from '../pages/views/Main/Home'
 import Shop from '../pages/views/Main/Shop';
 import Category from '../pages/views/Main/Category';
 import Product from '../pages/views/Main/Product';
-import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
-
+import Blogs from '../pages/views/Main/Blogs'
+import BlogPage from '../pages/views/Main/BlogPage';
+import About from '../pages/views/Main/About';
+import Contact from '../pages/views/Main/Contact';
+import ListContact from '../pages/views/Admin/Contact/ListContact';
 const Routers = () => {
     return (
         <Router>
@@ -65,6 +69,9 @@ const Routers = () => {
                             <Route path='/admin/blogs' exact>
                                 <ListBlog />
                             </Route>
+                            <Route path='/admin/contact' exact>
+                                <ListContact />
+                            </Route>
                         </Switch>
                     </LayoutAdmin>
                 </Route>
@@ -74,8 +81,20 @@ const Routers = () => {
                             <Route path="/" exact>
                                 <Home />
                             </Route>
+                            <Route path="/about" exact>
+                                <About />
+                            </Route>
+                            <Route path="/contact" exact>
+                                <Contact />
+                            </Route>
                             <Route path="/shop" >
                                 <Shop />
+                            </Route>
+                            <Route path="/blogs/:id" >
+                                <BlogPage />
+                            </Route>
+                            <Route path="/blogs" >
+                                <Blogs />
                             </Route>
                             <Route path="/category/:id" >
                                 <Category />

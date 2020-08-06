@@ -1,8 +1,6 @@
 import React from 'react'
-import girl1 from '../../../assets/Main/images/home/girl1.jpg'
-import girl2 from '../../../assets/Main/images/home/girl2.jpg'
-import girl3 from '../../../assets/Main/images/home/girl3.jpg'
-import pricing from '../../../assets/Main/images/home/pricing.png'
+import dam from '../../../assets/Main/images/home/dam.jpg'
+import { Link } from 'react-router-dom'
 const Slider = props => {
     return (
         <section id="slider">
@@ -14,14 +12,12 @@ const Slider = props => {
                                 <div className="item active">
                                     <div className="col-sm-6">
                                         <h1><span>E</span>-SHOPPER</h1>
-                                        <h2>Free E-Commerce Template</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        <button type="button" className="btn btn-default get">Get it now</button>
+                                        <h2>Đầm xinh cho ngày mới năng động</h2>
+                                        <p>Nổi tiếng với nhiều mẫu váy đầm cao cấp với chất lượng, E-SHOPPER luôn đặt uy tín lên trên đầu và tư vấn khách hàng nhiệt tình nhất. </p>
+                                        <Link to='/category/15' type="button" className="btn btn-default get">Xem ngay</Link>
                                     </div>
                                     <div className="col-sm-6">
-                                        <img src={girl2} className="girl img-responsive" alt="" />
-                                        <img src={pricing} className="pricing" alt="" />
+                                        <img src={dam} style={{ borderRadius: "50%", width: "400px" }} className="girl img-responsive" alt="" />
                                     </div>
                                 </div>
                             </div>

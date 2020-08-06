@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-
+import Moment from 'react-moment';
 const DetailBlog = () => {
     function Detail() {
         let { id } = useParams();
@@ -42,7 +42,7 @@ const DetailBlog = () => {
                             <div className="col-6">
                                 <h4 className="text-primary">Tiêu đề bài viết: {blog.title}</h4><br />
                                 <p><span className="text-primary">Danh mục: </span> {getCategory(blog.cate_id)}</p>
-                                <p><span className="text-primary">Ngày đăng: </span> {blog.created_at}$</p>
+                                <p><span className="text-primary">Ngày đăng: </span> <Moment format="DD/MM/YYYY hh:mm:ss">{blog.created_at}</Moment></p>
                                 <p><span className="text-primary">Giới thiệu ngắn: </span></p>
                                 <p>{blog.short_desc}</p>
                             </div>

@@ -2017,7 +2017,9 @@
     font-weight: 500;
     margin-bottom: 17px;
   }
-  
+  .single-blog-post{
+    margin-bottom: 80px;
+  }
   .single-blog-post > a {
   }
   
@@ -2033,9 +2035,21 @@
     margin-right: auto;
     margin-bottom: 10px;
 }
+.figure-image p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.figure-image ul li{
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
   .blog-post-area  
   .single-blog-post p {
-    color: #363432
+    color: #363432;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 0 10px;
   }
   
   .blog-post-area 
@@ -2541,6 +2555,37 @@
   
   .contact-info .social-networks ul li a:hover{
     color: #FE980F;
+  }
+  .about{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+  }
+  .about-title{
+    font-weight: bold;
+    color: #FE980F;
+  }
+  .about img{
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+  }
+  .contact-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color:#FE980F ;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .contact-info{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .form-contact{
+    margin-bottom: 30px;
+  }
+  .form-err{
+    color: red;
   }
 }
 

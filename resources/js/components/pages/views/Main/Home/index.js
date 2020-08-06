@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
-import { Link } from 'react-router-dom';
-
+import { Link, useLocation } from 'react-router-dom';
+import Moment from 'react-moment'
 const Home = () => {
     const [products, setProduct] = useState([]);
     const [blog, setBlog] = useState([]);
@@ -61,11 +61,11 @@ const Home = () => {
                 <h2 className="title text-center">Bài viết mới nhất</h2>
                 {blog.map(({ id, title, cate_id, image, short_desc, created_at }, index) => (
                     <div className="single-blog-post text-center" key={index}>
-                        <h3><Link to={`/blog/${id}`}>{title}</Link></h3>
+                        <h3><Link to={`/blogs/${id}`}>{title}</Link></h3>
                         <div className="post-meta">
                             <ul>
                                 <li><i className="fa fa-user" /> Admin</li>
-                                <li><i className="fa fa-clock-o" /> {created_at}</li>
+                                <li><i className="fa fa-clock-o" /><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></li>
                                 <li><i className="fa fa-list"></i>{getCategory(cate_id)}</li>
                             </ul>
                             <span>
@@ -76,11 +76,11 @@ const Home = () => {
                                 <i className="fa fa-star-half-o" />
                             </span>
                         </div>
-                        <Link to={`/blog/${id}`}>
+                        <Link to={`/blogs/${id}`}>
                             <img src={image} alt="" width="100px" />
                         </Link>
                         <p className="text-justify">{short_desc}</p>
-                        <Link className="btn btn-primary" tp={`/blog/${id}`} >Xem thêm</Link>
+                        <Link className="btn btn-primary" to={`/blogs/${id}`} >Xem thêm</Link>
                     </div>
                 ))}
             </div>

@@ -7,10 +7,10 @@ const Sidebar = props => {
         <div>
             <ul className="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
                 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/admin">
-                    <div className="sidebar-brand-icon rotate-n-15">
-                        <i className="fas fa-laugh-wink" />
+                    <div className="sidebar-brand-icon">
+                        <i className="fas fa-user-cog" />
                     </div>
-                    <div className="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                    <div className="sidebar-brand-text mx-3">Dashboard</div>
                 </Link>
                 {/* Divider */}
                 <hr className="sidebar-divider my-0" />
@@ -19,7 +19,7 @@ const Sidebar = props => {
                 {/* Nav Item - Pages Collapse Menu */}
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <i className="fas fa-fw fa-cog" />
+                        <i className="fas fa-list" />
                         <span>Category</span>
                     </a>
                     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -32,7 +32,7 @@ const Sidebar = props => {
 
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#products" aria-expanded="true" aria-controls="collapseTwo">
-                        <i className="fas fa-fw fa-cog" />
+                        <i className="fab fa-product-hunt" />
                         <span>Products</span>
                     </a>
                     <div id="products" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -44,7 +44,7 @@ const Sidebar = props => {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#blogs" aria-expanded="true" aria-controls="collapseTwo">
-                        <i className="fas fa-fw fa-cog" />
+                        <i className="fab fa-blogger" />
                         <span>Blogs</span>
                     </a>
                     <div id="blogs" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -53,6 +53,11 @@ const Sidebar = props => {
                             <Link className="collapse-item" to="/admin/blogs/add">Add Blog</Link>
                         </div>
                     </div>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/admin/contact">
+                        <i className="fas fa-envelope" />
+                        <span>Contact</span></Link>
                 </li>
                 {/* Divider */}
                 <hr className="sidebar-divider d-none d-md-block" />

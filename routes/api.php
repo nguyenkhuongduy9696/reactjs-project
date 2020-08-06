@@ -41,3 +41,7 @@ Route::prefix('blogs')->name('blogs.')->group(function () {
     Route::get('{blog}', 'BlogController@show')->name('show');
     Route::post('{blog}', 'BlogController@edit')->name('edit');
 });
+Route::prefix('contact')->name('contact.')->group(function () {
+    Route::post('', 'ContactController@add')->name('add');
+    Route::get('', 'ContactController@index')->name('index');
+});

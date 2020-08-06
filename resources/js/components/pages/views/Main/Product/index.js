@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom';
-
+import cart from '../../../../cart'
 const Product = () => {
     function Pro() {
         let { id } = useParams();
@@ -34,6 +34,8 @@ const Product = () => {
                 }
             }
         }
+
+        const c = cart();
         useEffect(() => {
             callDataProducts(), callDataCategory(), callRelate()
         }, [location]);
@@ -54,9 +56,9 @@ const Product = () => {
                                 <h4><span className="text-primary"> Giá sản phẩm: </span> {product.price}$</h4>
                                 <h4><span className="text-primary">Mô tả sản phẩm: </span></h4>
                                 <p>{product.short_desc}</p><br />
-                                <a href="#" className="btn btn-default cart-detail">
-                                    <i className="fa fa-shopping-cart"></i>Thêm vào giỏ
-                                </a>
+                                <button onClick={() => c.addCart(product.id)} className="btn btn-default cart-detail">
+                                    <i className="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -84,7 +86,7 @@ const Product = () => {
                                     <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
                                     <h2>{price}$</h2>
                                     <Link to={`/product/${id}`}>{name}</Link>
-                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</a>
+                                    <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
