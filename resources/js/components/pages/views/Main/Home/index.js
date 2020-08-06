@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Link, useLocation } from 'react-router-dom';
 import Moment from 'react-moment'
+import cart from '../../../../cart'
 const Home = () => {
     const [products, setProduct] = useState([]);
     const [blog, setBlog] = useState([]);
@@ -34,6 +35,7 @@ const Home = () => {
             }
         }
     }
+    const c = cart();
     useEffect(() => {
         callDataProduct(), callDataBlog(), callDataCategory()
     }, [])
@@ -50,7 +52,7 @@ const Home = () => {
                                     <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
                                     <h2>{price}$</h2>
                                     <Link to={`/product/${id}`}>{name}</Link>
-                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</a>
+                                    <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>

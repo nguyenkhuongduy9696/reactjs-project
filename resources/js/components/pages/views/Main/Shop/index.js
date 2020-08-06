@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
 import usePaginate from '../../../../paginate'
+import cart from '../../../../cart'
 const Shop = () => {
     const [products, setProduct] = useState([]);
+    const c = cart();
     const callDataProduct = () => {
         Axios.get('/api/products')
             .then(response => {
@@ -27,7 +29,7 @@ const Shop = () => {
                                     <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
                                     <h2>{price}$</h2>
                                     <Link to={`/product/${id}`}>{name}</Link>
-                                    <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</a>
+                                    <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>

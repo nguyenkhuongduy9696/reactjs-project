@@ -16,6 +16,7 @@ import ListBlog from '../pages/views/Admin/Blog/ListBlog';
 import AddBlog from '../pages/views/Admin/Blog/AddBlog';
 import EditBlog from '../pages/views/Admin/Blog/EditBlog';
 import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
+import ListContact from '../pages/views/Admin/Contact/ListContact';
 //Main
 import Home from '../pages/views/Main/Home'
 import Shop from '../pages/views/Main/Shop';
@@ -25,7 +26,7 @@ import Blogs from '../pages/views/Main/Blogs'
 import BlogPage from '../pages/views/Main/BlogPage';
 import About from '../pages/views/Main/About';
 import Contact from '../pages/views/Main/Contact';
-import ListContact from '../pages/views/Admin/Contact/ListContact';
+import Cart from '../pages/views/Main/Cart';
 const Routers = () => {
     return (
         <Router>
@@ -80,6 +81,9 @@ const Routers = () => {
                         <Switch>
                             <Route path="/" exact>
                                 <Home />
+                            </Route>
+                            <Route path="/cart" exact>
+                                <Cart />
                             </Route>
                             <Route path="/about" exact>
                                 <About />

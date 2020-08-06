@@ -3,6 +3,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
 import usePaginate from '../../../../paginate'
+import cart from '../../../../cart'
 const Category = () => {
     let location = useLocation();
     function Cate() {
@@ -17,6 +18,7 @@ const Category = () => {
                 })
                 .catch(error => console.log(error))
         }
+        const c = cart();
         const page = usePaginate(products, 6)
         useEffect(() => {
             callDataProduct()
@@ -33,7 +35,7 @@ const Category = () => {
                                         <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
                                         <h2>{price}$</h2>
                                         <Link to={`/product/${id}`}>{name}</Link>
-                                        <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</a>
+                                        <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
                                     </div>
                                 </div>
                             </div>

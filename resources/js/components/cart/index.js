@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import swal from 'sweetalert'
+import Axios from 'axios';
 const cart = () => {
     function addCart(id) {
         if (localStorage.getItem(id) == null) {
