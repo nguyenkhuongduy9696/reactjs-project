@@ -16,7 +16,7 @@ const Header = props => {
                             <div className="shop-menu pull-right">
                                 <ul className="nav navbar-nav">
                                     {/* <li><a href="#"><i className="fa fa-user" /> Account</a></li> */}
-                                    <li><a href="checkout.html"><i className="fa fa-crosshairs" /> Checkout</a></li>
+                                    <li><Link to="/checkout"><i className="fa fa-crosshairs" /> Checkout</Link></li>
                                     <li><Link to="/cart"><i className="fa fa-shopping-cart" /> Cart</Link></li>
                                     {/* <li><a href="login.html"><i className="fa fa-lock" /> Login</a></li> */}
                                 </ul>
