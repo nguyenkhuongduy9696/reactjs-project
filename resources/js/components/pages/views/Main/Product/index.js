@@ -34,7 +34,6 @@ const Product = () => {
                 }
             }
         }
-
         const c = cart();
         useEffect(() => {
             callDataProducts(), callDataCategory(), callRelate()

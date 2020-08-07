@@ -32,6 +32,26 @@ const Cart = () => {
                 }
             });
     }
+    const up = (id) => {
+        Axios.get(`/api/products/${id}`)
+            .then(res => {
+                let qlt = parseInt(localStorage.getItem(id));
+                if (qlt < res.data.quantity) {
+                    localStorage.setItem(id, qlt + 1);
+                    getCart();
+                }
+            })
+    }
+    const down = (id) => {
+        let qlt = parseInt(localStorage.getItem(id));
+        if (qlt > 1) {
+            localStorage.setItem(id, qlt - 1)
+            getCart();
+        } else {
+            localStorage.removeItem(id);
+            getCart();
+        }
+    }
     useEffect(() => {
         getCart()
     }, [])
@@ -43,31 +63,31 @@ const Cart = () => {
                     <table className="table table-condensed">
                         <thead>
                             <tr className="cart_menu">
-                                <td className="image">Item</td>
-                                <td className="description" />
+                                <td className="image">Image</td>
+                                <td className="description">Product</td>
                                 <td className="price">Price</td>
                                 <td className="quantity">Quantity</td>
                                 <td className="total">Total</td>
-                                <td />
+                                <td>Action</td>
                             </tr>
                         </thead>
                         <tbody>
                             {pro.map(({ id, name, image, price }, index) => (
                                 <tr key={index}>
                                     <td className="cart_product">
-                                        <a href="#"><img src={image} alt="" width="60px" /></a>
+                                        <Link to={`/product/${id}`}><img src={image} alt="" width="60px" /></Link>
                                     </td>
                                     <td className="cart_description">
-                                        <h4><a href="#">{name}</a></h4>
+                                        <h4><Link to={`/product/${id}`}>{name}</Link></h4>
                                     </td>
                                     <td className="cart_price">
                                         <p>{price}$</p>
                                     </td>
                                     <td className="cart_quantity">
                                         <div className="cart_quantity_button">
-                                            <button className="btn btn-default"> + </button>
+                                            <button onClick={() => down(id)} className="btn btn-default"> - </button>
                                             <span> {localStorage.getItem(id)} </span>
-                                            <button className="btn btn-default"> - </button>
+                                            <button onClick={() => up(id)} className="btn btn-default"> + </button>
                                         </div>
                                     </td>
                                     <td className="cart_total">
@@ -76,12 +96,12 @@ const Cart = () => {
                                     <td className="cart_delete">
                                         <button onClick={() => delItem(id)} className="btn btn-default" ><i className="fa fa-times"></i></button>
                                     </td>
-
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
+                <Link to="/checkout" className="btn btn-default check_out pull-right" >Check Out</Link>
             </section>
 
         </div>

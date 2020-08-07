@@ -1620,11 +1620,14 @@
   }
   
   #cart_items .cart_info .cart_description h4 a {
-    color: #363432;
+    color: #FE980F;
     font-family: 'Roboto',sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
   
+  }
+  #cart_items .cart_info .cart_description h4 a:hover {
+    color: #da7c01;
   }
   
   #cart_items .cart_info .cart_description p {

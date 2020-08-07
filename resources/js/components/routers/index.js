@@ -27,6 +27,7 @@ import BlogPage from '../pages/views/Main/BlogPage';
 import About from '../pages/views/Main/About';
 import Contact from '../pages/views/Main/Contact';
 import Cart from '../pages/views/Main/Cart';
+import Checkout from '../pages/views/Main/Checkout';
 const Routers = () => {
     return (
         <Router>
@@ -81,6 +82,9 @@ const Routers = () => {
                         <Switch>
                             <Route path="/" exact>
                                 <Home />
+                            </Route>
+                            <Route path="/checkout" exact>
+                                <Checkout />
                             </Route>
                             <Route path="/cart" exact>
                                 <Cart />
