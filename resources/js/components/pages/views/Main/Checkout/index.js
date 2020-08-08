@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import swal from 'sweetalert'
 import { useForm } from 'react-hook-form'
 const Checkout = () => {
     const [pro, setPro] = useState([]);
     const [total, setTotal] = useState(0);
+    const history = useHistory();
     const { handleSubmit, register, errors } = useForm();
     const getCart = () => {
         setPro([]);
@@ -22,7 +23,31 @@ const Checkout = () => {
         getCart()
     }, [])
     const onHandleSubmit = (data) => {
-
+        swal({
+            title: "Bạn có chắc chắn muốn đặt mua số sản phẩm này?",
+            icon: "info",
+            buttons: true,
+            buttons: ["Hủy", "Đồng ý"]
+        }).then((willAdd) => {
+            if (willAdd) {
+                let item = {
+                    name: data.name,
+                    email: data.email,
+                    address: data.address,
+                    phone: data.phone,
+                    total_price: total
+                }
+                axios.post('/api/orders', item)
+                    .then(res => {
+                        swal("Đặt mua hàng thành công. Cảm ơn bạn đã lựa chọn E-Shopper!", {
+                            icon: "success",
+                            timer: 2000
+                        });
+                        localStorage.clear();
+                        history.push('/');
+                    })
+            }
+        });
     }
 
     return (
@@ -30,7 +55,7 @@ const Checkout = () => {
             <section id="cart_items">
                 <h2 className="title text-center">Thanh toán</h2>
                 <div className="row">
-                    <div class="register-req">
+                    <div className="register-req">
                         <p>Nhập thông tin của bạn để hoàn tất quá trình thanh toán</p>
                     </div>
                     <div className="col-md-12">

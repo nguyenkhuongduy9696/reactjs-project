@@ -45,3 +45,6 @@ Route::prefix('contact')->name('contact.')->group(function () {
     Route::post('', 'ContactController@add')->name('add');
     Route::get('', 'ContactController@index')->name('index');
 });
+Route::prefix('orders')->name('orders.')->group(function () {
+    Route::post('', 'OrderController@add')->name('add');
+});
