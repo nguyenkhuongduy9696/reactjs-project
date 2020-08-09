@@ -17,6 +17,8 @@ import AddBlog from '../pages/views/Admin/Blog/AddBlog';
 import EditBlog from '../pages/views/Admin/Blog/EditBlog';
 import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
 import ListContact from '../pages/views/Admin/Contact/ListContact';
+import ListOrder from '../pages/views/Admin/Order/ListOrder';
+import OrderDetail from '../pages/views/Admin/Order/OrderDetail';
 //Main
 import Home from '../pages/views/Main/Home'
 import Shop from '../pages/views/Main/Shop';
@@ -28,6 +30,8 @@ import About from '../pages/views/Main/About';
 import Contact from '../pages/views/Main/Contact';
 import Cart from '../pages/views/Main/Cart';
 import Checkout from '../pages/views/Main/Checkout';
+
+
 const Routers = () => {
     return (
         <Router>
@@ -73,6 +77,12 @@ const Routers = () => {
                             </Route>
                             <Route path='/admin/contact' exact>
                                 <ListContact />
+                            </Route>
+                            <Route path='/admin/orders/:id' exact>
+                                <OrderDetail />
+                            </Route>
+                            <Route path='/admin/orders' exact>
+                                <ListOrder />
                             </Route>
                         </Switch>
                     </LayoutAdmin>

@@ -23,33 +23,53 @@ const Checkout = () => {
         getCart()
     }, [])
     const onHandleSubmit = (data) => {
-        swal({
-            title: "Bạn có chắc chắn muốn đặt mua số sản phẩm này?",
-            icon: "info",
-            buttons: true,
-            buttons: ["Hủy", "Đồng ý"]
-        }).then((willAdd) => {
-            if (willAdd) {
-                let item = {
-                    name: data.name,
-                    email: data.email,
-                    address: data.address,
-                    phone: data.phone,
-                    total_price: total
+        if (localStorage.length === 0) {
+            swal({
+                text: "Bạn vẫn chưa có sản phẩm nào trong giỏ hàng!",
+                icon: "error",
+                timer: 2000,
+            });
+        } else {
+            swal({
+                title: "Bạn có chắc chắn muốn đặt mua số sản phẩm này?",
+                icon: "info",
+                buttons: true,
+                buttons: ["Hủy", "Đồng ý"]
+            }).then((willAdd) => {
+                if (willAdd) {
+                    let item = {
+                        name: data.name,
+                        email: data.email,
+                        address: data.address,
+                        phone: data.phone,
+                        total_price: total
+                    }
+                    axios.post('/api/orders', item)
+                        .then(res => {
+                            let id = res.data.id;
+                            for (let i = 0; i < localStorage.length; i++) {
+                                let key = localStorage.key(i);
+                                let item2 = {
+                                    order_id: id,
+                                    product_id: key,
+                                    quantity: localStorage.getItem(key)
+                                }
+                                axios.post('/api/order-detail', item2)
+                                    .then(res => {
+                                        console.log(res.data)
+                                    }).catch(err => console.log(err))
+                            }
+                            swal("Đặt mua hàng thành công. Cảm ơn bạn đã lựa chọn E-Shopper!", {
+                                icon: "success",
+                                timer: 2000
+                            });
+                            localStorage.clear();
+                            history.push('/');
+                        }).catch(err => console.log(err))
                 }
-                axios.post('/api/orders', item)
-                    .then(res => {
-                        swal("Đặt mua hàng thành công. Cảm ơn bạn đã lựa chọn E-Shopper!", {
-                            icon: "success",
-                            timer: 2000
-                        });
-                        localStorage.clear();
-                        history.push('/');
-                    })
-            }
-        });
+            });
+        }
     }
-
     return (
         <div>
             <section id="cart_items">

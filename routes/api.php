@@ -47,4 +47,8 @@ Route::prefix('contact')->name('contact.')->group(function () {
 });
 Route::prefix('orders')->name('orders.')->group(function () {
     Route::post('', 'OrderController@add')->name('add');
+    Route::get('', 'OrderController@index')->name('index');
+    Route::get('/{order}', 'OrderController@show')->name('show');
 });
+Route::post('order-detail', 'OrderController@detail')->name('order-detail');
+Route::get('getPro/{order}', 'OrderController@getPro')->name('getPro');

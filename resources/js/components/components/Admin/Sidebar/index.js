@@ -59,6 +59,11 @@ const Sidebar = props => {
                         <i className="fas fa-envelope" />
                         <span>Contact</span></Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/admin/orders">
+                        <i className="fas fa-shopping-cart" />
+                        <span>Orders</span></Link>
+                </li>
                 {/* Divider */}
                 <hr className="sidebar-divider d-none d-md-block" />
                 {/* Sidebar Toggler (Sidebar) */}

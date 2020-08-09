@@ -5,6 +5,7 @@ const Dashboard = () => {
     const [product, setProduct] = useState([]);
     const [blog, setBlog] = useState([]);
     const [contact, setContact] = useState([]);
+    const [order, setOrder] = useState([]);
     const callDataProduct = () => {
         Axios.get('/api/products')
             .then(res => {
@@ -23,8 +24,14 @@ const Dashboard = () => {
                 setContact(res.data)
             }).catch(err => console.log(err))
     }
+    const callDataOrder = () => {
+        Axios.get('/api/orders')
+            .then(res => {
+                setOrder(res.data)
+            }).catch(err => console.log(err))
+    }
     useEffect(() => {
-        callDataProduct(), callDataBlog(), callDataContact()
+        callDataProduct(), callDataBlog(), callDataContact(), callDataOrder()
     }, [])
     return (
         <div>
@@ -74,7 +81,21 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className="col-xl-3 col-md-6 mb-4">
+                    <div className="card border-left-info shadow h-100 py-2">
+                        <div className="card-body">
+                            <div className="row no-gutters align-items-center">
+                                <div className="col mr-2">
+                                    <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Tổng số đơn hàng</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{order.length}</div>
+                                </div>
+                                <div className="col-auto">
+                                    <i className="fas fa-shopping-cart fa-2x text-primary" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

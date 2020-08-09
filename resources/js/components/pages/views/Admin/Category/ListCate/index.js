@@ -97,11 +97,11 @@ const ListCate = () => {
             </div>
             <nav aria-label="Page navigation example">
                 <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="#" onClick={() => page.jump(1)}>First</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>First</a></li>
                     <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>Previous</a></li>
                     <li className="page-item"><p className="page-link text-success" href="#">Current Page: {page.currentPage}</p></li>
                     <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>Next</a></li>
-                    <li className="page-item"><a className="page-link" href="#" onClick={() => page.jump(page.maxPage)}>Last</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>Last</a></li>
                 </ul>
             </nav>
         </div>
