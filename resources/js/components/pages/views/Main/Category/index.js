@@ -43,11 +43,11 @@ const Category = () => {
                     ))}
                 </div>
                 <ul className="pagination">
-                    <li><a href="" onClick={(e) => page.jump(1, e)}>First</a></li>
+                    <li><a href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
                     <li><a href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
                     <li className="active"><a href="#">{page.currentPage}</a></li>
                     <li><a href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                    <li><a href="" onClick={(e) => page.jump(page.maxPage, e)}>Last</a></li>
+                    <li><a href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
                 </ul>
             </div>
         );

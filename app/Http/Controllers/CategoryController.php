@@ -22,6 +22,7 @@ class CategoryController extends Controller
     public function delete(Category $category)
     {
         $category->delete();
+        Product::where('cate_id', $category->id)->update(['cate_id' => 13]);
         $category = Category::orderBy('updated_at', 'desc')->get();
         return response()->json($category, 200);
     }

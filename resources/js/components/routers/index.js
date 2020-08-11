@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Axios from 'axios';
 //Layout
 import LayoutAdmin from '../pages/layouts/LayoutAdmin';
 import LayoutMain from '../pages/layouts/LayoutMain'
-//Admin
+//Admin-dasboard
 import Dashboard from '../pages/views/Admin/Dashboard'
+//Admin-category
 import ListCate from '../pages/views/Admin/Category/ListCate'
 import AddCate from '../pages/views/Admin/Category/AddCate'
 import EditCategory from '../pages/views/Admin/Category/EditCategory';
+//Admin-product
 import ListProduct from '../pages/views/Admin/Products/ListProducts';
 import AddProduct from '../pages/views/Admin/Products/AddProducts';
 import EditProduct from '../pages/views/Admin/Products/EditProduct';
 import DetailProduct from '../pages/views/Admin/Products/DetailProduct';
+//Admin-blog
 import ListBlog from '../pages/views/Admin/Blog/ListBlog';
 import AddBlog from '../pages/views/Admin/Blog/AddBlog';
 import EditBlog from '../pages/views/Admin/Blog/EditBlog';
 import DetailBlog from '../pages/views/Admin/Blog/DetailBlog';
+//admin-contact
 import ListContact from '../pages/views/Admin/Contact/ListContact';
+//admin-order
 import ListOrder from '../pages/views/Admin/Order/ListOrder';
 import OrderDetail from '../pages/views/Admin/Order/OrderDetail';
 //Main
@@ -30,6 +36,7 @@ import About from '../pages/views/Main/About';
 import Contact from '../pages/views/Main/Contact';
 import Cart from '../pages/views/Main/Cart';
 import Checkout from '../pages/views/Main/Checkout';
+
 
 
 const Routers = () => {

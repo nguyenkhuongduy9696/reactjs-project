@@ -70,12 +70,13 @@ const Product = () => {
                             </ul>
                         </div>
                         <div className="tab-content">
-                            <div className="collapse" id="details">
+                            <div className="collapse show" id="details">
                                 <div className="figure-image text-justify" dangerouslySetInnerHTML={{ __html: product.detail }}></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr />
                 <h2 className="title text-center">Sản phẩm liên quan</h2>
                 {relate.map(({ id, name, image, price }, index) => (
                     <div className="col-sm-4" key={index}>

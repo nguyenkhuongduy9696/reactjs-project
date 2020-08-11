@@ -52,11 +52,11 @@ const ListContact = () => {
             </div>
             <nav aria-label="Page navigation example">
                 <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>First</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>Previous</a></li>
-                    <li className="page-item"><p className="page-link text-success" href="#">Current Page: {page.currentPage}</p></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>Next</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>Last</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
+                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
+                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
                 </ul>
             </nav>
         </div>

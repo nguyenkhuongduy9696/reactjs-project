@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../assets/Main/images/home/logo.png'
 import { Link } from 'react-router-dom';
 const Header = props => {
+    const [num, setNum] = useState(localStorage.length);
     return (
         <header id="header">
             <div className="header-middle">
@@ -17,7 +18,7 @@ const Header = props => {
                                 <ul className="nav navbar-nav">
                                     {/* <li><a href="#"><i className="fa fa-user" /> Account</a></li> */}
                                     <li><Link to="/checkout"><i className="fa fa-crosshairs" /> Checkout</Link></li>
-                                    <li><Link to="/cart"><i className="fa fa-shopping-cart" /> Cart</Link></li>
+                                    <li><Link to="/cart"><i className="fa fa-shopping-cart" /> Cart({num})</Link></li>
                                     {/* <li><a href="login.html"><i className="fa fa-lock" /> Login</a></li> */}
                                 </ul>
                             </div>
