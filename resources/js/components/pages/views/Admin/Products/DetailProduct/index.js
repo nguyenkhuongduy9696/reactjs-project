@@ -16,8 +16,7 @@ const DetailProduct = () => {
             axios.get('/api/category')
                 .then(response => {
                     setCategory(response.data)
-                })
-                .catch(error => console.log(error));
+                }).catch(error => console.log(error));
         };
         const getCategory = (cate_id) => {
             for (let i = 0; i < category.length; i++) {

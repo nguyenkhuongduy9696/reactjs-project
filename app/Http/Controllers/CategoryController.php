@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Blog;
 use App\Model\Category;
 use App\Model\Product;
 use Illuminate\Http\Request;
@@ -23,6 +24,7 @@ class CategoryController extends Controller
     {
         $category->delete();
         Product::where('cate_id', $category->id)->update(['cate_id' => 13]);
+        Blog::where('cate_id', $category->id)->update(['cate_id' => 13]);
         $category = Category::orderBy('updated_at', 'desc')->get();
         return response()->json($category, 200);
     }
@@ -30,7 +32,7 @@ class CategoryController extends Controller
     {
         $arr = [];
         $arr['cate'] = $category;
-        $products = Product::where('cate_id', $category->id)->orderBy('updated_at', 'desc')->get();
+        $products = Product::where('cate_id', $category->id)->orderBy('updated_at', 'desc')->paginate(6);
         $arr['pro'] = $products;
         return response()->json($arr, 200);
     }
@@ -39,5 +41,10 @@ class CategoryController extends Controller
         $data = $request->all();
         $category->update($data);
         return response()->json($category, 200);
+    }
+    public function page()
+    {
+        $cate = Category::orderBy('updated_at', 'desc')->paginate(4);
+        return response()->json($cate, 200);
     }
 }

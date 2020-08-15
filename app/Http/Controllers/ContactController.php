@@ -15,7 +15,7 @@ class ContactController extends Controller
     }
     public function index()
     {
-        $contact = Contact::orderBy('created_at', 'desc')->get();
+        $contact = Contact::orderBy('created_at', 'desc')->paginate(4);
         return response()->json($contact, 200);
     }
 }

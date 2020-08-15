@@ -2,25 +2,35 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom';
-import usePaginate from '../../../../../paginate'
+import Pagination from 'react-js-pagination'
 const ListProduct = () => {
-    const [products, setProduct] = useState([]);
+    const [products, setProduct] = useState({});
     const [category, setCategory] = useState([]);
-    const callDataProducts = () => {
-        axios.get('/api/products')
+    const [pageProduct, setPageProduct] = useState([]);
+    useEffect(() => {
+        callDataProducts(), callDataCategory()
+    }, []);
+    const callDataProducts = (pageNumber = 1) => {
+        axios.get(`/api/productPage?page=${pageNumber}`)
             .then(respone => {
-                setProduct(respone.data)
+                console.log(respone.data)
+                setProduct(respone.data);
+                setPageProduct(respone.data.data)
             }).catch(error => console.log(error))
     }
     const callDataCategory = () => {
         axios.get('/api/category')
             .then(response => {
                 setCategory(response.data)
-            })
-            .catch(error => console.log(error));
+            }).catch(error => console.log(error));
     };
-    const page = usePaginate(products, 4);
-
+    const getCategory = (cate_id) => {
+        for (let i = 0; i < category.length; i++) {
+            if (category[i].id === cate_id) {
+                return category[i].name;
+            }
+        }
+    }
     const deleteProduct = (id) => {
         swal({
             title: "Bạn có chắc chắn muốn xóa sản phẩm này?",
@@ -41,17 +51,24 @@ const ListProduct = () => {
                 }
             });
     }
-    const getCategory = (cate_id) => {
-        for (let i = 0; i < category.length; i++) {
-            if (category[i].id === cate_id) {
-                return category[i].name;
-            }
-        }
-    }
-    useEffect(() => {
-        callDataProducts(), callDataCategory()
-
-    }, []);
+    const list = pageProduct.map(({ id, name, cate_id, image, price, quantity }, index) => {
+        return (
+            <tr key={index}>
+                <td>{id}</td>
+                <td><Link to={`/admin/products/${id}`}>{name}</Link></td>
+                <td>
+                    {getCategory(cate_id)}
+                </td>
+                <td><img src={image} alt="" width={70} /></td>
+                <td>{price}$</td>
+                <td>{quantity}</td>
+                <td>
+                    <Link className="btn btn-primary mr-1" to={`/admin/products/edit/${id}`} >Edit</Link>
+                    <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>
+                </td>
+            </tr>
+        )
+    })
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Danh sách sản phẩm</h1>
@@ -74,36 +91,22 @@ const ListProduct = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {page.currentData().map(({ id, name, cate_id, image, price, quantity }, index) => (
-                                    <tr key={index}>
-                                        <td>{id}</td>
-                                        <td><Link to={`/admin/products/${id}`}>{name}</Link></td>
-                                        <td>
-                                            {getCategory(cate_id)}
-                                        </td>
-                                        <td><img src={image} alt="" width={70} /></td>
-                                        <td>{price}$</td>
-                                        <td>{quantity}</td>
-                                        <td>
-                                            <Link className="btn btn-primary mr-1" to={`/admin/products/edit/${id}`} >Edit</Link>
-                                            <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>
-                                        </td>
-                                    </tr>
-                                ))}
+                                {list}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <nav aria-label="Page navigation example">
-                <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
-                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
-                </ul>
-            </nav>
+            <Pagination
+                activePage={products.current_page}
+                itemsCountPerPage={products.per_page}
+                totalItemsCount={products.total}
+                onChange={(pageNumber) => callDataProducts(pageNumber)}
+                itemClass="page-item"
+                linkClass="page-link"
+                firstPageText="First"
+                lastPageText="Last"
+            />
         </div>
     );
 }

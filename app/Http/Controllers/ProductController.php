@@ -44,4 +44,9 @@ class ProductController extends Controller
         $pros = Product::where('cate_id', $product->cate_id)->where('id', '!=', $product->id)->take(3)->get();
         return response()->json($pros, 200);
     }
+    public function page()
+    {
+        $pro = Product::orderBy('updated_at', 'desc')->paginate(6);
+        return response()->json($pro, 200);
+    }
 }

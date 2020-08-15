@@ -16,8 +16,8 @@ const EditBlog = () => {
         const [errorContent, setErrorContent] = useState('');
         const [img, setImg] = useState();
         const [imageAsFile, setImageAsFile] = useState('');
-        const history = useHistory();
         const [progress, setProgress] = useState(0);
+        const history = useHistory();
         const { handleSubmit, register, errors } = useForm();
         const editorConfig = {
             cloudServices: {
@@ -29,8 +29,7 @@ const EditBlog = () => {
             axios.get('/api/category')
                 .then(response => {
                     setCategory(response.data)
-                })
-                .catch(error => console.log(error));
+                }).catch(error => console.log(error));
         };
         const callDataBlog = () => {
             axios.get(`/api/blogs/${id}`)

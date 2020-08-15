@@ -2,26 +2,28 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom'
-import usePaginate from '../../../../../paginate'
+import Pagination from 'react-js-pagination'
 import Moment from 'react-moment';
 const ListBlog = () => {
     const [category, setCategory] = useState([]);
-    const [blogs, setBlog] = useState([]);
+    const [blogs, setBlog] = useState({});
+    const [pageBlogs, setPageBlogs] = useState([]);
+    useEffect(() => {
+        callDataCategory(), callDataBlog()
+    }, [])
     const callDataCategory = () => {
         axios.get('/api/category')
             .then(response => {
                 setCategory(response.data)
-            })
-            .catch(error => console.log(error));
+            }).catch(error => console.log(error));
     }
-    const callDataBlog = () => {
-        axios.get('/api/blogs')
+    const callDataBlog = (pageNumber = 1) => {
+        axios.get(`/api/blogPage?page=${pageNumber}`)
             .then(res => {
                 setBlog(res.data)
-            })
-            .catch(error => console.log(error))
+                setPageBlogs(res.data.data)
+            }).catch(error => console.log(error))
     }
-    const page = usePaginate(blogs, 4);
     const getCategory = (cate_id) => {
         for (let i = 0; i < category.length; i++) {
             if (category[i].id === cate_id) {
@@ -29,7 +31,6 @@ const ListBlog = () => {
             }
         }
     }
-
     const deleteBlog = (id) => {
         swal({
             title: "Bạn có chắc chắn muốn xóa bài viết này?",
@@ -50,13 +51,21 @@ const ListBlog = () => {
                 }
             });
     }
-    // const formatDate = (x) => {
-    //     let date = new Date(x);
-
-    // }
-    useEffect(() => {
-        callDataCategory(), callDataBlog()
-    }, [])
+    const list = pageBlogs.map(({ id, title, image, cate_id, created_at }, index) => {
+        return (
+            <tr key={index}>
+                <td>{id}</td>
+                <td><Link to={`/admin/blogs/${id}`}>{title}</Link></td>
+                <td>{getCategory(cate_id)}</td>
+                <td><img src={image} alt="" width="70px" /></td>
+                <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
+                <td>
+                    <Link className="btn btn-primary mr-1" to={`/admin/blogs/edit/${id}`} >Edit</Link>
+                    <button className="btn btn-danger" onClick={() => deleteBlog(id)} >Delete</button>
+                </td>
+            </tr>
+        )
+    })
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Danh sách bài viết</h1>
@@ -78,33 +87,22 @@ const ListBlog = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {page.currentData().map(({ id, title, image, cate_id, created_at }, index) => (
-                                    <tr key={index}>
-                                        <td>{id}</td>
-                                        <td><Link to={`/admin/blogs/${id}`}>{title}</Link></td>
-                                        <td>{getCategory(cate_id)}</td>
-                                        <td><img src={image} alt="" width="70px" /></td>
-                                        <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
-                                        <td>
-                                            <Link className="btn btn-primary mr-1" to={`/admin/blogs/edit/${id}`} >Edit</Link>
-                                            <button className="btn btn-danger" onClick={() => deleteBlog(id)} >Delete</button>
-                                        </td>
-                                    </tr>
-                                ))}
+                                {list}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <nav aria-label="Page navigation example">
-                <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
-                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
-                </ul>
-            </nav>
+            <Pagination
+                activePage={blogs.current_page}
+                itemsCountPerPage={blogs.per_page}
+                totalItemsCount={blogs.total}
+                onChange={(pageNumber) => callDataBlog(pageNumber)}
+                itemClass="page-item"
+                linkClass="page-link"
+                firstPageText="First"
+                lastPageText="Last"
+            />
         </div>
     );
 }

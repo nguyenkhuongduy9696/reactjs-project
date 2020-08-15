@@ -23,8 +23,7 @@ const EditCategory = () => {
                     setCategory(response.data.cate)
                     setImg(response.data.cate.image)
                     setDetail(response.data.cate.detail)
-                })
-                .then(error => console.log(error))
+                }).catch(error => console.log(error))
         }
         const editorConfig = {
             cloudServices: {

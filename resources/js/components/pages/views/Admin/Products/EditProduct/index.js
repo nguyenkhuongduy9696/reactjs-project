@@ -8,7 +8,8 @@ import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const EditProduct = () => {
     function EditForm() {
-        const { handleSubmit, register, errors } = useForm();
+        const [category, setCategory] = useState([]);
+        const [product, setProduct] = useState({});
         const [errorDetail, setErrorDetail] = useState('');
         const [detail, setDetail] = useState(' ');
         const [img, setImg] = useState();
@@ -16,8 +17,7 @@ const EditProduct = () => {
         const [progress, setProgress] = useState(0);
         const history = useHistory();
         let { id } = useParams();
-        const [category, setCategory] = useState([]);
-        const [product, setProduct] = useState({});
+        const { handleSubmit, register, errors } = useForm();
         const editorConfig = {
             cloudServices: {
                 tokenUrl: 'https://73717.cke-cs.com/token/dev/a34370765a54fdad1639651ca88df80cebc9c72a39cffdaeb4447b1d923a',
@@ -28,8 +28,7 @@ const EditProduct = () => {
             axios.get('/api/category')
                 .then(response => {
                     setCategory(response.data)
-                })
-                .catch(error => console.log(error));
+                }).catch(error => console.log(error));
         };
         const callDataProducts = () => {
             axios.get(`/api/products/${id}`)

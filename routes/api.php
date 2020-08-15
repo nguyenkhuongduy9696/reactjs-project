@@ -17,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('new-products', 'ProductController@new')->name('new-product');
-Route::get('new-blog', 'BlogController@new')->name('new-blog');
-Route::get('relate-product/{product}', 'ProductController@relate')->name('relate-product');
 Route::prefix('category')->name('category.')->group(function () {
     Route::get('', 'CategoryController@index')->name('index');
     Route::post('', 'CategoryController@add')->name('add');
@@ -52,3 +49,9 @@ Route::prefix('orders')->name('orders.')->group(function () {
 });
 Route::post('order-detail', 'OrderController@detail')->name('order-detail');
 Route::get('getPro/{order}', 'OrderController@getPro')->name('getPro');
+Route::get('new-products', 'ProductController@new')->name('new-product');
+Route::get('new-blog', 'BlogController@new')->name('new-blog');
+Route::get('relate-product/{product}', 'ProductController@relate')->name('relate-product');
+Route::get('productPage', 'ProductController@page')->name('productPage');
+Route::get('categoryPage', 'CategoryController@page')->name('categoryPage');
+Route::get('blogPage', 'BlogController@page')->name('blogPage');

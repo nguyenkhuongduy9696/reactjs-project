@@ -19,15 +19,15 @@ const Dashboard = () => {
             }).catch(err => console.log(err))
     }
     const callDataContact = () => {
-        Axios.get('/api/contact')
+        Axios.get('/api/contact?page=1')
             .then(res => {
-                setContact(res.data)
+                setContact(res.data.total)
             }).catch(err => console.log(err))
     }
     const callDataOrder = () => {
-        Axios.get('/api/orders')
+        Axios.get('/api/orders?page=1')
             .then(res => {
-                setOrder(res.data)
+                setOrder(res.data.total)
             }).catch(err => console.log(err))
     }
     useEffect(() => {
@@ -72,7 +72,7 @@ const Dashboard = () => {
                             <div className="row no-gutters align-items-center">
                                 <div className="col mr-2">
                                     <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Phản hồi của khách hàng</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{contact.length}</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{contact}</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-envelope fa-2x text-warning" />
@@ -87,7 +87,7 @@ const Dashboard = () => {
                             <div className="row no-gutters align-items-center">
                                 <div className="col mr-2">
                                     <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Tổng số đơn hàng</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{order.length}</div>
+                                    <div className="h5 mb-0 font-weight-bold text-gray-800">{order}</div>
                                 </div>
                                 <div className="col-auto">
                                     <i className="fas fa-shopping-cart fa-2x text-primary" />

@@ -2,28 +2,27 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { Link } from 'react-router-dom'
-import usePaginate from '../../../../../paginate'
+import Pagination from 'react-js-pagination'
 const ListCate = () => {
-    const [category, setCategory] = useState([]);
+    const [category, setCategory] = useState({});
+    const [pageCategory, setPageCategory] = useState([]);
     const [product, setProduct] = useState([]);
-    const callDataCategory = () => {
-        axios.get('/api/category')
+    useEffect(() => {
+        callDataCategory(), callDataProduct();
+    }, []);
+    const callDataCategory = (pageNumber = 1) => {
+        axios.get(`/api/categoryPage?page=${pageNumber}`)
             .then(response => {
                 setCategory(response.data)
-            })
-            .catch(error => console.log(error));
+                setPageCategory(response.data.data)
+            }).catch(error => console.log(error));
     }
     const callDataProduct = () => {
         axios.get('/api/products')
             .then(response => {
                 setProduct(response.data)
-
-            })
-            .catch(error => console.log(error));
+            }).catch(error => console.log(error));
     }
-    useEffect(() => {
-        callDataCategory(), callDataProduct();
-    }, []);
     const getProduct = (id) => {
         let count = 0;
         for (let i = 0; i < product.length; i++) {
@@ -33,7 +32,6 @@ const ListCate = () => {
         }
         return count;
     }
-    const page = usePaginate(category, 4)
     const deleteProduct = (id) => {
         swal({
             title: "Bạn có chắc chắn muốn xóa danh mục này?",
@@ -54,6 +52,23 @@ const ListCate = () => {
                 }
             });
     }
+    const list = pageCategory.map(({ id, name, image, detail }, index) => {
+        return (
+            <tr key={index}>
+                <td>{id}</td>
+                <td>{name}</td>
+                <td><img src={image} alt="" width="70px" /></td>
+                <td>
+                    <div dangerouslySetInnerHTML={{ __html: detail }}></div>
+                </td>
+                <td>{getProduct(id)}</td>
+                <td>
+                    <Link className="btn btn-primary mr-1" to={`/admin/category/edit/${id}`} >Edit</Link>
+                    <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>
+                </td>
+            </tr>
+        )
+    })
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Danh sách danh mục</h1>
@@ -75,35 +90,22 @@ const ListCate = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {page.currentData().map(({ id, name, image, detail }, index) => (
-                                    <tr key={index}>
-                                        <td>{id}</td>
-                                        <td>{name}</td>
-                                        <td><img src={image} alt="" width="70px" /></td>
-                                        <td>
-                                            <div dangerouslySetInnerHTML={{ __html: detail }}></div>
-                                        </td>
-                                        <td>{getProduct(id)}</td>
-                                        <td>
-                                            <Link className="btn btn-primary mr-1" to={`/admin/category/edit/${id}`} >Edit</Link>
-                                            <button className="btn btn-danger" onClick={() => deleteProduct(id)} >Delete</button>
-                                        </td>
-                                    </tr>
-                                ))}
+                                {list}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <nav aria-label="Page navigation example">
-                <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
-                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
-                </ul>
-            </nav>
+            <Pagination
+                activePage={category.current_page}
+                itemsCountPerPage={category.per_page}
+                totalItemsCount={category.total}
+                onChange={(pageNumber) => callDataCategory(pageNumber)}
+                itemClass="page-item"
+                linkClass="page-link"
+                firstPageText="First"
+                lastPageText="Last"
+            />
         </div>
     );
 }

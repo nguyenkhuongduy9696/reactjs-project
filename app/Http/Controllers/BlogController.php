@@ -39,4 +39,9 @@ class BlogController extends Controller
         $blog = Blog::orderBy('created_at', 'desc')->take(1)->get();
         return response()->json($blog, 200);
     }
+    public function page()
+    {
+        $blog = Blog::orderBy('updated_at', 'desc')->paginate(3);
+        return response()->json($blog, 200);
+    }
 }

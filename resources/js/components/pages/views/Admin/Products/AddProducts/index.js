@@ -26,8 +26,7 @@ const AddProduct = () => {
         axios.get('/api/category')
             .then(response => {
                 setCategory(response.data)
-            })
-            .catch(error => console.log(error));
+            }).catch(error => console.log(error));
     };
     const handleChange = (e) => {
         if (e.target.files[0]) {

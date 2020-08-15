@@ -1,20 +1,35 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
-import usePagination from '../../../../../paginate';
+import Pagination from 'react-js-pagination'
 import Moment from 'react-moment'
 import { Link } from 'react-router-dom';
 const ListOrder = () => {
-    const [order, setOrder] = useState([]);
-    const callDataOrder = () => {
-        Axios.get('/api/orders')
-            .then(res => {
-                setOrder(res.data)
-            }).catch(err => console.log(err))
-    }
-    const page = usePagination(order, 4);
+    const [order, setOrder] = useState({});
+    const [pageOrder, setPageOrder] = useState([]);
     useEffect(() => {
         callDataOrder()
     }, [])
+    const callDataOrder = (pageNumber = 1) => {
+        Axios.get(`/api/orders?page=${pageNumber}`)
+            .then(res => {
+                setOrder(res.data)
+                setPageOrder(res.data.data)
+            }).catch(err => console.log(err))
+    }
+    const list = pageOrder.map(({ id, name, address, phone, created_at }, index) => {
+        return (
+            <tr key={index}>
+                <td>{id}</td>
+                <td>{name}</td>
+                <td>{address}</td>
+                <td>{phone}</td>
+                <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
+                <td>
+                    <Link className="btn btn-primary mr-1" to={`/admin/orders/${id}`} >Detail</Link>
+                </td>
+            </tr>
+        )
+    })
     return (
         <div>
             <h1 className="h3 mb-2 text-gray-800">Danh sách đơn hàng</h1>
@@ -36,32 +51,22 @@ const ListOrder = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {page.currentData().map(({ id, name, address, phone, created_at }, index) => (
-                                    <tr key={index}>
-                                        <td>{id}</td>
-                                        <td>{name}</td>
-                                        <td>{address}</td>
-                                        <td>{phone}</td>
-                                        <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
-                                        <td>
-                                            <Link className="btn btn-primary mr-1" to={`/admin/orders/${id}`} >Detail</Link>
-                                        </td>
-                                    </tr>
-                                ))}
+                                {list}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <nav aria-label="Page navigation example">
-                <ul className="pagination">
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
-                    <li className="page-item"><p className="page-link text-success" href="#">{page.currentPage}</p></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                    <li className="page-item"><a className="page-link" href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
-                </ul>
-            </nav>
+            <Pagination
+                activePage={order.current_page}
+                itemsCountPerPage={order.per_page}
+                totalItemsCount={order.total}
+                onChange={(pageNumber) => callDataOrder(pageNumber)}
+                itemClass="page-item"
+                linkClass="page-link"
+                firstPageText="First"
+                lastPageText="Last"
+            />
         </div>
     );
 }

@@ -1,48 +1,64 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Link } from 'react-router-dom'
-import usePaginate from '../../../../paginate'
 import cart from '../../../../cart'
+import Pagination from 'react-js-pagination'
 const Shop = () => {
-    const [products, setProduct] = useState([]);
+    const [products, setProduct] = useState({});
+    const [pageProduct, setPageProduct] = useState([]);
     const c = cart();
-    const callDataProduct = () => {
-        Axios.get('/api/products')
-            .then(response => {
-                setProduct(response.data)
-            })
-            .catch(error => console.log(error))
-    }
-    const page = usePaginate(products, 6)
     useEffect(() => {
-        callDataProduct()
+        callDataProducts()
     }, [])
+    const callDataProducts = (pageNumber = 1) => {
+        axios.get(`/api/productPage?page=${pageNumber}`)
+            .then(respone => {
+                console.log(respone.data)
+                setProduct(respone.data);
+                setPageProduct(respone.data.data)
+            }).catch(error => console.log(error))
+    }
+    const list = pageProduct.map(({ id, name, image, price }, index) => {
+        return (
+            <div className="col-sm-4" key={index}>
+                <div className="product-image-wrapper">
+                    <div className="single-products">
+                        <div className="productinfo text-center">
+                            <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
+                            <h2>{price}$</h2>
+                            <Link to={`/product/${id}`}>{name}</Link>
+                            <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    })
     return (
         <div>
             <div className="features_items">
-                <h2 className="title text-center">Cửa hàng</h2>
-                {page.currentData().map(({ id, name, image, price }, index) => (
-                    <div className="col-sm-4" key={index}>
-                        <div className="product-image-wrapper">
-                            <div className="single-products">
-                                <div className="productinfo text-center">
-                                    <Link to={`/product/${id}`}><img src={image} alt="" /></Link>
-                                    <h2>{price}$</h2>
-                                    <Link to={`/product/${id}`}>{name}</Link>
-                                    <button onClick={() => c.addCart(id)} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
+                <div className="row">
+                    <div className="col-sm-9">
+                        <h2 className="title text-center">Cửa hàng</h2>
+                    </div>
+                    <div className="col-sm-3">
+                        <div className="search_box pull-right">
+                            <input type="text" placeholder="Search" />
                         </div>
                     </div>
-                ))}
+                </div>
+                {list}
             </div>
-            <ul className="pagination">
-                <li><a href="" onClick={(e) => page.jump(1, e)}>&#8920;</a></li>
-                <li><a href="" onClick={(e) => page.prev(e)}>&laquo;</a></li>
-                <li className="active"><a href="#">{page.currentPage}</a></li>
-                <li><a href="" onClick={(e) => page.next(e)}>&raquo;</a></li>
-                <li><a href="" onClick={(e) => page.jump(page.maxPage, e)}>&#8921;</a></li>
-            </ul>
+            <Pagination
+                activePage={products.current_page}
+                itemsCountPerPage={products.per_page}
+                totalItemsCount={products.total}
+                onChange={(pageNumber) => callDataProducts(pageNumber)}
+                itemClass="page-item"
+                linkClass="page-link"
+                firstPageText="First"
+                lastPageText="Last"
+            />
         </div>
     );
 }

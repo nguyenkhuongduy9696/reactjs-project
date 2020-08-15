@@ -8,6 +8,9 @@ const OrderDetail = () => {
         const [order, setOrder] = useState({});
         const [detail, setDetail] = useState([]);
         const [pro, setPro] = useState([]);
+        useEffect(() => {
+            callDataDetail(), callDataOrder()
+        }, [])
         const callDataOrder = () => {
             Axios.get(`/api/orders/${id}`)
                 .then(res => {
@@ -17,6 +20,12 @@ const OrderDetail = () => {
         const callDataDetail = () => {
             Axios.get(`/api/getPro/${id}`)
                 .then(res => {
+                    for (let i = 0; i < res.data.length; i++) {
+                        Axios.get(`/api/products/${res.data[i].product_id}`)
+                            .then(response => {
+                                setPro(pro => [...pro, response.data])
+                            }).catch(err => console.log(err))
+                    }
                     setDetail(res.data)
                 }).catch(err => console.log(err))
         }
@@ -27,18 +36,6 @@ const OrderDetail = () => {
                 }
             }
         }
-        const callDataPro = () => {
-            for (let i = 0; i < detail.length; i++) {
-                let item = detail[i].product_id;
-                Axios.get(`/api/products/${item}`)
-                    .then(res => {
-                        setPro(pro => [...pro, res.data])
-                    }).catch(err => console.log(err))
-            }
-        }
-        useEffect(() => {
-            callDataOrder(), callDataDetail(), callDataPro()
-        }, [])
         return (
             <div>
                 <h1 className="h3 mb-2 text-gray-800">Chi tiết đơn hàng</h1>
@@ -80,7 +77,7 @@ const OrderDetail = () => {
                                             <td><img src={image} alt="" width={70} /></td>
                                             <td>{price}$</td>
                                             <td>{getQlt(id)}</td>
-                                            <td>{getQlt(id) * price}</td>
+                                            <td>{getQlt(id) * price}$</td>
                                         </tr>
                                     ))}
                                 </tbody>
