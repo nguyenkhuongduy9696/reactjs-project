@@ -16,7 +16,34 @@ const ListOrder = () => {
                 setPageOrder(res.data.data)
             }).catch(err => console.log(err))
     }
-    const list = pageOrder.map(({ id, name, address, phone, created_at }, index) => {
+    const changeStatus = (id) => {
+        swal({
+            title: "Cập nhật trạng thái đơn hàng? ",
+            icon: "info",
+            buttons: true,
+            buttons: ["Hủy", "Cập nhật"],
+        })
+            .then((willUpdate) => {
+                if (willUpdate) {
+                    axios.post(`/api/orders/update/${id}`)
+                        .then(respone => {
+                            swal("Cập nhật trạng thái đơn hàng thành công!", {
+                                icon: "success",
+                                timer: 2000
+                            });
+                            callDataOrder(1);
+                        }).catch(error => console.log(error))
+                }
+            });
+    }
+    const getStatus = (status, id) => {
+        if (status === 1) {
+            return <button className="btn btn-warning" onClick={() => changeStatus(id)} >Pending</button>
+        } else {
+            return <span className="text-success">Done</span>
+        }
+    }
+    const list = pageOrder.map(({ id, name, address, phone, created_at, status }, index) => {
         return (
             <tr key={index}>
                 <td>{id}</td>
@@ -24,6 +51,9 @@ const ListOrder = () => {
                 <td>{address}</td>
                 <td>{phone}</td>
                 <td><Moment format="DD/MM/YYYY hh:mm:ss">{created_at}</Moment></td>
+                <td>
+                    {getStatus(status, id)}
+                </td>
                 <td>
                     <Link className="btn btn-primary mr-1" to={`/admin/orders/${id}`} >Detail</Link>
                 </td>
@@ -47,6 +77,7 @@ const ListOrder = () => {
                                     <th>Address</th>
                                     <th>Phone</th>
                                     <th>Date Received</th>
+                                    <th>Status</th>
                                     <th>Detail</th>
                                 </tr>
                             </thead>

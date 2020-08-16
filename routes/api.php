@@ -46,6 +46,7 @@ Route::prefix('orders')->name('orders.')->group(function () {
     Route::post('', 'OrderController@add')->name('add');
     Route::get('', 'OrderController@index')->name('index');
     Route::get('/{order}', 'OrderController@show')->name('show');
+    Route::post('update/{order}', 'OrderController@update')->name('update');
 });
 Route::post('order-detail', 'OrderController@detail')->name('order-detail');
 Route::get('getPro/{order}', 'OrderController@getPro')->name('getPro');
@@ -55,3 +56,4 @@ Route::get('relate-product/{product}', 'ProductController@relate')->name('relate
 Route::get('productPage', 'ProductController@page')->name('productPage');
 Route::get('categoryPage', 'CategoryController@page')->name('categoryPage');
 Route::get('blogPage', 'BlogController@page')->name('blogPage');
+Route::get('search/{search}', 'ProductController@search')->name('search-product');

@@ -6,6 +6,7 @@ import Pagination from 'react-js-pagination'
 const Shop = () => {
     const [products, setProduct] = useState({});
     const [pageProduct, setPageProduct] = useState([]);
+    const [search, setSearch] = useState("")
     const c = cart();
     useEffect(() => {
         callDataProducts()
@@ -17,6 +18,17 @@ const Shop = () => {
                 setProduct(respone.data);
                 setPageProduct(respone.data.data)
             }).catch(error => console.log(error))
+    }
+    const onHandleChange = (event) => {
+        let value = event.target.value;
+        if (value == "") {
+            callDataProducts()
+        } else {
+            axios.get(`/api/search/${value}`)
+                .then(function (response) {
+                    setPageProduct(response.data)
+                });
+        }
     }
     const list = pageProduct.map(({ id, name, image, price }, index) => {
         return (
@@ -43,7 +55,7 @@ const Shop = () => {
                     </div>
                     <div className="col-sm-3">
                         <div className="search_box pull-right">
-                            <input type="text" placeholder="Search" />
+                            <input type="text" placeholder="Search" onChange={onHandleChange} />
                         </div>
                     </div>
                 </div>

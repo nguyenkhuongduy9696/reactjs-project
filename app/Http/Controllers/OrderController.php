@@ -34,4 +34,10 @@ class OrderController extends Controller
         $data = DB::table('order_detail')->where('order_id', $order->id)->get();
         return response()->json($data, 200);
     }
+    public function update(Order $order)
+    {
+        Order::where('id', $order->id)->update(['status' => 2]);
+        $order = Order::orderBy('created_at', 'desc')->paginate(4);
+        return response()->json($order, 200);
+    }
 }

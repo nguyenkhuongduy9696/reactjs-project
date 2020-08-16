@@ -36,6 +36,13 @@ const OrderDetail = () => {
                 }
             }
         }
+        const getStatus = (status) => {
+            if (status === 1) {
+                return <p><span className="text-primary">Trạng thái: </span> Pending </p>
+            } else {
+                return <p><span className="text-primary">Trạng thái: </span> Done </p>
+            }
+        }
         return (
             <div>
                 <h1 className="h3 mb-2 text-gray-800">Chi tiết đơn hàng</h1>
@@ -50,6 +57,7 @@ const OrderDetail = () => {
                                 <p><span className="text-primary">Số điện thoại: </span>{order.phone}</p>
                                 <p><span className="text-primary">Tổng giá trị đơn hàng: </span>{order.total_price}$</p>
                                 <p><span className="text-primary">Ngày nhận đơn: </span> <Moment format="DD/MM/YYYY hh:mm:ss">{order.created_at}</Moment></p>
+                                {getStatus(order.status)}
                             </div>
                         </div><br />
                         <div className="row">

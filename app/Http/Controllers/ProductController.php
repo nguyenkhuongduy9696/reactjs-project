@@ -49,4 +49,9 @@ class ProductController extends Controller
         $pro = Product::orderBy('updated_at', 'desc')->paginate(6);
         return response()->json($pro, 200);
     }
+    public function search($search)
+    {
+        $products = Product::where('name', 'LIKE', '%' . $search . '%')->get();
+        return response()->json($products, 200);
+    }
 }
